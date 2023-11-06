@@ -1,26 +1,32 @@
 ---
+// ページタイトルとページ説明のプロップスのインターフェースを定義
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 
 interface StringTitleProp {
-  pageTitle: string;
-  pageDesc?: string;
+  pageTitle: string; // 文字列のページタイトル
+  pageDesc?: string; // オプションのページ説明
 }
 
 interface ArrayTitleProp {
-  pageTitle: [string, string];
-  titleTransition: string;
-  pageDesc?: string;
+  pageTitle: [string, string]; // ページタイトルのトランジションに使用される文字列の配列
+  titleTransition: string; // ページタイトルのトランジション名
+  pageDesc?: string; // オプションのページ説明
 }
 
+// ページタイトルとページ説明をプロップスとして受け取るコンポーネントのプロップスの型
 export type Props = StringTitleProp | ArrayTitleProp;
 
+// Astro.props からプロップスを取得
 const { props } = Astro;
+
 ---
 
-<Breadcrumbs />
+<Breadcrumbs /> <!-- パンくずリストコンポーネントを表示 -->
+
 <main id="main-content">
   {
     "titleTransition" in props ? (
+      // ページタイトルがトランジションを持つ場合の表示
       <h1>
         {props.pageTitle[0]}
         <span transition:name={props.titleTransition}>
@@ -28,20 +34,24 @@ const { props } = Astro;
         </span>
       </h1>
     ) : (
+      // ページタイトルがトランジションを持たない場合の表示
       <h1>{props.pageTitle}</h1>
     )
   }
-  <p>{props.pageDesc}</p>
-  <slot />
+  <p>{props.pageDesc}</p> <!-- ページ説明を表示 -->
+  <slot /> <!-- コンテンツを挿入 -->
 </main>
 
 <style>
+  /* メインコンテンツのスタイル */
   #main-content {
     @apply mx-auto w-full max-w-3xl px-4 pb-12;
   }
+  /* ページタイトルのスタイル */
   #main-content h1 {
     @apply text-2xl font-semibold sm:text-3xl;
   }
+  /* ページ説明のスタイル */
   #main-content p {
     @apply mb-6 mt-2 italic;
   }
