@@ -1,5 +1,5 @@
 ---
-author: LIL JAP KID
+author: Taro Gray
 pubDatetime: 2023-11-16T12:05:00.000Z
 title: 【ネットワークコマンドの基本】：IpconfigからArpまで
 postSlug: IpconfigからArpまでについて

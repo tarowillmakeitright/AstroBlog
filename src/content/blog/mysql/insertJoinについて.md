@@ -1,5 +1,5 @@
 ---
-author: LIL JAP KID
+author: Taro Gray
 pubDatetime: 2023-11-16T11:15:00.547Z
 title: 【MySQL構文】INNER JOINについて学ぼう
 postSlug: insertJoinについて
@@ -16,7 +16,7 @@ description: "面白いデータを使って `INNER JOIN` の例を説明しま�
 
 面白いデータを使って `INNER JOIN` の例を説明しましょう。想像してみてください：私たちには2つのテーブルがあります。「Wizards」（魔法使い）と「Spells」（呪文）。魔法使いはそれぞれ特定の呪文を使えるとしましょう。
 
-### テーブルの構造
+## テーブルの構造
 
 1. **Wizards（魔法使い）**:
 
@@ -30,7 +30,7 @@ description: "面白いデータを使って `INNER JOIN` の例を説明しま�
    - `effect`：呪文の効果。
    - `wizard_id`：この呪文を使える魔法使いのID。
 
-### データ例
+## データ例
 
 - **Wizards**:
   | wizard_id | name | age |
@@ -48,7 +48,7 @@ description: "面白いデータを使って `INNER JOIN` の例を説明しま�
   | 4 | Teleportation | テレポートする | 3 |
   | 5 | Healing | 癒す | 2 |
 
-### INNER JOINのクエリ
+## INNER JOINのクエリ
 
 ここで、各魔法使いが使える呪文のリストを取得したいとします。これは `INNER JOIN` を使って実現できます：
 
@@ -58,7 +58,7 @@ FROM Wizards
 INNER JOIN Spells ON Wizards.wizard_id = Spells.wizard_id;
 ```
 
-### 結果
+## 結果
 
 このクエリは、`Wizards` テーブルと `Spells` テーブルを `wizard_id` で結合し、魔法使いの名前と彼らが使える呪文の名前と効果をリストします。出力は以下のようになります：
 
@@ -70,7 +70,7 @@ INNER JOIN Spells ON Wizards.wizard_id = Spells.wizard_id;
 | Merlin       | Healing        | 癒す           |
 | Harry Potter | Teleportation  | テレポートする |
 
-### 解説
+## 解説
 
 `INNER JOIN` は、2つのテーブル間の共通のデータを結合するのに使います。この例では、`Wizards` テーブルの `wizard_id` が `Spells` テーブルの `wizard_id` と一致する行を結合しています。これにより、各魔法使いと彼らが使える呪文の関係が明らかになります。
 

@@ -1,6 +1,6 @@
 ---
-author: LIL JAP KID
-pubDatetime: 2023-11-16T11:21:00.000Z
+author: Taro Gray
+pubDatetime: 2023-11-16T11:36:00.000Z
 title: 【Javascript DOM編】Nodeオブジェクトについて
 postSlug: Nodeオブジェクトについて
 featured: true
@@ -10,14 +10,14 @@ tags:
   - DOM
   - Node
   - オブジェクト
-description: JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本的な構成要素です。`Node`オブジェクトには多くのプロパティがありますが、ここでは主要なものを挙げ、それぞれについて簡単な説明とコード例を提供します。
+description: "JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本的な構成要素です。`Node`オブジェクトには多くのプロパティがありますが、ここでは主要なものを挙げ、それぞれについて簡単な説明とコード例を提供します。"
 ---
 
 ## Table of contents
 
 JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本的な構成要素です。`Node`オブジェクトには多くのプロパティがありますが、ここでは主要なものを挙げ、それぞれについて簡単な説明とコード例を提供します。
 
-### 1. nodeName
+## 1. nodeName
 
 - **概要**: `nodeName`は、ノードの名前を表します。要素ノードの場合はタグ名、テキストノードの場合は`#text`、ドキュメントノードの場合は`#document`などが返されます。
 - **例**:
@@ -26,7 +26,7 @@ JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本�
   console.log(element.nodeName); // 要素のタグ名を出力
   ```
 
-### 2. nodeType
+## 2. nodeType
 
 - **概要**: `nodeType`は、ノードのタイプを表す数値を返します（例：1 = Element, 3 = Text）。
 - **例**:
@@ -35,7 +35,7 @@ JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本�
   console.log(element.nodeType); // ノードタイプを出力
   ```
 
-### 3. parentNode
+## 3. parentNode
 
 - **概要**: `parentNode`は、ノードの親ノードを返します。親ノードがない場合は`null`を返します。
 - **例**:
@@ -44,7 +44,7 @@ JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本�
   console.log(element.parentNode); // 親ノードを出力
   ```
 
-### 4. childNodes
+## 4. childNodes
 
 - **概要**: すでに述べたように、`childNodes`はノードの子ノードのリストを返します。
 - **例**:
@@ -53,7 +53,7 @@ JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本�
   console.log(element.childNodes); // 子ノードのリストを出力
   ```
 
-### 5. firstChild / lastChild
+## 5. firstChild / lastChild
 
 - **概要**: `firstChild`は最初の子ノードを、`lastChild`は最後の子ノードを返します。
 - **例**:
@@ -63,7 +63,7 @@ JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本�
   console.log(element.lastChild); // 最後の子ノードを出力
   ```
 
-### 6. previousSibling / nextSibling
+## 6. previousSibling / nextSibling
 
 - **概要**: `previousSibling`は、現在のノードの前にある兄弟ノードを返します。`nextSibling`は後にある兄弟ノードを返します。
 - **例**:

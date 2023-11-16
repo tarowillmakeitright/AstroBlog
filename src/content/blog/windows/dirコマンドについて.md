@@ -1,5 +1,5 @@
 ---
-author: LIL JAP KID
+author: Taro Gray
 pubDatetime: 2023-11-16T12:11:00.000Z
 title: 【cmdコマンドの基本】MacのlsコマンドをWindowsで 
 postSlug: dirコマンドについて
@@ -19,13 +19,13 @@ description: "ファイルがどこにあるかを確認するために、コマ
 
 ファイルがどこにあるかを確認するために、コマンドライン（コマンドプロンプトまたはターミナル）を使用して、`dir`コマンド（Windowsの場合）または`ls`コマンド（Unix/Linuxの場合）を使います。そして、ファイル名を指定して検索を行います。
 
-Windowsの場合（`dir`コマンドを使用）:
+## Windowsの場合（`dir`コマンドを使用）:
 
 ```
 dir /s /b "ファイル名"
 ```
 
-Unix/Linuxの場合（`ls`コマンドを使用）:
+## Unix/Linuxの場合（`ls`コマンドを使用）:
 
 ```
 find / -name "ファイル名" 2>/dev/null
