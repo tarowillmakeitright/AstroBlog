@@ -7,7 +7,6 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-  - Linuxコマンド
 description: こんにちは、Linuxの魔法使いの皆さん！今日は、ターミナルでの高度な操作を学び、ちょっとしたハッカー気分を味わいます。さあ、キーボードを手に取り、ターミナルの世界に潜入しましょう！
 ---
 
