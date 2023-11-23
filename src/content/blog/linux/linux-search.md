@@ -22,7 +22,7 @@ description: こんにちは、Linuxの魔法使いの皆さん！今日は、�
 
 ```bash
 # Ctrl + rで "sudo apt-get update" を検索
-(reverse-i-search)`': sudo apt-get update
+# (reverse-i-search)`': sudo apt-get update
 # Enter → Escを素早く押して編集モードに
 sudo apt-get update
 # もしやめたいなら、Ctrl + gでキャンセル
