@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-17T12:22:00Z
 title: git addコマンドを実行した後、通常は以下の手順で進め
-postSlug: post-1-git-add-command
+postSlug: git-add-command
 featured: true
 draft: false
 tags:
