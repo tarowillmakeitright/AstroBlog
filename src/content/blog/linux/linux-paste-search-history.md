@@ -37,7 +37,7 @@ description: 皆さん、こんにちは！Linuxの魔法学校へ再びよう�
 # Ctrl + rを押して検索開始
 reverse-i-search:
 # "upd"とタイプすると...
-reverse-i-search upd': sudo apt-get update
+reverse-i-search upd: sudo apt-get update
 ```
 
 ## まとめ：ペーストと検索の達人
