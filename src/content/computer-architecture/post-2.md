@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T11:42:54.547Z
+pubDatetime: 2023-11-16T11:42:54.00Z
 title: 【Computer Architecture】GPUとCPUについて
-postSlug: 2
+postSlug: post-2
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
@@ -10,7 +10,7 @@ tags:
   - hardware
   - コンピューターアーキテクチャ
   - ハードウェア
-description: "GPU（Graphics Processing Unit）とCPU（Central Processing Unit）は、コンピュータの主要な処理装置ですが、役割と構造が異なります。"
+description: GPU（Graphics Processing Unit）とCPU（Central Processing Unit）は、コンピュータの主要な処理装置ですが、役割と構造が異なります。
 ---
 
 ## Table of contents

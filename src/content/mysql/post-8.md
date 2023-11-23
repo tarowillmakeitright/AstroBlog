@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:02:00.547Z
+pubDatetime: 2023-11-23T11:02:00.00Z
 title: 【MySQL正規形】バッドノウハウ（Bad Know-How）とは何か？
-postSlug: mysql-8
+postSlug: post-8
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - Bad Know-How
-description: "バッドノウハウとは、効率的でない、または害を及ぼす可能性のある技術や方法を指す言葉です。これは、うまくいかない方法や、問題を引き起こす可能性のあるアプローチを示します。"
+description: バッドノウハウとは、効率的でない、または害を及ぼす可能性のある技術や方法を指す言葉です。これは、うまくいかない方法や、問題を引き起こす可能性のあるアプローチを示します。
 ---
 
 ## テーブルの構造

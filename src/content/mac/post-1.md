@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T12:05:00.000Z
+pubDatetime: 2023-11-16T12:05:00.00Z
 title: 【terminalコマンドの基本】WindowsのツリーコマンドをMacで
 postSlug: post-1
 featured: true
@@ -11,7 +11,7 @@ tags:
   - terminal
   - command
   - linux
-description: "MacOSにはデフォルトで「tree」コマンドがインストールされていないため、代替方法を使用するか、Homebrewなどのパッケージマネージャーを使用してインストールする必要があります。"
+description: MacOSにはデフォルトで「tree」コマンドがインストールされていないため、代替方法を使用するか、Homebrewなどのパッケージマネージャーを使用してインストールする必要があります。
 ---
 
 ## Table of contents

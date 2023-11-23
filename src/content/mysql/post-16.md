@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T11:21:00.000Z
+pubDatetime: 2023-11-16T11:21:00.00Z
 title: 【MySQL正規形】第４正規形について学ぼう
-postSlug: mysql-16
+postSlug: post-16
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
@@ -10,7 +10,7 @@ tags:
   - 第4正規形
   - 4NF
   - 正規形
-description: "第4正規形（4NF）は、リレーショナルデータベースの設計において、より高度な正規化を行うための概念です。4NFは、特にマルチバリュード依存（多値依存）を排除することに焦点を当てています。これは、ある属性が他の属性に依存し、その依存関係が繰り返し（リピート）されることを防ぐためのものです。"
+description: 第4正規形（4NF）は、リレーショナルデータベースの設計において、より高度な正規化を行うための概念です。4NFは、特にマルチバリュード依存（多値依存）を排除することに焦点を当てています。これは、ある属性が他の属性に依存し、その依存関係が繰り返し（リピート）されることを防ぐためのものです。"
 ---
 
 ## Table of contents

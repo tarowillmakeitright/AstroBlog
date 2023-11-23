@@ -1,5 +1,5 @@
 ---
-author: LIL JAP KID
+author: Taro Gray
 pubDatetime: 2023-10-31T11:45:54.547Z
 title: Javascript Map 非同期処理についてわかりやすくまとめてみた
 postSlug: post-3
@@ -11,7 +11,7 @@ tags:
   - map
   - 非同期処理
   - asynchronous
-description: ""
+description: JavaScriptの`map`は、配列の各要素に対して関数を適用し、その結果からなる新しい配列を作成する高階関数です。これは関数型プログラミングの概念を活用しており、非常に便利です。
 ---
 
 ## Table of contents

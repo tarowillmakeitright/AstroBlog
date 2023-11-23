@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T11:47:00.000Z
+pubDatetime: 2023-11-16T11:47:00.00Z
 title: 【Computer Architecture】GPUとCPUについて
 postSlug: post-1
 featured: true
@@ -10,7 +10,7 @@ tags:
   - hardware
   - コンピューターアーキテクチャ
   - ハードウェア
-description: "コンピュータが基本的な算術演算をどのように処理するかを理解することは、コンピューティングの基礎を学ぶ上で重要です。以下では、CPUがどのようにして単純な加算を行うかをアセンブリ言語の観点から説明します。"
+description: コンピュータが基本的な算術演算をどのように処理するかを理解することは、コンピューティングの基礎を学ぶ上で重要です。以下では、CPUがどのようにして単純な加算を行うかをアセンブリ言語の観点から説明します。
 ---
 
 ## Table of contents

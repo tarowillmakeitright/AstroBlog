@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-19T08:48:00.000Z
+pubDatetime: 2023-11-19T08:48:00.00Z
 title: 【MySQL正規形】第3正規形（3NF）について学ぼう
-postSlug: mysql-15
+postSlug: post-15
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
@@ -10,7 +10,7 @@ tags:
   - 第3正規形
   - 3NF
   - 正規形
-description: "第3正規形（3NF）は、リレーショナルデータベース設計のさらに高度な段階です。3NFは、データベース内の冗長性をさらに削減し、データの整合性を保つための重要な手段です。"
+description: 第3正規形（3NF）は、リレーショナルデータベース設計のさらに高度な段階です。3NFは、データベース内の冗長性をさらに削減し、データの整合性を保つための重要な手段です。
 ---
 
 # 第三正規形（3NF）についての解説

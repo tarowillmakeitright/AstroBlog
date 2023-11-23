@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:09:00.547Z
+pubDatetime: 2023-11-23T11:09:00.00Z
 title: 【MySQLグレーゾーン】アドホックな集計キーの利用
-postSlug: mysql-7
+postSlug: post-7
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - アドホックな集計キーの利用
-description: "アドホックな集計キーは、特定の分析やレポートのために一時的に作成されるキーです。データベース設計においてこれらのキーの使用はグレーゾーンにあり、柔軟性と効率のバランスを取る必要があります。"
+description: アドホックな集計キーは、特定の分析やレポートのために一時的に作成されるキーです。データベース設計においてこれらのキーの使用はグレーゾーンにあり、柔軟性と効率のバランスを取る必要があります。
 ---
 
 ## テーブルの構造

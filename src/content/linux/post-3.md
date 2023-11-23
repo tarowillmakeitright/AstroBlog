@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T110:43:00.000Z
+pubDatetime: 2023-11-23T110:43:00.00Z
 title: 【Linuxコマンドマスターシリーズ】ペーストと検索の秘密
 postSlug: post-3
 featured: true
@@ -10,7 +10,7 @@ tags:
   - Linuxコマンド
   - Ctrl + y
   - Ctrl + r
-description: "第3回のブログ記事をMarkdown形式で作成します。今回はペーストと検索に関するコマンドを面白く、実用的に紹介します。タイトルは「Linuxコマンドマスターシリーズ：ペーストと検索の秘密」にしましょう。"
+description: 第3回のブログ記事をMarkdown形式で作成します。今回はペーストと検索に関するコマンドを面白く、実用的に紹介します。タイトルは「Linuxコマンドマスターシリーズ：ペーストと検索の秘密」にしましょう。
 ---
 
 ## Table of contents

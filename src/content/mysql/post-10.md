@@ -1,15 +1,15 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:06:00.547Z
+pubDatetime: 2023-11-23T11:06:00.00Z
 title: 【MySQLグレーゾーン】代理キーの使いどころ
-postSlug: mysql-10
+postSlug: post-10
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - 代理キー
   - Surrogate Key
-description: "データベース設計において、代理キー（Surrogate Key）の使用はしばしば「グレーゾーン」と見なされます。代理キーは、ビジネス上の意味を持たないが、データベース内でレコードを一意に識別するために使用されるキーです。"
+description: データベース設計において、代理キー（Surrogate Key）の使用はしばしば「グレーゾーン」と見なされます。代理キーは、ビジネス上の意味を持たないが、データベース内でレコードを一意に識別するために使用されるキーです。
 ---
 
 ## テーブルの構造

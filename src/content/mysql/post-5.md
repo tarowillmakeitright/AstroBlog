@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:02:00.547Z
+pubDatetime: 2023-11-23T11:02:00.00Z
 title: 【MySQL構文】SQLのAND構文の使い方
 postSlug: post-5
 featured: true
@@ -8,7 +8,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - MySQL
   - AND
-description: "SQLの `AND` 構文は、複数の条件を組み合わせてデータを検索する際に使用される基本的なツールです。この構文を使用することで、より具体的なクエリを作成し、必要なデータを正確に取得できます。"
+description: SQLの `AND` 構文は、複数の条件を組み合わせてデータを検索する際に使用される基本的なツールです。この構文を使用することで、より具体的なクエリを作成し、必要なデータを正確に取得できます。
 ---
 
 ## テーブルの構造

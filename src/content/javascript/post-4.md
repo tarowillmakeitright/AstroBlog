@@ -10,7 +10,7 @@ tags:
   - DOM
   - Node
   - オブジェクト
-description: "JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本的な構成要素です。`Node`オブジェクトには多くのプロパティがありますが、ここでは主要なものを挙げ、それぞれについて簡単な説明とコード例を提供します。"
+description: JavaScriptのDOMにおける`Node`オブジェクトは、DOMツリーの基本的な構成要素です。`Node`オブジェクトには多くのプロパティがありますが、ここでは主要なものを挙げ、それぞれについて簡単な説明とコード例を提供します。
 ---
 
 ## Table of contents

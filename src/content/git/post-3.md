@@ -19,7 +19,7 @@ tags:
   - GitTips
   - HackerDefense
 
-description: "Netlifyを使用してWebアプリケーションやウェブサイトをデプロイする手順をご説明します。Netlifyは、フロントエンドのデプロイメントとホスティングを簡単にするサービスです。"
+description: Netlifyを使用してWebアプリケーションやウェブサイトをデプロイする手順をご説明します。Netlifyは、フロントエンドのデプロイメントとホスティングを簡単にするサービスです。
 ---
 
 ## Table of Contents

@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-07T22:37:00Z
 title: GitHub Push Permission Errorについて
-postSlug: 2
+postSlug: post-2
 featured: true
 draft: false
 tags:
@@ -19,7 +19,7 @@ tags:
   - GitTips
   - HackerDefense
 
-description: "この記事では、Gitの基本操作中に発生する可能性のある問題、特にGitHubへのpush時に遭遇する権限エラーについて解説します。また、ハッカーからの攻撃を防ぐためのセキュリティ対策についても触れます。"
+description: この記事では、Gitの基本操作中に発生する可能性のある問題、特にGitHubへのpush時に遭遇する権限エラーについて解説します。また、ハッカーからの攻撃を防ぐためのセキュリティ対策についても触れます。
 ---
 
 ## Table of Contents

@@ -1,15 +1,15 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:09:00.547Z
+pubDatetime: 2023-11-23T11:09:00.00Z
 title: 【MySQLグレーゾーン】多段ビューの活用とリスク
-postSlug: mysql-12
+postSlug: post-12
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - 多段ビュー
   - Multi-Level Views
-description: "多段ビュー（Multi-Level Views）は、データベース設計における複雑な側面の一つです。これらはデータの抽象化と簡素化を可能にする一方で、パフォーマンスや管理の面でのリスクも伴います。"
+description: 多段ビュー（Multi-Level Views）は、データベース設計における複雑な側面の一つです。これらはデータの抽象化と簡素化を可能にする一方で、パフォーマンスや管理の面でのリスクも伴います。
 ---
 
 ## テーブルの構造

@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T11:15:00.547Z
+pubDatetime: 2023-11-16T11:15:00.00Z
 title: 【MySQL構文】INNER JOINについて学ぼう
 postSlug: post-3
 featured: true
@@ -8,7 +8,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - MySQL
   - INNER JOIN
-description: "面白いデータを使って `INNER JOIN` の例を説明しましょう。想像してみてください：私たちには2つのテーブルがあります。「Wizards」（魔法使い）と「Spells」（呪文）。魔法使いはそれぞれ特定の呪文を使えるとしましょう。"
+description: 面白いデータを使って `INNER JOIN` の例を説明しましょう。想像してみてください：私たちには2つのテーブルがあります。「Wizards」（魔法使い）と「Spells」（呪文）。魔法使いはそれぞれ特定の呪文を使えるとしましょう。
 ---
 
 ## Table of contents

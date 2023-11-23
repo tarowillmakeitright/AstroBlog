@@ -1,7 +1,6 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-23T10:50:00.547Z
-pubDatetime: 2023-11-23T10:50:00.547Z
 title: 【MySQL構文】DELETE文とUPDATE文の基本
 postSlug: post-2
 featured: true
@@ -10,7 +9,7 @@ tags:
   - MySQL
   - DELETE
   - UPDATE
-description: "SQLにおける `DELETE` と `UPDATE` ステートメントは、データベース内のデータを変更するために使用されます。これらのコマンドはデータを操作する強力なツールであり、適切に使用することが重要です。"
+description: SQLにおける `DELETE` と `UPDATE` ステートメントは、データベース内のデータを変更するために使用されます。これらのコマンドはデータを操作する強力なツールであり、適切に使用することが重要です。
 ---
 
 ## Table of contents

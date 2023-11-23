@@ -1,18 +1,17 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-16T12:11:00.000Z
-title: 【cmdコマンドの基本】MacのlsコマンドをWindowsで 
+title: 【cmdコマンドの基本】MacのlsコマンドをWindowsで
 postSlug: post-1
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Windows
   - dir
-  - cmd 
+  - cmd
   - command
   - linux
-description: "ファイルがどこにあるかを確認するために、コマンドライン（コマンドプロンプトまたはターミナル）を使用して、`dir`コマンド（Windowsの場合）または`ls`コマンド（Unix/Linuxの場合）を使います。そして、ファイル名を指定して検索を行います。
-"
+description: ファイルがどこにあるかを確認するために、コマンドライン（コマンドプロンプトまたはターミナル）を使用して、`dir`コマンド（Windowsの場合）または`ls`コマンド（Unix/Linuxの場合）を使います。そして、ファイル名を指定して検索を行います。
 ---
 
 ## Table of contents

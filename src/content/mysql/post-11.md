@@ -1,15 +1,15 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T11:06:00.547Z
+pubDatetime: 2023-11-23T11:06:00.00Z
 title: 【MySQLグレーゾーン】列待ちテーブル（Queue Table）の活用
-postSlug: mysql-11
+postSlug: post-11
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - 列待ちテーブル
   - Queue Table
-description: "列待ちテーブル（Queue Table）は、データベース設計における一種のグレーゾーンです。これらは、特定のタスクやプロセスを順序良く処理するために使用されるテーブルです。"
+description: 列待ちテーブル（Queue Table）は、データベース設計における一種のグレーゾーンです。これらは、特定のタスクやプロセスを順序良く処理するために使用されるテーブルです。
 ---
 
 ## テーブルの構造

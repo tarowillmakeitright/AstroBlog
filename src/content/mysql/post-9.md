@@ -1,15 +1,15 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T11:21:00.000Z
+pubDatetime: 2023-11-16T11:21:00.00Z
 title: 【MySQL構文】ボイスコット正規系について学ぼう
-postSlug: mysql-9
+postSlug: post-9
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - ボイスコッド正規形
   - 正規形
-description: "「ボイス・コッド正規形」（Boyce-Codd Normal Form, BCNF）BCNFはリレーショナルデータベース理論における正規形の一つで、データの冗長性を減らすために使用されます。"
+description: 「ボイス・コッド正規形」（Boyce-Codd Normal Form, BCNF）BCNFはリレーショナルデータベース理論における正規形の一つで、データの冗長性を減らすために使用されます。
 ---
 
 ## Table of contents

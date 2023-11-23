@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-19T08:43:00.000Z
+pubDatetime: 2023-11-19T08:43:00.00Z
 title: 【MySQL正規形】 第二正規形（2NF）について学ぼう
-postSlug: mysql-14
+postSlug: post-14
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
@@ -10,7 +10,7 @@ tags:
   - 第2正規形
   - 2NF
   - 正規形
-description: "第2正規形（2NF）は、リレーショナルデータベース設計における重要な正規化ステップです。1NF（第一正規形）から一歩進んだ2NFは、データの冗長性をさらに減らし、データ整合性を高めることを目指します。"
+description: 第2正規形（2NF）は、リレーショナルデータベース設計における重要な正規化ステップです。1NF（第一正規形）から一歩進んだ2NFは、データの冗長性をさらに減らし、データ整合性を高めることを目指します。
 ---
 
 # 第二正規形（2NF）についての説明

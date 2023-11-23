@@ -10,7 +10,7 @@ tags:
   - DOM
   - Element
   - オブジェクト
-description: "JavaScriptのDOMにおける`Element`オブジェクトは、HTMLやXMLドキュメント内の要素を表します。`Element`は`Node`オブジェクトを継承しているため、`Node`のプロパティとメソッドをすべて持っていますが、さらに特有の機能も提供します。以下は`Element`オブジェクトの主要なプロパティとメソッドに関する説明と例です。"
+description: JavaScriptのDOMにおける`Element`オブジェクトは、HTMLやXMLドキュメント内の要素を表します。`Element`は`Node`オブジェクトを継承しているため、`Node`のプロパティとメソッドをすべて持っていますが、さらに特有の機能も提供します。以下は`Element`オブジェクトの主要なプロパティとメソッドに関する説明と例です。
 ---
 
 ## Table of contents

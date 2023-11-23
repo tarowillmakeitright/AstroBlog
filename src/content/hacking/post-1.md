@@ -1,5 +1,5 @@
 ---
-author: LIL JAP KID
+author: Taro Gray
 pubDatetime: 2023-11-07T23:26:54.547Z
 title: ARPスプーフィング攻撃と防御について
 postSlug: post-1
@@ -25,7 +25,7 @@ tags:
   - security best practices
   - network infrastructure
 
-description: "ARPスプーフィングは、ネットワークのセキュリティを侵害するために使用される攻撃の一種です。この攻撃を理解し、適切な対策を講じることが重要です。"
+description: ARPスプーフィングは、ネットワークのセキュリティを侵害するために使用される攻撃の一種です。この攻撃を理解し、適切な対策を講じることが重要です。
 ---
 
 ## Table of contents

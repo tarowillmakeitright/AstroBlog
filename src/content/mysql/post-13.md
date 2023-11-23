@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-19T08:40:00.000Z
+pubDatetime: 2023-11-19T08:40:00.00Z
 title: 【MySQL正規形】第一正規形（1NF）につついて学ぼう
-postSlug: mysql-13
+postSlug: post-13
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
@@ -10,7 +10,7 @@ tags:
   - 第1正規形
   - 1NF
   - 正規形
-description: "リレーショナルデータベース設計において、第一正規形（1NF）は基本的な正規化のステップです。1NFにすることで、データベース内のデータが整理され、より効率的に管理できるようになります。"
+description: リレーショナルデータベース設計において、第一正規形（1NF）は基本的な正規化のステップです。1NFにすることで、データベース内のデータが整理され、より効率的に管理できるようになります。
 ---
 
 ## Table of contents

@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-23T10:56:00.547Z
+pubDatetime: 2023-11-23T10:56:00.00Z
 title: 【MySQL構文】SQLのLIKE構文の使い方
-postSlug: mysql-6
+postSlug: post-6
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - MySQL
   - LIKE
-description: "SQLの `LIKE` 構文は、文字列の検索に使用される強力なツールです。特に、あいまい検索やパターンマッチングに役立ちます。"
+description: SQLの `LIKE` 構文は、文字列の検索に使用される強力なツールです。特に、あいまい検索やパターンマッチングに役立ちます。
 ---
 
 ## テーブルの構造
