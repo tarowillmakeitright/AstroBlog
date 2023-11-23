@@ -24,7 +24,6 @@ description: 皆さん、こんにちは！Linuxの魔法学校へ再びよう�
 # "sudo apt-get update"と打った後...
  sudo apt-get update
 # Ctrl + uを使って全てカット
- []
 # Ctrl + yでペーストして復活！
  sudo apt-get update
 ```
