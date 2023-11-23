@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T10:56:00.547Z
 title: 【MySQL構文】SQLのLIKE構文の使い方
-postSlug: SQLのLIKE構文の使い方
+postSlug: mysql-6
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
