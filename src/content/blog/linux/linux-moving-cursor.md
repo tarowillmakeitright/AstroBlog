@@ -2,12 +2,11 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T10:42:00.00Z
 title: 【Linuxコマンドマスターシリーズ】移動とナビゲーションの魔法
-postSlug: post-4
+postSlug: linux-moving-cursor
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-  - Linuxコマンド
 description: こんにちは、Linuxの世界へようこそ！今日は、あなたがターミナルの魔法使いになるための最初の一歩を踏み出します。カーソル移動の基本から始めましょう。これらのコマンドは、まるで魔法のようにあなたのタイピング速度を上げるでしょう！
 ---
 

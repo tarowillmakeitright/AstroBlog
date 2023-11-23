@@ -2,12 +2,11 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T10:40:00.00Z
 title: 【Linuxコマンドマスターシリーズ】編集と削除の魔術師
-postSlug: post-5
+postSlug: linux-deleting
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-  - Linuxコマンド
 description: こんにちは、Linuxの魔法使いの皆さん！前回はカーソル移動の魔法をマスターしましたが、今回はもっとパワフルな魔法、編集と削除の技術を紹介します。タイピングミス？長いコマンド？心配無用！これらのショートカットで、あなたのターミナルはもっと魔法的になるでしょう。
 ---
 
