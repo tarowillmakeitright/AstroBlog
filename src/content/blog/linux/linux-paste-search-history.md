@@ -10,7 +10,7 @@ tags:
 description: 皆さん、こんにちは！Linuxの魔法学校へ再びようこそ。今回は、ペーストと検索の魔法に焦点を当てます。これらの魔法を使いこなせば、あなたのターミナル操作はまるで魔術師のようにスムーズになるでしょう！
 ---
 
-## Table of contents
+## Tanle of contents
 
 ## Linuxコマンドマスターシリーズ：ペーストと検索の秘密
 
@@ -22,11 +22,11 @@ description: 皆さん、こんにちは！Linuxの魔法学校へ再びよう�
 
 ```bash
 # "sudo apt-get update"と打った後...
- sudo apt-get update
+sudo apt-get update
 # Ctrl + uを使って全てカット
- []
+[]
 # Ctrl + yでペーストして復活！
- sudo apt-get update
+sudo apt-get update
 ```
 
 ## Ctrl + r：履歴の探偵
@@ -35,9 +35,9 @@ description: 皆さん、こんにちは！Linuxの魔法学校へ再びよう�
 
 ```bash
 # Ctrl + rを押して検索開始
- reverse-i-search:
+reverse-i-search:
 # "upd"とタイプすると...
- reverse-i-search upd: sudo apt-get update
+(reverse-i-search)`upd': sudo apt-get update
 ```
 
 ## まとめ：ペーストと検索の達人
