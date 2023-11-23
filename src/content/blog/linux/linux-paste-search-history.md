@@ -35,9 +35,9 @@ sudo apt-get update
 
 ```bash
 # Ctrl + rを押して検索開始
-reverse-i-search:
+reverse-i-search
 # "upd"とタイプすると...
-(reverse-i-search)`upd': sudo apt-get update
+reverse-i-search upd  sudo apt-get update
 ```
 
 ## まとめ：ペーストと検索の達人
