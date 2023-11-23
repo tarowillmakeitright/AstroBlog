@@ -45,7 +45,7 @@ reverse-i-search
 # Ctrl + rで検索を始めたけど...
 reverse-i-search
 # やっぱりやめたい...
-Ctrl + gを押す
+# Ctrl + gを押す
 # 検索キャンセル！
 ```
 
