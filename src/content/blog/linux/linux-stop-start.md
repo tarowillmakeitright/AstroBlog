@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-16T20:30:00.00Z
+pubDatetime: 2023-11-23T20:30:00.00Z
 title: 【linux構文】時間停止と再開の術
 postSlug: linux-stop-start
 featured: true
