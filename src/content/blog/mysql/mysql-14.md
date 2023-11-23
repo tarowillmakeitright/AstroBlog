@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-19T08:43:00.000Z
-title: 【MySQL構文】 第二正規形（2NF）について学ぼう
-postSlug: 第2正規形（2NF）について
+title: 【MySQL正規形】 第二正規形（2NF）について学ぼう
+postSlug: mysql-14
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

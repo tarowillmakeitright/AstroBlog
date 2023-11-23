@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-19T08:40:00.000Z
 title: 【MySQL正規形】第一正規形（1NF）につついて学ぼう
-postSlug: 第1正規形（1NF）について
+postSlug: mysql-13
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T11:06:00.547Z
 title: 【MySQLグレーゾーン】列待ちテーブル（Queue Table）の活用
-postSlug: 列待ちテーブル（Queue Table）の活用
+postSlug: mysql-11
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

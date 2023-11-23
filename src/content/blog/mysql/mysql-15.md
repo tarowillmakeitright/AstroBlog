@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-19T08:48:00.000Z
 title: 【MySQL正規形】第3正規形（3NF）について学ぼう
-postSlug: 第3正規形（3NF）について
+postSlug: mysql-15
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

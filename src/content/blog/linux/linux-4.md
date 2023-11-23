@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T10:42:00.000Z
 title: 【Linuxコマンドマスターシリーズ]移動とナビゲーションの魔法
-postSlug: 移動とナビゲーションの魔法について
+postSlug: linux-4
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

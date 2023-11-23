@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-23T11:09:00.547Z
 title: 【MySQLグレーゾーン】多段ビューの活用とリスク
-postSlug: 多段ビューの活用とリスク
+postSlug: mysql-12
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
