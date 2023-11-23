@@ -8,11 +8,6 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Linux
   - Linuxコマンド
-  - Ctrl + h
-  - Ctrl + d
-  - Ctrl + w
-  - Ctrl + k
-  - Ctrl + u
 description: こんにちは、Linuxの魔法使いの皆さん！前回はカーソル移動の魔法をマスターしましたが、今回はもっとパワフルな魔法、編集と削除の技術を紹介します。タイピングミス？長いコマンド？心配無用！これらのショートカットで、あなたのターミナルはもっと魔法的になるでしょう。
 ---
 

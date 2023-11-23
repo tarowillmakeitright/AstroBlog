@@ -8,11 +8,6 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Linux
   - Linuxコマンド
-  - Ctrl + b
-  - Ctrl + f
-  - Ctrl + a
-  - Ctrl + e
-
 description: こんにちは、Linuxの世界へようこそ！今日は、あなたがターミナルの魔法使いになるための最初の一歩を踏み出します。カーソル移動の基本から始めましょう。これらのコマンドは、まるで魔法のようにあなたのタイピング速度を上げるでしょう！
 ---
 

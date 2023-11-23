@@ -8,10 +8,6 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Linux
   - Linuxコマンド
-  - Ctrl + s
-  - Ctrl + q
-  - Ctrl + l
-  - Ctrl + g
 description: 第4回のブログ記事をMarkdown形式で作成します。今回はコントロールとキャンセルに関するコマンドを面白く、実用的に紹介します。タイトルは「Linuxコマンドマスターシリーズ：コントロールとキャンセルの大冒険」にしましょう。
 ---
 

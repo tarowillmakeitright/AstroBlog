@@ -8,8 +8,6 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Linux
   - Linuxコマンド
-  - Ctrl + y
-  - Ctrl + r
 description: 皆さん、こんにちは！Linuxの魔法学校へ再びようこそ。今回は、ペーストと検索の魔法に焦点を当てます。これらの魔法を使いこなせば、あなたのターミナル操作はまるで魔術師のようにスムーズになるでしょう！
 ---
 
