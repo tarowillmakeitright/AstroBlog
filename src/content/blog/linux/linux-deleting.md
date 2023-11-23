@@ -22,9 +22,9 @@ description: こんにちは、Linuxの魔法使いの皆さん！前回はカ�
 
 ```bash
 # 例: "sl"を間違えて打ってしまった...
-sl
+# sl
 # Ctrl + hを押して、"l"を消去
-s[]
+# s[]
 ```
 
 ## Ctrl + d：消える文字列の魔法
@@ -33,9 +33,9 @@ s[]
 
 ```bash
 # "sudo apt-get update"の"u"を消したい...
-sudo apt-get update
+# sudo apt-get update
 # Ctrl + dを押して、"u"を消去
-sdo apt-get update
+# sudo apt-get update
 ```
 
 ## Ctrl + w, Ctrl + k, Ctrl + u：大量削除の魔法
@@ -46,11 +46,11 @@ sdo apt-get update
 
 ```bash
 # 長いコマンドを打ったけど、変更したい...
-sudo apt-get install python3
+ sudo apt-get install python3
 # Ctrl + wを押して、"python3"を削除
-sudo apt-get install[]
+ sudo apt-get install[]
 # Ctrl + uを押して、行の先頭まで削除
-[]
+ []
 ```
 
 ## まとめ：編集と削除の達人

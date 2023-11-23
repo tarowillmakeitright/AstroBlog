@@ -23,11 +23,11 @@ description: 皆さん、こんにちは！Linuxの魔法学校へ再びよう�
 
 ```bash
 # "sudo apt-get update"と打った後...
-sudo apt-get update
+ sudo apt-get update
 # Ctrl + uを使って全てカット
-[]
+# []
 # Ctrl + yでペーストして復活！
-sudo apt-get update
+ sudo apt-get update
 ```
 
 ## Ctrl + r：履歴の探偵
@@ -36,7 +36,7 @@ sudo apt-get update
 
 ```bash
 # Ctrl + rを押して検索開始
-(reverse-i-search)`':
+#(reverse-i-search)`':
 # "upd"とタイプすると...
 (reverse-i-search)`upd': sudo apt-get update
 ```

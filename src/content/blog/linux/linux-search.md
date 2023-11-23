@@ -34,10 +34,10 @@ sudo apt-get update
 
 ```bash
 # cmatrixをインストール（まだなら）
-sudo apt-get install cmatrix
+# sudo apt-get install cmatrix
 
 # cmatrixを実行して、マトリックス世界へ
-cmatrix
+# cmatrix
 ```
 
 ## まとめ：ハッカー風の魔法使い

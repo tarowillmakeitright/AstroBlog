@@ -35,11 +35,11 @@ git clone
 
 ```bash
 # 長いコマンドを入力した後...
-sudo apt-get update
+ sudo apt-get update
 # Ctrl + aを押して、行の先頭へ
-[s]udo apt-get update
+ [s]udo apt-get update
 # Ctrl + eを押して、行の末尾へ
-sudo apt-get update[]
+ sudo apt-get update[]
 ```
 
 ## まとめ：カーソルの魔法使い

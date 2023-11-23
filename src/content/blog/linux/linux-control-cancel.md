@@ -48,7 +48,7 @@ Linuxの魔法使いの皆さん、こんにちは！今日は、ターミナル
 
 ```bash
 # Ctrl + rで検索を始めたけど...
-# (reverse-i-search)`':
+#(reverse-i-search)`':
 # やっぱりやめたい...
 # Ctrl + gを押す
 # 検索キャンセル！
