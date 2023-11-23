@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-07T23:46:00Z
 title: Netlifyを使用してWebアプリケーションやウェブサイトをデプロイする手順
-postSlug: git-3
+postSlug: post-3
 featured: true
 draft: false
 tags:

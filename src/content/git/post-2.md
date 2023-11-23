@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-07T22:37:00Z
 title: GitHub Push Permission Errorについて
-postSlug: git-2
+postSlug: 2
 featured: true
 draft: false
 tags:

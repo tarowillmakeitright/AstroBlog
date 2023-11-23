@@ -2,7 +2,7 @@
 author: LIL JAP KID
 pubDatetime: 2023-11-07T23:26:54.547Z
 title: ARPスプーフィング攻撃と防御について
-postSlug: hacking-1
+postSlug: post-1
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

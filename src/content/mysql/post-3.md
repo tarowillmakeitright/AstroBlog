@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-11-16T11:15:00.547Z
 title: 【MySQL構文】INNER JOINについて学ぼう
-postSlug: mysql-3
+postSlug: post-3
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

@@ -3,7 +3,7 @@ author: Taro Gray
 pubDatetime: 2023-11-23T10:50:00.547Z
 pubDatetime: 2023-11-23T10:50:00.547Z
 title: 【MySQL構文】DELETE文とUPDATE文の基本
-postSlug: mysql-2
+postSlug: post-2
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:

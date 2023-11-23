@@ -2,7 +2,7 @@
 author: LIL JAP KID
 pubDatetime: 2023-10-31T11:45:54.547Z
 title: Javascript Map 非同期処理についてわかりやすくまとめてみた
-postSlug: javascript-4
+postSlug: post-3
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
