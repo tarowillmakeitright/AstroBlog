@@ -16,8 +16,6 @@ description: "`git add` コマンドを実行した後、通常は以下の手�
 
 ## Table of contents
 
-`git add` コマンドを実行した後、通常は以下の手順で進めます。
-
 ## git commit
 
 1. **コミットの作成 (`git commit`):** `git add` でステージングした変更をコミットにまとめます。これには `git commit` コマンドを使用し、変更についての説明を含むコミットメッセージを記入します。例: `git commit -m "変更の説明"`
