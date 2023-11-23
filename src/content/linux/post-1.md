@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-23T10:45:00.000Z
-title: 【Linuxコマンドマスターシリーズ]コントロールとキャンセルの大冒険
+title: 【Linuxコマンドマスターシリーズ】コントロールとキャンセルの大冒険
 postSlug: post-1
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a

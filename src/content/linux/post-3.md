@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-23T110:43:00.000Z
-title: 【Linuxコマンドマスターシリーズ]ペーストと検索の秘密
+title: 【Linuxコマンドマスターシリーズ】ペーストと検索の秘密
 postSlug: post-3
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
