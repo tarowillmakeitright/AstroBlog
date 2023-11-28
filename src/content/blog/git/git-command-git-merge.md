@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2023-11-24T12:46:00Z
-title: Netlifyを使用してWebアプリケーションやウェブサイトをデプロイする手順
+title: git merge コマンドについて
 postSlug: git-command-git-merge
 featured: true
 draft: false
