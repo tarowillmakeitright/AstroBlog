@@ -7,6 +7,7 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
+  - asynchronous API
 description: JavaScriptにおいて、非同期APIをコールバックと共に使用することは、効果的なプログラミングの一部です。この記事では、このコンセプトを面白く理解するためのコード例を提供します。
 ---
 
