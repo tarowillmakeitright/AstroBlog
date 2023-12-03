@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:55:00.007Z
+pubDatetime: 2023-12-03T05:55:00.00Z
 title: プロトタイプチェーンの基本
 postSlug: x
 featured: true
