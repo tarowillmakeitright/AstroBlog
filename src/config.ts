@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://gray-taro.netlify.app/", // replace this with your deployed domain
   author: "GrayHat Taro",
-  desc: "わたしの名前は、ハッカーを夢見るGrayHat Taro。",
+  desc: "hello, I am about to be a dumb ass hacker",
   title: "DumbAssHack",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
