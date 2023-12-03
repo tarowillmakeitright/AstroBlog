@@ -8,7 +8,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Javascript
   - iterable
-description: JavaScriptは、そのプロトタイプベースの継承システムを通じて、オブジェクトが他のオブジェクトのプロパティやメソッドを継承する方法を提供しています。この記事では、JavaScriptのプロトタイプチェーンの基本を面白く学びましょう！
+description: Node.jsでのイテレータとイテラブルは、データ構造を順序立ててアクセスするための強力な概念です。この記事では、イテレータとイテラブルの基本から、面白いコード例を通じてその使用方法を探ります。
 ---
 
 ## Table of contents
