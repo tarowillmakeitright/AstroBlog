@@ -7,6 +7,7 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
+  - asynchronous
 description: JavaScriptはシングルスレッドの言語ですが、非同期プログラミングを通じて複数のタスクを効率的に処理することができます。この記事では、マルチスレッドとイベントループによる非同期プログラミングの魅力を探ります。
 ---
 
