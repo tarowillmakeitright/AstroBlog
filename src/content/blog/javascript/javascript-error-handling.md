@@ -1,13 +1,14 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:03:00.007Z
+pubDatetime: 2023-12-03T05:03:00.00Z
 title: Node.jsのエラーハンドリング：面白く学ぶエラー処理
 postSlug: javascript-error-handling
 featured: true
+draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
-  - error handling
+  - error-handling
 description: Node.jsでのエラーハンドリングは、ロバストなアプリケーション開発に不可欠です。この記事では、エラーハンドリングの基本から、より高度なテクニックまでを面白い例とともに解説します。
 ---
 
@@ -17,7 +18,7 @@ description: Node.jsでのエラーハンドリングは、ロバストなアプ
 
 Node.jsでのエラーハンドリングは、ロバストなアプリケーション開発に不可欠です。この記事では、エラーハンドリングの基本から、より高度なテクニックまでを面白い例とともに解説します。
 
-## 1. `JSON.parse()`のエラーハンドリング
+## 1. 'JSON.parse()'のエラーハンドリング
 
 `JSON.parse()`は、不正なJSONを解析しようとした際にエラーを投げます。これを適切にハンドリングしましょう。
 

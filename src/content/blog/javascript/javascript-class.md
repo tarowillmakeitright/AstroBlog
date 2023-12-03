@@ -1,9 +1,10 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T04:46:00.007Z
+pubDatetime: 2023-12-03T04:46:00.00Z
 title: JavaScriptクラスの魔法：公開・非公開プロパティとメソッド
 postSlug: javascript-class-public-private
 featured: true
+draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript

@@ -1,9 +1,10 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:19:00.007Z
+pubDatetime: 2023-12-03T05:19:00.00Z
 title: Node.jsのイテレータとイテラブル：楽しく探索するデータの旅
 postSlug: javascript-iterable
 featured: true
+draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript

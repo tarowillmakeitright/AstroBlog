@@ -1,19 +1,20 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:05:00.007Z
+pubDatetime: 2023-12-03T05:05:00.00Z
 title: Node.jsで遊ぶジェネレータ：無限の可能性を`yield`しよう！
-postSlug: javascript-promise
+postSlug: javascript-generator
 featured: true
+draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
-  - promise
+  - generator
 description: Node.jsのジェネレータは、関数の実行を一時停止し、後で再開することができる非常に強力な機能です。この記事では、`yield`キーワードを使用してジェネレータを探索し、面白い例を通じてその魅力を解説します。
 ---
 
 ## Table of contents
 
-## Node.jsで遊ぶジェネレータ：無限の可能性を`yield`しよう！
+## Node.jsで遊ぶジェネレータ：無限の可能性を yield しよう！
 
 Node.jsのジェネレータは、関数の実行を一時停止し、後で再開することができる非常に強力な機能です。この記事では、`yield`キーワードを使用してジェネレータを探索し、面白い例を通じてその魅力を解説します。
 

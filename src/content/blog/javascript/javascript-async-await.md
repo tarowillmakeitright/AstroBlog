@@ -1,9 +1,10 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T06:46:00.007Z
+pubDatetime: 2023-12-03T06:46:00.00Z
 title: Node.jsで楽しむ async await 非同期処理の新しいアプローチ
 postSlug: javascript-async-await
 featured: true
+draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
