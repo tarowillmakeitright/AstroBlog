@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:10:00.007Z
+pubDatetime: 2023-12-03T05:19:00.007Z
 title: Node.jsのイテレータとイテラブル：楽しく探索するデータの旅
 postSlug: javascript-iterable
 featured: true
