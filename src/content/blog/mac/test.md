@@ -1,5 +1,5 @@
 ---
-author:
+author: GrayHat Taro
 pubDatetime: 2023-12-03T22:30:00.00Z
 title: 【test】test
 postSlug: test
