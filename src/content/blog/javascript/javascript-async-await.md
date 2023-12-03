@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:37:00.007Z
+pubDatetime: 2023-12-03T06:11:00.007Z
 title: Node.jsで楽しむ async/await 非同期処理の新しいアプローチ
 postSlug: javascript-async-await
 featured: true
@@ -9,7 +9,7 @@ tags:
   - Javascript
   - async
   - await
-description: Node.jsにおける async/await は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。
+description: "Node.jsにおける async/await は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。"
 ---
 
 ## Table of contents
@@ -18,7 +18,7 @@ description: Node.jsにおける async/await は、非同期処理をより読�
 
 Node.jsにおける`async/await`は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。
 
-## async/await の基本
+## 1. async/await の基本
 
 `async/await`を使用することで、非同期処理を同期処理のように書くことができます。
 
@@ -33,7 +33,7 @@ fetchData()
   .catch(err => console.error(err));
 ```
 
-## エラーハンドリング
+## 2. エラーハンドリング
 
 `async/await`を使う際のエラーハンドリングは`try/catch`ブロックを使用します。
 
@@ -50,7 +50,7 @@ async function fetchDataWithHandling() {
 fetchDataWithHandling();
 ```
 
-## 面白い例：宇宙カフェの注文システム
+## 3. 面白い例：宇宙カフェの注文システム
 
 面白い例として、宇宙カフェでの注文システムを`async/await`を使用して実装してみましょう。
 
@@ -72,7 +72,7 @@ orderSpaceCoffee();
 
 この架空の例では、宇宙カフェからコーヒーを注文し、非同期的に届けられる様子を表現しています。
 
-## ハッカーと async/await
+## 4. ハッカーと async/await
 
 ハッカーも`async/await`を利用して、複雑な非同期タスクを管理することがあります。
 
