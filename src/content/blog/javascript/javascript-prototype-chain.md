@@ -7,7 +7,7 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Javascript
-  - prototype chain
+  - prototype-chain
 description: JavaScriptは、そのプロトタイプベースの継承システムを通じて、オブジェクトが他のオブジェクトのプロパティやメソッドを継承する方法を提供しています。この記事では、JavaScriptのプロトタイプチェーンの基本を面白く学びましょう！
 ---
 
