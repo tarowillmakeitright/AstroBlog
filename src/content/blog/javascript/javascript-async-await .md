@@ -9,7 +9,7 @@ tags:
   - Javascript
   - async
   - await
-description: Node.jsにおける async/await は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。
+description: Node.jsにおける async await は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。
 ---
 
 ## Table of contents
