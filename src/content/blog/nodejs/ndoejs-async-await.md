@@ -1,13 +1,13 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T10:47:00.00Z
+pubDatetime: 2023-12-03T11:21:00.00Z
 title: Node.jsで楽しむ async await 非同期処理の新しいアプローチ
-postSlug: javascript-async-await
+postSlug: nodejs-async-await
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - Javascript
+  - NodeJS
   - async
   - await
 description: Node.jsにおける async await は、非同期処理をより読みやすく、扱いやすくするための強力な機能です。この記事では、基本的な使用方法から、面白い例を通じてその魅力を解説します。
