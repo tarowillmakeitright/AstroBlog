@@ -1,5 +1,5 @@
 ---
-author:
+author: Taro Gray
 pubDatetime: 2023-12-11T00:12:00Z
 title: Node.jsのPromiseの状態：`Settled`、`Fulfilled`、`Rejected`を理解しよう
 postSlug: nodejs-promise-settled-fulfilled-rejected
