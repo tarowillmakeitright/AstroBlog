@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-10T22:26:00.00Z
+pubDatetime: 2023-12-10T23:38:00.00Z
 title: Node.jsで遊ぶ分割代入：コードをクリーンに、そして楽しく！
 postSlug: nodejs-destructuring-assignment
 featured: true
