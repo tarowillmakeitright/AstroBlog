@@ -7,7 +7,7 @@ featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - NodeJs
+  - NodeJS
   - promise
 description: Node.jsの非同期処理におけるPromiseは、コードの読みやすさと管理のしやすさを大きく改善します。この記事では、Promiseの生成と状態遷移について面白い例を交えて解説します。
 ---
