@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:05:00.00Z
+pubDatetime: 2023-12-10T23:39:00.00Z
 title: Node.jsで遊ぶジェネレータ：無限の可能性を`yield`しよう！
-postSlug: javascript-generator
+postSlug: nodejs-generator
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a

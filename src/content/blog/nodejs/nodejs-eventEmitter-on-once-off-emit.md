@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-08T22:23:00.00Z
+pubDatetime: 2023-12-10T23:39:00.00Z
 title: Node.jsのEventEmitter：イベント駆動プログラミングの楽しみ
 postSlug: nodejs-eventEmitter-on-once-off-emit
 featured: true

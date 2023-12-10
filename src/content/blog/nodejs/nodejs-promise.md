@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:52:00.00Z
+pubDatetime: 2023-12-10T23:41:00.00Z
 title: Node.jsで楽しむPromise：生成から状態遷移まで
 postSlug: nodejs-promise
 featured: true

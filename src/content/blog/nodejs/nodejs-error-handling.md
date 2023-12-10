@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-03T05:03:00.00Z
+pubDatetime: 2023-12-10T11:38:00.00Z
 title: Node.jsのエラーハンドリング：面白く学ぶエラー処理
 postSlug: nodejs-error-handling
 featured: true
