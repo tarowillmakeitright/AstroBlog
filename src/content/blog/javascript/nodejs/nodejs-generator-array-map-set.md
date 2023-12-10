@@ -2,12 +2,12 @@
 author: Taro Gray
 pubDatetime: 2023-12-03T05:54:00.00Z
 title: Node.jsのジェネレータ：非同期以外の面白い使い方
-postSlug: javascript-generator-array-map-set
+postSlug: nodejs-generator-array-map-set
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - Javascript
+  - NodeJS
   - generator
 description: Node.jsのジェネレータは非同期プログラミングだけでなく、多様な用途に利用できる強力なツールです。この記事では、`Array`、`Map`、`Set`に関連するジェネレータの使い方を面白い例と共に紹介します。
 ---
