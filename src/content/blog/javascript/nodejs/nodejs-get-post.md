@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-12-17T23:50:00.00Z
+pubDatetime: 2023-12-17T23:58:00.00Z
 title: Node.jsのExpressでFetchを活用する：GETとPOSTリクエストの扱い
 postSlug: nodejs-get-post
 featured: true
@@ -11,14 +11,10 @@ tags:
   - express
   - get
   - post
-description:
+description: Node.jsのExpressフレームワークは、Webサーバーの構築に欠かせないツールです。この記事では、フロントエンドから`fetch`を使ってExpressサーバーにGETおよびPOSTリクエストを送信する方法を面白い例と共に解説します。
 ---
 
 ## Table of contents
-
-了解しました！Node.jsのExpressフレームワークで`fetch`を使ったGETおよびPOSTリクエストの取り扱いに関するブログ記事をMarkdown形式で作成します。面白いコード例と、ハッカーに関連する情報も組み込みます。それでは、以下のブログ記事をご覧ください。
-
----
 
 ## Node.jsのExpressでFetchを活用する：GETとPOSTリクエストの扱い
 
