@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2023-12-24T02:17:00.547Z
 title: 【MySQL構文】INSERT INTO SET vs INSERT INTO VALUES の違い
-postSlug: mysql-insert-into-select
+postSlug: MYSQL-INSERT-INTO-SELECT
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
