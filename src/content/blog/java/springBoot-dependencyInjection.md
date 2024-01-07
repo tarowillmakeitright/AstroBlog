@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-01-07T12:29:00.00Z
+pubDatetime: 2024-01-07T12:58:00.00Z
 title: Spring Boot 馬鹿げた例で学ぶ依存性注入！
 postSlug: springBoot-dependencyInjection
 featured: true
