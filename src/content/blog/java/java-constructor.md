@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-01-07T13:05:00.00Z
-title: Spring Boot 馬鹿げた例で学ぶ依存性注入！
+title: Javaのコンストラクタ なぜ存在するのか？
 postSlug: java-constructor
 featured: true
 draft: false
