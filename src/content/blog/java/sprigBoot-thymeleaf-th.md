@@ -15,10 +15,6 @@ description: このブログはThymeleafの`th:value`と`th:field`属性に焦�
 
 ## Table of contents
 
-## Thymeleafの魔法: th:valueとth:fieldの探検！
-
-皆さん、こんにちは！今日はSpring Bootの魔法の世界であるThymeleafテンプレートエンジンに焦点を当てます。特に、フォーム要素にバインドされる`th:value`と`th:field`属性について詳しく見ていきましょう。それでは、面白くてわかりやすい例を通じて、これらの属性の神秘を解き明かしましょう。
-
 ## Thymeleafって何？
 
 Thymeleafは、JavaのWeb開発で広く使われるモダンなサーバーサイドのJavaテンプレートエンジンの一つです。HTML内に特別な属性を使って、データをビューにバインドし、動的なWebページを生成します。

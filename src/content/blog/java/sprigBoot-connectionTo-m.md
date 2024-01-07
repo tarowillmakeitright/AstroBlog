@@ -16,8 +16,6 @@ description: このブログはSpring Bootを使用したMySQLデータベース
 
 ## Table of contents
 
-## Spring BootでMySQLに接続し、HTMLにデータを表示する冒険！
-
 ## Spring BootとMySQLの連携
 
 Spring BootアプリケーションでMySQLデータベースに接続するには、まず依存関係をセットアップし、データベースの設定をアプリケーションに伝える必要があります。
