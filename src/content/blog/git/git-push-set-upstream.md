@@ -1,13 +1,13 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-01-07T13:47:00.00Z
-title: Git `git push --set-upstream` の使い方
+title: Git git push --set-upstream の使い方
 postSlug: git-push-set-upstream
 featured: true
 draft: false
 tags:
   - Git
-  - git push --set-upstream
+  - git push set upstream
 description: このようなスタイルでブログ記事を作成すると、読者が理解しやすく、またコマンドの利点が明確に伝わります。面白さを加えるために、具体的なシナリオや例を用いることが効果的です。
 ---
 

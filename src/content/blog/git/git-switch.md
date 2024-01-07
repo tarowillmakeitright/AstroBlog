@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-01-07T13:50:00.00Z
-title:  Git の新星 `git switch` コマンドの探求
+title: Git の新星 git switch コマンドの探求
 postSlug: git-switch
 featured: true
 draft: false
 tags:
   - Git
   - git switch
-description: `git switch` は、Git の使い勝手を向上させる素晴らしいコマンドです。このコマンドを使いこなし、より効率的にブランチを操作しましょう！
+description: git switch は、Git の使い勝手を向上させる素晴らしいコマンドです。このコマンドを使いこなし、より効率的にブランチを操作しましょう！
 ---
 
 ## Table of contents
