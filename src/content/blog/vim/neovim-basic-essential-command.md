@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-01-08T23:43:00.00Z
-title: ZNeovimの探索：カーソル移動とその他の鍵となるコマンド
+title: Neovimの探索：カーソル移動とその他の鍵となるコマンド
 postSlug: neovim-basic-essential-command
 featured: true
 draft: false
