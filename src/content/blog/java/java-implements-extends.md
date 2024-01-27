@@ -51,6 +51,7 @@ public class FireWand extends MagicWand {
 ### `implements`の例：魔法の盾
 
 ```java
+
 // インターフェース
 public interface MagicShield {
     void activateShield();
