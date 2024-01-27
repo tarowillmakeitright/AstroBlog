@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-01-27T20:32:00.00Z
+pubDatetime: 2024-01-27T20:51:00.00Z
 title: Neovimでの効率的なテキスト編集とナビゲーション
 postSlug: vim-neovim-efficiency
 featured: true
