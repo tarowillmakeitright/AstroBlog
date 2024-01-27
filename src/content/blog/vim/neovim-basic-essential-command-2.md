@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-01-27T20:28:00.00Z
-title: Neovim入門：基本的なコマンドとテクニック
+pubDatetime: 2024-01-27T20:47:00.00Z
+title: Neovim入門：基本的なコマンドとテクニック 第２章
 postSlug: neovim-basic-essential-command-2
 featured: true
 draft: false
