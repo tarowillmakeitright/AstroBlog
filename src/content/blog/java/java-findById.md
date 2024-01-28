@@ -8,15 +8,14 @@ draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Java
-description: `findById`メソッドは、データベースから特定のエンティティを効率的かつ安全に取得するための強力なツールです。Spring Data JPAやHibernateと組み合わせることで、アプリケーションのデータアクセス層を簡潔で堅牢なものにすることができます。このメソッドを使いこなし、Javaの世界でのデータ探索をマスターしましょう！
-
+description: findByIdメソッドは、データベースから特定のエンティティを効率的かつ安全に取得するための強力なツールです。Spring Data JPAやHibernateと組み合わせることで、アプリケーションのデータアクセス層を簡潔で堅牢なものにすることができます。このメソッドを使いこなし、Javaの世界でのデータ探索をマスターしましょう！
 ---
 
 ## Table of contents
 
 こんにちは、Javaの世界の冒険者たち！今日はデータベースアクセスにおける重要なメソッド、`findById`について詳しく見ていきましょう。このメソッドは、データベースから特定のIDを持つエンティティを見つける際に非常に便利です。中級者向けの具体例を交えて、この冒険を始めましょう。
 
-## `findById`とは？
+## findById とは？
 
 `findById`メソッドは、JavaのSpring Data JPAやHibernateなどのORMフレームワークで提供される、特定のIDに基づいてエンティティを検索するためのメソッドです。このメソッドは`Optional`オブジェクトを返し、検索したエンティティが存在するかどうかを安全に取り扱うことができます。
 
@@ -60,7 +59,7 @@ public class Book {
 
 この例では、`LibraryService`は`BookRepository`を使って特定のIDを持つ書物を探し、見つかった場合はその書物を、見つからない場合は`null`を返します。
 
-## `findById`の利点
+## findById の利点
 
 - **安全性**: `Optional`を返すことで、`NullPointerException`を防ぐことができます。
 - **効率性**: IDに基づいて直接エンティティを取得できるため、効率的です。
