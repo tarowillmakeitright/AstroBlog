@@ -8,7 +8,7 @@ draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Spring Boot
-description: @ControllerAdvice, @ResponseBody, @ExceptionHandler, @ResponseStatus(HttpStatus.NOT_FOUND)は、Spring Bootアプリケーションにおける例外処理を強化するための鍵です。これらのアノテーションを使いこなすことで、エラー処理をより効率的に、かつユーザーフレンドリーに行うことができます。エラー処理の魔法を使って、あなたのアプリケーションをより堅牢なものにしましょう！
+description: ControllerAdvice, @ResponseBody, @ExceptionHandler, @ResponseStatus(HttpStatus.NOT_FOUND)は、Spring Bootアプリケーションにおける例外処理を強化するための鍵です。これらのアノテーションを使いこなすことで、エラー処理をより効率的に、かつユーザーフレンドリーに行うことができます。エラー処理の魔法を使って、あなたのアプリケーションをより堅牢なものにしましょう！
 ---
 
 ## Table of contents
