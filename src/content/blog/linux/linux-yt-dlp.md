@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-03T21:26:00.000Z
+pubDatetime: 2024-02-03T21:28:00.000Z
 title: Unixでのyt-dlp活用ガイド
 postSlug: linux-yt-dlp
 featured: true
