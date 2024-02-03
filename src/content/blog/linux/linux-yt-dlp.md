@@ -7,7 +7,7 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-description: yt-dlp は高機能で柔軟なダウンロードツールです。このガイドを参考にして、Unix環境で`yt-dlp`を最大限に活用しましょう。
+description: yt-dlpは高機能で柔軟なダウンロードツールです。このガイドを参考にして、Unix環境で`yt-dlp`を最大限に活用しましょう。
 ---
 
 ## Table of contents
