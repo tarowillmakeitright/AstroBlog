@@ -8,7 +8,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Linux
   - yt-dlp
-description: Unix環境での`yt-dlp`の使用方法についてのブログ記事を、中級者向けのレベルでMarkdown形式で作成します。`yt-dlp`は、YouTubeやその他のビデオ共有サイトからメディアをダウンロードするためのコマンドラインプログラムです。ここでは、`yt-dlp`の基本的な使い方から、少し高度な使い方までを紹介し、コード例を交えて解説します。
+description: Unix環境でのyt-dlpの使用方法についてのブログ記事を、中級者向けのレベルでMarkdown形式で作成します。yt-dl`は、YouTubeやその他のビデオ共有サイトからメディアをダウンロードするためのコマンドラインプログラムです。ここでは、yt-dlpの基本的な使い方から、少し高度な使い方までを紹介し、コード例を交えて解説します。
 ---
 
 ## Table of contents
