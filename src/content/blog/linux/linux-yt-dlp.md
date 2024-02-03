@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
-pubDatetime: 2023-11-28T09:35:00.000Z
-title: 【Unixでの`yt-dlp`活用ガイド
+pubDatetime: 2024-02-03T21:15:00.000Z
+title: Unixでの`yt-dlp`活用ガイド
 postSlug: linux-yt-dlp
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
