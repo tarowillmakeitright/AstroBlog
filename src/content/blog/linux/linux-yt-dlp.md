@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-03T19:50:00.000Z
+pubDatetime: 2024-02-03T19:50:00.00Z
 title: Unix環境でyt-dlpをマスターする
 postSlug: linux-yt-dlp
 featured: true
