@@ -25,19 +25,19 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 
 ## 基本的な使用法
 
-### ビデオのダウンロード
+## ビデオのダウンロード
 
 ```bash
 yt-dlp [ビデオURL]
 ```
 
-### オーディオのみをダウンロード
+## オーディオのみをダウンロード
 
 ```bash
 yt-dlp -x --audio-format mp3 [ビデオURL]
 ```
 
-### プレイリストのダウンロード
+## プレイリストのダウンロード
 
 ```bash
 yt-dlp -i [プレイリストURL]
@@ -47,7 +47,7 @@ yt-dlp -i [プレイリストURL]
 
 `yt-dlp`がpipやPyPiでインストールされている場合、`pip`コマンドを使用してアップデートする必要があります。
 
-### アップデート方法
+## アップデート方法
 
 ```bash
 pip install --upgrade yt-dlp
