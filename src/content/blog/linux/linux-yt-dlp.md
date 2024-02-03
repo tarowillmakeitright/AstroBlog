@@ -79,7 +79,7 @@ pip install --upgrade yt-dlp
 
 ```bash
 pip uninstall yt-dlp
-pip install yt-dlp==2022.11.11
+pip install yt-dlp==YEAR.MONTH.DATE
 ```
 
 ## 参考文献
