@@ -16,12 +16,8 @@ description: yt-dlpは高機能で柔軟なダウンロードツールです。�
 
 ## インストール方法
 
-Unix系システムで`yt-dlp`をインストールするには、以下のコマンドを実行します。
-
-```bash
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-sudo chmod a+rx /usr/local/bin/yt-dlp
-```
+Unix系システムで`yt-dlp`をインストールするには、以下のwebsiteを参考にしてください。
+[yt-dlp公式ギットハブ](https://github.com/yt-dlp/yt-dlp)
 
 ## 基本的な使用法
 
