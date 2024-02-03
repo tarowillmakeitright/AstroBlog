@@ -13,11 +13,11 @@ description: Unix環境でのyt-dlpの使用方法についてのブログ記事
 
 ## Table of contents
 
-## `yt-dlp`：究極のメディアダウンロードツール
+## yt-dlp：究極のメディアダウンロードツール
 
 `yt-dlp`は、YouTubeをはじめとする数百のビデオ共有サイトからビデオやオーディオをダウンロードできる強力なツールです。この記事では、`yt-dlp`のインストール方法から、基本的な使用法、そしていくつかの高度な機能までをカバーします。
 
-## `yt-dlp`のインストール
+## yt-dlp のインストール
 
 Unix系システム（LinuxやmacOS）で`yt-dlp`をインストールするには、以下のコマンドを使用します。
 
@@ -50,7 +50,7 @@ yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=example
 
 ```bash
 yt-dlp -F https://www.youtube.com/watch?v=example
-yt-dlp -f <フォーマットコード> https://www.youtube.com/watch?v=example
+yt-dlp -f [フォーマットコード] https://www.youtube.com/watch?v=example
 ```
 
 ## プレイリストのダウンロード
@@ -115,7 +115,7 @@ yt-dlp -F [URL]
 
 もし`-b`というオプションについて言及したい場合、それは恐らく誤解か、または別のコマンドやコンテキストに特有のオプションかもしれません。`yt-dlp`での使用においては、適切なフォーマット指定やその他のオプションの使用に焦点を当てることをお勧めします。
 
-## `yt-dlp`を特定のバージョンにアップデートする方法
+## yt-dlpを特定のバージョンにアップデートする方法
 
 1. **現在の`yt-dlp`をアンインストール**:
 
@@ -132,7 +132,7 @@ yt-dlp -F [URL]
 
    このコマンドは、`yt-dlp`を指定されたバージョンにインストールします。ただし、`2022.11.11`がPyPiで利用可能なバージョンである必要があります。利用可能なバージョンは[PyPiの`yt-dlp`ページ](https://pypi.org/project/yt-dlp/)で確認できます。
 
-## `yt-dlp`を最新バージョンにアップデートする
+## yt-dlpを最新バージョンにアップデートする
 
 特定のバージョンではなく、単に最新バージョンにアップデートしたい場合は、以下のコマンドを使用します。
 
