@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-03T13:20:00.000Z
+pubDatetime: 2024-02-03T19:50:00.000Z
 title: 【Linuxコマンドマスターシリーズ】yt-dlp：究極のメディアダウンロードツール
 postSlug: linux-yt-dlp
 featured: true
@@ -22,7 +22,7 @@ description: yt-dlp は、その強力な機能と柔軟性で、オンライン
 最新版の`yt-dlp`をインストールするには、以下のコマンドを実行します。
 
 ```bash
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo curl -L (https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
 ```
 
@@ -33,17 +33,15 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 指定されたURLのビデオをダウンロードする基本的なコマンドは次のとおりです。
 
 ```bash
-yt-dlp https://www.youtube.com/watch?v=example
+yt-dlp (https://www.youtube.com/watch?v=example)
 ```
-
-## 中級者向けの高度な使用法
 
 ### オーディオのみをダウンロード
 
 ビデオからオーディオトラックのみを抽出してダウンロードします。
 
 ```bash
-yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=example
+yt-dlp -x --audio-format mp3 (https://www.youtube.com/watch?v=example)
 ```
 
 ### 特定のフォーマットでダウンロード
@@ -51,8 +49,8 @@ yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=example
 利用可能なフォーマットを確認し、特定のフォーマットでダウンロードします。
 
 ```bash
-yt-dlp -F https://www.youtube.com/watch?v=example
-yt-dlp -f mp4 https://www.youtube.com/watch?v=example
+yt-dlp -F (https://www.youtube.com/watch?v=example)
+yt-dlp -f mp4 (https://www.youtube.com/watch?v=example)
 ```
 
 ### プレイリストのダウンロード
@@ -60,7 +58,7 @@ yt-dlp -f mp4 https://www.youtube.com/watch?v=example
 YouTubeのプレイリスト全体をダウンロードします。
 
 ```bash
-yt-dlp -i https://www.youtube.com/playlist?list=example
+yt-dlp -i (https://www.youtube.com/playlist?list=example)
 ```
 
 ### 字幕のダウンロード
@@ -68,10 +66,10 @@ yt-dlp -i https://www.youtube.com/playlist?list=example
 ビデオと共に字幕をダウンロードします。
 
 ```bash
-yt-dlp --write-sub --sub-lang en https://www.youtube.com/watch?v=example
+yt-dlp --write-sub --sub-lang en (https://www.youtube.com/watch?v=example)
 ```
 
-## yt-dlpのアップデート
+## `yt-dlp`のアップデート
 
 `yt-dlp`がpip経由でインストールされている場合、以下のコマンドでアップデートします。
 
