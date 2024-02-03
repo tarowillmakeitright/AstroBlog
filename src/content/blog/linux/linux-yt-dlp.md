@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-02-03T12:23:00.000Z
-title: 【Linuxコマンドマスターシリーズ】`yt-dlp`：究極のメディアダウンロードツール
+title: 【Linuxコマンドマスターシリーズ】yt-dlp：究極のメディアダウンロードツール
 postSlug: linux-yt-dlp
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
