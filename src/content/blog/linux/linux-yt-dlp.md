@@ -52,7 +52,7 @@ yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=example
 
 ```bash
 yt-dlp -F https://www.youtube.com/watch?v=example
-yt-dlp -f <フォーマットコード> https://www.youtube.com/watch?v=example
+yt-dlp -f mp4 https://www.youtube.com/watch?v=example
 ```
 
 ### プレイリストのダウンロード
