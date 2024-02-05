@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-01-07T13:47:00.00Z
+pubDatetime: 2024-02-05T22:59:00.00Z
 title: Git git push --set-upstream の使い方
 postSlug: git-push-set-upstream
 featured: true
