@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-02-05T22:09:00Z
-title: Git のタイムマシン `git log` コマンドの探検
+title: Git のタイムマシン git log コマンドの探検
 postSlug: git-log
 featured: true
 draft: false
 tags:
   - GitHub
   - git log
-description: `git log` コマンドは、Gitの強力なツールの一つです。これを使いこなすことで、プロジェクトの歴史を詳細に調べ、コードの変化を追跡することができます。まさに開発者にとってのタイムマシン、それが `git log` です。
+description: git log コマンドは、Gitの強力なツールの一つです。これを使いこなすことで、プロジェクトの歴史を詳細に調べ、コードの変化を追跡することができます。まさに開発者にとってのタイムマシン、それが `git log` です。
 ---
 
 ## Table of contents
