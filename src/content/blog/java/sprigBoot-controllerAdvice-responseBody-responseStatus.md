@@ -31,7 +31,9 @@ Spring Bootでは、例外処理を簡単かつ効果的に行うためのいく
 
 `@ExceptionHandler`は、特定の例外を処理するメソッドに使用されます。このアノテーションが付与されたメソッドは、指定された例外が発生したときに自動的に呼び出されます。
 
-## @ResponseStatus(HttpStatus.NOT_FOUND)
+## @ResponseStatus
+
+### (HttpStatus.NOT_FOUND)
 
 `@ResponseStatus(HttpStatus.NOT_FOUND)`は、HTTPレスポンスとして特定のステータスコード（この場合は404 Not Found）を返すことを指示します。
 
