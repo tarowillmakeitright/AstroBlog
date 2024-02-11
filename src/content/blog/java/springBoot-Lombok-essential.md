@@ -8,7 +8,7 @@ draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Java
-description:Lombokは、Javaでの開発作業を大幅に簡素化し、生産性を向上させる素晴らしいツールです。このブログで紹介した機能を活用すれば、Spring Bootアプリケーションの開発がより快適に、そして効率的になるでしょう。Lombokの魔法を使って、あなたのコードを次のレベルに引き上げましょう！ 
+description: Lombokは、Javaでの開発作業を大幅に簡素化し、生産性を向上させる素晴らしいツールです。このブログで紹介した機能を活用すれば、Spring Bootアプリケーションの開発がより快適に、そして効率的になるでしょう。Lombokの魔法を使って、あなたのコードを次のレベルに引き上げましょう！
 ---
 
 ## Table of contents
