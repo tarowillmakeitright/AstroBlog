@@ -7,9 +7,9 @@ featured: true
 draft: false
 ogImage:
 tags:
-  - TCP IP
+  - TCP
+  - IP
   - IPアドレス
-
 description: これらの基本を理解することで、インターネットの仕組みや、私たちが日常的に使用しているデジタルデバイスの通信方法についての洞察が深まります。
 ---
 
