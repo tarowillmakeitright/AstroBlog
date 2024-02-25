@@ -5,7 +5,6 @@ title: 【ネットワークの基礎】 各層とその重要なプロトコル
 postSlug: books-masteringTCPIP-important-protocol
 featured: true
 draft: false
-ogImage:
 tags:
   - IP
   - ICMP
