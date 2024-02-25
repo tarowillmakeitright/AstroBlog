@@ -1,14 +1,13 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-02-25T17:57:00.00Z
-title: 【ネットワーキングの基礎】 TCP/IP 入門
+title: ネットワーキングの基礎 TCP/IP 入門
 postSlug: books-masteringTCPIP-fundamental-network
 featured: true
 draft: false
 ogImage:
 tags:
-  - TCP
-  - IP
+  - TCP IP
   - IPアドレス
 description: これらの基本を理解することで、インターネットの仕組みや、私たちが日常的に使用しているデジタルデバイスの通信方法についての洞察が深まります。
 ---
