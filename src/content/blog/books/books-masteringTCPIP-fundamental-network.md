@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-25T17:57:00.00Z
-title: ネットワーキングの基礎 TCP/IP 入門
+pubDatetime: 2024-02-25T17:57:00Z
+title: 【ネットワーキングの基礎】 TCP/IP 入門
 postSlug: books-masteringTCPIP-fundamental-network
 featured: true
 draft: false
