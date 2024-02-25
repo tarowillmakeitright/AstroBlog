@@ -1,20 +1,23 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-25T17:57:00Z
-title: 【ネットワーキングの基礎】 TCP/IP 入門
+pubDatetime: 2024-02-25T22:33:00Z
+title: the fundamental of network
 postSlug: books-masteringTCPIP-fundamental-network
 featured: true
-draft: false
-ogImage:
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - TCP IP
   - IPアドレス
-description: これらの基本を理解することで、インターネットの仕組みや、私たちが日常的に使用しているデジタルデバイスの通信方法についての洞察が深まります。
+  - DNS
+  - ルーター
+  - プロトコル
+  - LAN
+  - WAN
+  - OSIモデル
+description: 
+インターネットは、私たちの生活に不可欠なものとなっていますが、その背後にある技術を理解するのは一見複雑に思えるかもしれません。『マスタリングTCP/IP 入門編』の第一章に沿って、ネットワーキングの基本を簡単に理解してみましょう。
 ---
 
 ## Table of contents
-
-インターネットは、私たちの生活に不可欠なものとなっていますが、その背後にある技術を理解するのは一見複雑に思えるかもしれません。『マスタリングTCP/IP 入門編』の第一章に沿って、ネットワーキングの基本を簡単に理解してみましょう。
 
 ## 1. TCP/IP (Transmission Control Protocol/Internet Protocol)
 
