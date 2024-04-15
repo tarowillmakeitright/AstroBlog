@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-15T222:26:00.00Z
+pubDatetime: 2024-04-15T22:26:00.00Z
 title: IntelliJ IDEAでテストとデバッグを効率化するショートカット
-postSlug:
+postSlug: ide-intellij-shortcut-test-debug
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
