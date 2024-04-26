@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2024-04-26T22:37:00.00Z
 title: Java Design Pattern : Factory Method について
-postSlug: java-design-factory-method.md
+postSlug: java-design-factory-method
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
@@ -14,10 +14,6 @@ description: Factory Method パターンは、デザインパターンの一つ�
 ---
 
 ## Table of contents
-
-## パターンの概要
-
-Factory Method パターンは、オブジェクトの作成に関する責任を持つインターフェースを定義しますが、どのクラスのインスタンスを作成するかについては、サブクラスが決定します。これにより、クラスのインスタンス生成をクラスの内部にカプセル化することができ、クライアントは具体的なクラスに依存することなくオブジェクトを生成できます。
 
 ## 基本的な構造
 
