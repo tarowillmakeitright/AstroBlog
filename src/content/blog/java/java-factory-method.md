@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-26T15:15:00.00Z
+pubDatetime: 2024-04-26T15:40:00.00Z
 title: Factory Method パターンの解説
 Factory Method パターンの解説
 postSlug: java-template-method
