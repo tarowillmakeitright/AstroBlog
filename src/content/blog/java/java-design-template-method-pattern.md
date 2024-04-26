@@ -1,14 +1,14 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-26T20:08:00.00Z
-title: Java Design Pattern : Template Methodについて 
-postSlug: java-design-template-method-pattern.
+pubDatetime: 2024-02-19T22:21:00.00Z
+title: Java Design Pattern Template Method について
+postSlug: java-design-template-method-pattern
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Java
-  - Design Pattern
+  - Java Design Pattern
   - Template Method
 description: テンプレートメソッドパターンは、デザインパターンの一つで、アルゴリズムの構造をメソッドに定義し、アルゴリズムのいくつかのステップをサブクラスに委譲することで、サブクラスが特定のステップを再定義せずにアルゴリズムの構造を変更することなく再利用できるようにするパターンです。
 ---
