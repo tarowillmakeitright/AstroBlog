@@ -15,8 +15,6 @@ description: Prototype パターンは、デザインパターンの一つで、
 
 ## Table of contents
 
-## Prototype パターンの詳細解説
-
 ## パターンの目的
 
 Prototype パターンの主な目的は、新しいインスタンスを作成するために直接コンストラクタを呼び出す代わりに、既存のオブジェクトを複製することによってオブジェクトの生成コストを削減することです。これにより、動的なシステム拡張が可能となり、複雑なオブジェクトのセットアッププロセスを簡略化できます。
@@ -70,4 +68,4 @@ Prototype パターンのさらなる理解を深めるために、以下の記�
 
    - Prototype パターンの詳細な説明、利点、欠点、さらには多言語での実装例が提供されています。
 
-2. **SourceMaking** - [Prototype Design Pattern](https://sourcemaking.com/design_patterns/singleto)
+2. **SourceMaking** - [Prototype Design Pattern](https://sourcemaking.com/design_patterns/singleton)

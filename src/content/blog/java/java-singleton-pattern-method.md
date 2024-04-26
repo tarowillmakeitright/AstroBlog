@@ -9,7 +9,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Java
   - Design Pattern
-  - Template Method Pattern
+  - Singleton Method Pattern
 description: Singleton パターンは、特定のクラスのインスタンスが一つだけ生成され、そのインスタンスがグローバルにアクセス可能であることを保証するデザインパターンです。このパターンは、一貫した状態管理や、リソースへのアクセス制御など、アプリケーション全体で一つのインスタンスのみを必要とする場合に有効です。
 ---
 

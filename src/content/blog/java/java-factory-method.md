@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-26T16:40:00.00Z
-title: Factory Method パターンの解説
+title: [Java Design Pattern] Factory Method パターンの解説
 postSlug: java-factory-method
 featured: true
 draft: false
@@ -9,7 +9,7 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Java
   - Design Pattern
-  - Template Method Pattern
+  - Factory Method Pattern
 description: Factory Method パターンは、デザインパターンの一つで、インスタンスの生成をサブクラスに委譲することで、システムの柔軟性と拡張性を高める手法です。このパターンは特に、クライアントとクラスの具体的な実装の間の結合度を低減する場合に有効です。
 ---
 
