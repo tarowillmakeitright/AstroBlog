@@ -2,7 +2,6 @@
 author: Taro Gray
 pubDatetime: 2024-04-26T16:40:00.00Z
 title: Factory Method パターンの解説
-Factory Method パターンの解説
 postSlug: java-factory-method
 featured: true
 draft: false
