@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-27T207:48:00.00Z
+pubDatetime: 2024-04-27T07:48:00.00Z
 title: Java Design Pattern Prototype Method について
 postSlug: java-design-prototype-method
 featured: true
