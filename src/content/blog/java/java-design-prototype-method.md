@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2024-04-27T207:48:00.00Z
 title: Java Design Pattern Prototype Method について
-postSlug: java-design-Prototype-method
+postSlug: java-design-prototype-method
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
