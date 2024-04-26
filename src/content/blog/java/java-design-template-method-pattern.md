@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-02-19T22:21:00.00Z
+pubDatetime: 2024-04-26T22:27:00.00Z
 title: Java Design Pattern Template Method について
 postSlug: java-design-template-method-pattern
 featured: true
