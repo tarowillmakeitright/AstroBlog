@@ -64,8 +64,5 @@ public class Client {
 
 Prototype パターンのさらなる理解を深めるために、以下の記事を参考にすることをお勧めします。
 
-1. **Refactoring Guru** - [Prototype Pattern](https://refactoring.guru/design-patterns/prototype)
-
-   - Prototype パターンの詳細な説明、利点、欠点、さらには多言語での実装例が提供されています。
-
-2. **SourceMaking** - [Prototype Design Pattern](https://sourcemaking.com/design_patterns/singleton)
+1. **Refactoring Guru** - [Factory Method](https://refactoring.guru/design-patterns/prototype)
+2. **SourceMaking** - [Prototype Method Design Pattern](https://sourcemaking.com/design_patterns/prototype)
