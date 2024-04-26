@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-26T18:46:00.00Z
-title: Singleton パターンの解説
+title: Java Design Pattern : Singleton Method の解説 
 postSlug: java-singleton-pattern-method
 featured: true
 draft: false

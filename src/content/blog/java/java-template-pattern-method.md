@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-26T12:44:00.00Z
-title: テンプレートメソッドパターンについて
+title: Java Design Pattern : Template Method について
 postSlug: java-template-pattern-method
 featured: true
 draft: false

@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-26T16:43:00.00Z
-title: [Java Design Pattern] Prototype パターンの解説
+title: Java Design Pattern : Prototype パターンの解説
 postSlug: java-prototype-pattern-method
 featured: true
 draft: false
