@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-26T18:42:00.00Z
+pubDatetime: 2024-04-26T19:15:00.00Z
 title: Java Design Pattern Factory Method の解説
 postSlug: java-factory-pattern-method
 featured: true
@@ -9,15 +9,11 @@ ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4
 tags:
   - Java
   - Design Pattern
-  - Factory Method Pattern
-description: Factory Method パターンは、デザインパターンの一つで、インスタンスの生成をサブクラスに委譲することで、システムの柔軟性と拡張性を高める手法です。このパターンは特に、クライアントとクラスの具体的な実装の間の結合度を低減する場合に有効です。
+  - Factory Method
+description: Factory Method パターンは、オブジェクトの作成に関する責任を持つインターフェースを定義しますが、どのクラスのインスタンスを作成するかについては、サブクラスが決定します。これにより、クラスのインスタンス生成をクラスの内部にカプセル化することができ、クライアントは具体的なクラスに依存することなくオブジェクトを生成できます。
 ---
 
 ## Table of contents
-
-## パターンの概要
-
-Factory Method パターンは、オブジェクトの作成に関する責任を持つインターフェースを定義しますが、どのクラスのインスタンスを作成するかについては、サブクラスが決定します。これにより、クラスのインスタンス生成をクラスの内部にカプセル化することができ、クライアントは具体的なクラスに依存することなくオブジェクトを生成できます。
 
 ## 基本的な構造
 
@@ -73,8 +69,6 @@ public class Client {
 Factory Method パターンについてより深く理解するための参考資料を以下に示します。
 
 1. **Refactoring Guru** - [Factory Method](https://refactoring.guru/design-patterns/factory-method)
-
    - このサイトでは、Factory Method パターンについて詳細な説明と、多言語での実装例が提供されています。
-
 2. **SourceMaking** - [Factory Method Design Pattern](https://sourcemaking.com/design_patterns/factory_method)
    - パターンの動機、構造、そして具体的な使用例について詳しく説明されており、実際のアプリケーションでの適用例も紹介されています。
