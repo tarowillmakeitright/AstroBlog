@@ -3,7 +3,7 @@ author: Taro Gray
 pubDatetime: 2024-04-26T16:40:00.00Z
 title: Factory Method パターンの解説
 Factory Method パターンの解説
-postSlug: java-template-method
+postSlug: java-factory-method
 featured: true
 draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
