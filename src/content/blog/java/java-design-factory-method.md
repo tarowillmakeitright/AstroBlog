@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-26T22:37:00.00Z
-title: Java Design Pattern : Factory Method について
+title: Java Design Pattern Factory Method について
 postSlug: java-design-factory-method
 featured: true
 draft: false
