@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-04-27T15:33:00.00Z
-title: 
+title: TMUX のウィンドウとパネルの操作ガイド
 postSlug: neovim-window-panel-manipulation
 featured: true
 draft: false
