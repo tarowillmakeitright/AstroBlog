@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-26T11:59:00.00Z
+pubDatetime: 2024-04-27T11:59:00.00Z
 title: Java Design Pattern Bridge Method について
 postSlug: java-design-bridge-method
 featured: true
