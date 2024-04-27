@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-27T13:21:00.00Z
+pubDatetime: 2024-04-27T13:37:00.00Z
 title: Java Design Pattern State Method について
 postSlug: java-design-state-method
 featured: true
@@ -10,7 +10,7 @@ tags:
   - Java
   - Java Design Pattern
   - State Method
-description:State パターンは、オブジェクトの内部状態が変化するとその行動が変わるような状況で使用されるデザインパターンです。このパターンは、オブジェクトの状態を表すクラス群を通じて状態依存の振る舞いをカプセル化し、実行時にオブジェクトのクラスを変更することなくその振る舞いを変更できるようにします。
+description: State パターンは、オブジェクトの内部状態が変化するとその行動が変わるような状況で使用されるデザインパターンです。このパターンは、オブジェクトの状態を表すクラス群を通じて状態依存の振る舞いをカプセル化し、実行時にオブジェクトのクラスを変更することなくその振る舞いを変更できるようにします。
 ---
 
 ## Table of contents
