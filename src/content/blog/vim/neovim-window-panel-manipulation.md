@@ -8,11 +8,11 @@ draft: false
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Neovim
-  - tmux kill 
+  - tmux kill
   - tmux ウィンドウ
   - tmux パネル
   - tmux セッション
-description: `tmux`は強力なターミナルマルチプレクサーで、複数のセッションを一つの画面内で管理することができます。この記事では、`tmux`でのウィンドウとパネルの操作方法について詳しく解説します。
+description: tmuxは強力なターミナルマルチプレクサーで、複数のセッションを一つの画面内で管理することができます。この記事では、tmuxでのウィンドウとパネルの操作方法について詳しく解説します。
 ---
 
 ## Table of contents
