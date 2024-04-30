@@ -140,10 +140,4 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
   },
-  {
-    name: "Line",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Line`,
-    active: true,
-  },
 ];
