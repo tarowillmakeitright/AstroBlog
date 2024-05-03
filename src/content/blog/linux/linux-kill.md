@@ -7,9 +7,9 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-  - linux kill 
+  - kill
   - jobs
-description:Linuxオペレーティングシステムにおけるプロセスとジョブの管理は、システムの効率的な運用に欠かせないスキルです。この記事では、プロセスの表示、ジョブの制御、そしてプロセスの終了方法について解説します。
+description: Linuxオペレーティングシステムにおけるプロセスとジョブの管理は、システムの効率的な運用に欠かせないスキルです。この記事では、プロセスの表示、ジョブの制御、そしてプロセスの終了方法について解説します。
 ---
 
 ## Table of contents
