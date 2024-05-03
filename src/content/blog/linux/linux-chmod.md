@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-05-03T23:37:00.000Z
+pubDatetime: 2024-05-04T00:01:00.000Z
 title: Linuxのファイルパーミッション: オーナー、グループ、そしてchmod
 postSlug: linux-chmod
 featured: true
