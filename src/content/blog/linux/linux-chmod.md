@@ -1,12 +1,13 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-04-28T09:51:00.000Z
+pubDatetime: 2024-05-03T23:37:00.000Z
 title: Linuxのファイルパーミッション: オーナー、グループ、そしてchmod
 postSlug: linux-chmod
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
+  - chmod
 description: Linuxでのファイル管理において、ファイルの所有者（オーナー）、グループ、そしてパーミッションは非常に重要です。これらの設定は、ファイルへのアクセスを制御し、システムのセキュリティを保つために使われます。
 ---
 
