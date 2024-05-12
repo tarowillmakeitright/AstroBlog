@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 22024-05-07T15:16:00.000Z
+pubDatetime: 2024-05-07T15:16:00.000Z
 title: Linuxのテストコマンドと条件式の使い方
 postSlug: linux-test-command
 featured: true
