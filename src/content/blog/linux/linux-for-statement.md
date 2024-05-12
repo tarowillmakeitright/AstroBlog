@@ -7,8 +7,8 @@ featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
   - Linux
-  - linux for statement 
-description:Bash スクリプトでは、`for` ループは反復処理を行う際に非常に重要な役割を果たします。この記事では、`$@`, `seq`, および `in` キーワードを使った `for` ループの具体的な使い方を紹介します。
+  - linux for statement
+description: Bash スクリプトでは、`for` ループは反復処理を行う際に非常に重要な役割を果たします。この記事では、`$@`, `seq`, および `in` キーワードを使った `for` ループの具体的な使い方を紹介します。
 ---
 
 ## Table of contents
