@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-06-23:T15:29:00.000Z
+pubDatetime: 2024-06-23:T21:29:00.000Z
 title: 2進数・10進数・16進数の変換と計算方法
 postSlug: basicInfo-numeral-systems
 featured: true
