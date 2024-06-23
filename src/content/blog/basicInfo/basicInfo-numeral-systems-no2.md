@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
+pubDatetime: 2024-06-23:T17:29:00.000Z
 title: 2進数・10進数・16進数の変換と計算方法 Part 2
-pubDatetime: 2024-06-23T17:00:00.000Z
 postSlug: basicInfo-numeral-systems-no2
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
@@ -78,7 +78,7 @@ description: 2進数、10進数、16進数の変換と基本的な計算方法�
 0 * 2^3 = 0 * 8 = 0
 0 * 2^2 = 0 * 4 = 0
 1 * 2^1 = 1 * 2 = 2
-0 * 2^0 = 0 * 1 = 0
+0  2^0 = 0 * 1 = 0
 
 16 + 0 + 0 + 2 + 0 = 18
 ```
