@@ -1,8 +1,8 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-06-23T15:34:00.000Z
-title: 2進数・10進数・16進数の変換と計算方法 Part 2
-postSlug: basicInfo-numeral-systems-no2
+pubDatetime: 2024-06-15T15:54:00.000Z
+title: 2進数・10進数・16進数の変換と計算方法
+postSlug: basicInfo-numeral-systems
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
