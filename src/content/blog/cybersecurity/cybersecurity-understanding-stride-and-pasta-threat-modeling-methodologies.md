@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-06-30T17:00:00.00Z
-title: Threat Modeling: STRIDEとPASTAの手法を理解する
+pubDatetime: 2024-06-30T17:09:00.00Z
+title: Threat Modeling のSTRIDEとPASTAの手法を理解する
 postSlug: cybersecurity-understanding-stride-and-pasta-threat-modeling-methodologies
 featured: true
 draft: false
