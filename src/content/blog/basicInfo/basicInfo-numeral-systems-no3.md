@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2024-06-30T15:30:00.000Z
 title: 2進数・10進数・16進数の変換と計算方法 Part 3
-postSlug: basicInfo-numeral-systems-part-3
+postSlug: basicInfo-numeral-systems-no3
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
