@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-08-29T12:29:00.00Z
+pubDatetime: 2024-08-29T13:07:00.00Z
 title: Neovimにプラグインを追加してインストールする方法
 postSlug: vim-how-to-add-and-install-plugins-in-neovim
 featured: true
