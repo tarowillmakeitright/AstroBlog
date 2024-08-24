@@ -16,7 +16,7 @@ tags:
 description: Neovimでプラグインを追加してインストールする方法を、詳細な手順と共に解説します。
 ---
 
-## 目次
+## Table of Contents
 
 ## はじめに
 
