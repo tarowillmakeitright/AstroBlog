@@ -14,7 +14,7 @@ tags:
 description: tmuxの便利なショートカットコマンドを一文説明とともにまとめました。作業効率を向上させるために役立つコマンドを紹介します。
 ---
 
-## Table of Contents
+## Table of contents
 
 ## はじめに
 
