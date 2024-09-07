@@ -1,15 +1,15 @@
 ---
-author: Taro Gray  
-pubDatetime: 2024-09-07T15:51:00.00Z  
-title: Java Streamの中間操作を徹底解説  
-postSlug: java-stream-intermediate-operations  
-featured: true  
-draft: false  
-ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a  
+author: Taro Gray
+pubDatetime: 2024-09-07T15:51:00.00Z
+title: Java Streamの中間操作を徹底解説
+postSlug: java-stream-intermediate-operations
+featured: true
+draft: false
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-- Java
-- Stream API  
-  description: JavaのStream APIにおける中間操作について詳しく解説します。中間操作は、データのフィルタリングやマッピングなど、Stream内でのデータ処理において重要な役割を果たします。
+  - Java
+  - Stream API
+description: JavaのStream APIにおける中間操作について詳しく解説します。中間操作は、データのフィルタリングやマッピングなど、Stream内でのデータ処理において重要な役割を果たします。
 ---
 
 ## Table of contetns
