@@ -1,7 +1,7 @@
 ---
 author: Taro Gray  
-pubDatetime: 2024-09-07T15:13:00.00Z  
-title: Java Streamの中間操作（Intermediate Operations）を徹底解説  
+pubDatetime: 2024-09-07T15:51:00.00Z  
+title: Java Streamの中間操作を徹底解説  
 postSlug: java-stream-intermediate-operations  
 featured: true  
 draft: false  
