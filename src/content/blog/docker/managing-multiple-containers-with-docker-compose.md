@@ -16,13 +16,6 @@ description: Docker Composeを使って複数コンテナを効率的に管理�
 
 ## Table of contents
 
-    1.	Docker Composeとは？
-    2.	Docker Composeでのコンテナ起動: docker-compose up
-    3.	コンテナの停止と削除: docker-compose down
-    4.	コンテナの一時停止: docker-compose stop
-    5.	定義ファイルのパス指定について
-    6.	まとめ
-
 ## 1. Docker Composeとは？
 
 Docker Composeは、複数のコンテナを一括して管理・操作できるツールです。通常、アプリケーションは1つのコンテナではなく、複数のサービス（例：Webサーバ、データベース、キャッシュサーバなど）で構成されることが多いです。そのような場合、個々のコンテナを個別に管理するのは大変なので、Composeを使ってまとめて定義し、一度に起動・管理できるようにします。
