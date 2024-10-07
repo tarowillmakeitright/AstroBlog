@@ -1,11 +1,10 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-10-08T00:31:00.00Z
+pubDatetime: 2024-10-08T08:00:00.00Z
 title: Docker Composeで複数コンテナを効率的に管理する方法
 postSlug: managing-multiple-containers-with-docker-compose
 featured: true
 draft: false
-ogImage: https://example.com/docker-compose.png
 tags:
   - docker
   - docker compose
@@ -85,7 +84,7 @@ Composeファイルのパスを毎回指定するのは面倒なので、docker-
 
 このブログでは、Docker Composeを使って複数コンテナを効率的に管理する方法について解説しました。
 
-    •	docker-compose up: 複数のコンテナをまとめて起動するために使います。特に、複数のサービス（例：Webサーバ、データベース、キャッシュ）を一度に動かす場合に便利です。
-    •	docker-compose down: サービス全体を停止し、コンテナやネットワーク、ボリュームを削除する際に使います。
-    •	docker-compose stop: コンテナを一時的に停止し、簡単に再起動したい場合に役立ちます。
-    •	定義ファイルのパス指定: 定義ファイルのパスを省略できる方法を活用すると、より作業が効率化されます。
+- docker-compose up: 複数のコンテナをまとめて起動するために使います。特に、複数のサービス（例：Webサーバ、データベース、キャッシュ）を一度に動かす場合に便利です。
+- docker-compose down: サービス全体を停止し、コンテナやネットワーク、ボリュームを削除する際に使います。
+- docker-compose stop: コンテナを一時的に停止し、簡単に再起動したい場合に役立ちます。
+- 定義ファイルのパス指定: 定義ファイルのパスを省略できる方法を活用すると、より作業が効率化されます。
