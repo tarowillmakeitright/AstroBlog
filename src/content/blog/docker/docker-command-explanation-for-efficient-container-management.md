@@ -5,7 +5,6 @@ title: Dockerコマンド解説: 効率的なコンテナ管理のための基�
 postSlug: docker-command-explanation-for-efficient-container-management
 featured: true
 draft: false
-ogImage: https://example.com/docker-commands.png
 tags:
   - docker create
   - docker pull 
@@ -90,7 +89,7 @@ docker network create ネットワーク名
 
 なぜ使うのか: コンテナ同士を特定のネットワーク内で安全に通信させたい場合や、サービス間の接続を確立するために使います。
 
-# 10. Apache, MySQL, OpenJDKの使用例
+## 10. Apache, MySQL, OpenJDKの使用例
 
 Apacheのイメージ
 
