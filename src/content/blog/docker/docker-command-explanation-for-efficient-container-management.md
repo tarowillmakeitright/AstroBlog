@@ -1,10 +1,10 @@
 ---
-author: Taro Gray
-pubDatetime: 2024-10-08T08:00:00.00Z
-title: Dockerコマンド解説: 効率的なコンテナ管理のための基本操作
-postSlug: docker-command-explanation-for-efficient-container-management
-featured: true
-draft: false
+author: Taro Gray 
+pubDatetime: 2024-10-08T22:15:00.00Z 
+title: Dockerコマンド解説: 効率的なコンテナ管理のための基本操作 
+postSlug: docker-command-explanation-for-efficient-container-management 
+featured: true 
+draft: false 
 tags:
   - docker create
   - docker pull 
@@ -18,18 +18,6 @@ description: Dockerを使ってコンテナやイメージを管理するため�
 ---
 
 ## Table of contents
-
-    1.	Docker create
-    2.	Docker pull
-    3.	Docker start
-    4.	Docker ps
-    5.	Docker run
-    6.	Docker rm
-    7.	Docker image rm
-    8.	Docker image ls
-    9.	Docker network create
-    10.	Apache, MySQL, OpenJDKの使用例
-    11.	DockerでMySQLコンテナの詳細な設定
 
 ## 1. Docker create
 
@@ -121,10 +109,9 @@ docker run --name my-mysql-container -dit --net=my-network \
  mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci --default-authentication-plugin=mysql_native_password
 
 説明:
-
-    •	–net=my-network: 事前に作成したカスタムネットワークを指定して、同じネットワーク内でコンテナ同士を通信できるようにします。
-    •	-e オプション: 環境変数を設定し、MySQLの初期設定を行います（ルートパスワード、データベース名、ユーザー名、パスワードなど）。
-    •	MySQLオプション: --character-set-server=utf8mb4 や --collation-server=utf8mb4_general_ciなどで文字セットや照合順序を指定しています。また、--default-authentication-plugin=mysql_native_passwordで認証方式も設定します。
+–net=my-network: 事前に作成したカスタムネットワークを指定して、同じネットワーク内でコンテナ同士を通信できるようにします。
+-e オプション: 環境変数を設定し、MySQLの初期設定を行います（ルートパスワード、データベース名、ユーザー名、パスワードなど）。
+MySQLオプション: --character-set-server=utf8mb4 や --collation-server=utf8mb4_general_ciなどで文字セットや照合順序を指定しています。また、--default-authentication-plugin=mysql_native_passwordで認証方式も設定します。
 
 ## まとめ
 
