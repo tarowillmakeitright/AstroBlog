@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-10-08T23:11:00.00Z
+pubDatetime: 2024-10-10T00:00:00.00Z
 title: Dockerでのコンテナイメージ化とイメージ管理の基本
 postSlug: creating-and-managing-docker-images
 featured: true
@@ -8,7 +8,6 @@ draft: false
 tags:
   - docker commit
   - docker build
-  - dockerfile
   - docker save
 description: Dockerでコンテナのイメージ化やDockerfileを使ったイメージ作成方法、そしてイメージの保存について詳しく解説します。各コマンドの使い方と、どのような場面で使用するべきかを理解しましょう。
 ---
@@ -103,6 +102,48 @@ ARG VERSION=1.0.0
 
 コンテナの状態をチェックするためのヘルスチェックコマンドを定義します。
 
+    1.	FROM: ベースイメージを指定します。イメージのビルドは、このベースイメージから始まります。
+
+FROM ubuntu:20.04
+
+    2.	ADD / COPY: ホストマシンのファイルやディレクトリをコンテナ内にコピーします。
+
+COPY ./app /usr/src/app
+
+    3.	RUN: イメージのビルド中に実行するコマンドを指定します。ソフトウェアのインストールなどに使用されます。
+
+RUN apt-get update && apt-get install -y nginx
+
+    4.	CMD / ENTRYPOINT: コンテナ起動時に実行されるデフォルトのコマンドを指定します。CMDは上書き可能、ENTRYPOINTは固定されます。
+
+CMD ["nginx", "-g", "daemon off;"]
+
+    5.	EXPOSE: コンテナが使用するポートを指定します。
+
+EXPOSE 80
+
+    6.	VOLUME: ボリュームを指定して、コンテナ内で永続的にデータを保存します。
+
+VOLUME /data
+
+    7.	ENV: 環境変数を設定します。
+
+ENV APP_ENV=production
+
+    8.	WORKDIR: コンテナ内での作業ディレクトリを指定します。
+
+WORKDIR /usr/src/app
+
+    9.	LABEL: イメージにメタデータを付与します。バージョン情報や開発者情報を含めることができます。
+
+LABEL maintainer="taro@example.com"
+
+    10.	ARG: ビルド時に使用する引数を定義します。ENVと異なり、ビルド時にのみ使用されます。
+
+ARG VERSION=1.0.0
+
+    11.	HEALTHCHECK: コンテナの状態をチェックするためのヘルスチェックコマンドを定義します。
+
 HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
 
 なぜ使うのか？
@@ -115,7 +156,8 @@ docker save -o ファイル名.tar イメージ名
 説明: Dockerイメージを.tarファイルとして保存するコマンドです。保存されたイメージは、他の環境に持ち込んだり、他のユーザーと共有したりすることができます。
 
 なぜ使うのか？
-Docker saveは、ローカルでビルドしたイメージをバックアップしたり、別のサーバーや環境に持ち込む場合に使用します。例えば、インターネットに接続されていない環境でイメージを配布する必要がある場合、tarファイルとして保存しておくと便利です。
+
+Docker saveは、ローカルでビルドしたイメージをバックアップしたり、別のサーバーや環境に持ち込む場合に使用します。例えば、インターネットに接続されていない環境でイメージを配布する必要がある場合、.tarファイルとして保存しておくと便利です。
 
 ## 5. まとめ
 
