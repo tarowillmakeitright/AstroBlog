@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2024-10-09T22:30:00.00Z
+pubDatetime: 2024-09-09T17:00:00.00Z
 title: Dockerでのコンテナイメージ化とイメージ管理の基本
 postSlug: creating-and-managing-docker-images
 featured: true
@@ -9,14 +9,14 @@ ogImage: https://example.com/docker-image.png
 tags:
   - Docker
   - docker commit
-  - docker build
   - docker save
+  - docker build
 description: Dockerでコンテナのイメージ化やDockerfileを使ったイメージ作成方法、そしてイメージの保存について詳しく解説します。各コマンドの使い方と、どのような場面で使用するべきかを理解しましょう。
 ---
 
 ## Table of contents
 
-### 1. Docker commit: コンテナをイメージ化する
+## 1. Docker commit: コンテナをイメージ化する
 
 docker commit コンテナ名 作成するイメージ名
 
@@ -25,7 +25,7 @@ docker commit コンテナ名 作成するイメージ名
 なぜ使うのか？
 Docker commitは、開発や設定変更を行ったコンテナの状態をそのまま新しいイメージとして保存したいときに使います。例えば、あるコンテナに対してソフトウェアのインストールや設定を行った後、その状態を保持したイメージを作成し、他の環境で再利用することが可能です。
 
-2. Docker build: Dockerfileを使ったイメージ作成
+## 2. Docker build: Dockerfileを使ったイメージ作成
 
 docker build -t 作成するイメージ名 材料フォルダのパス
 
@@ -34,7 +34,7 @@ docker build -t 作成するイメージ名 材料フォルダのパス
 なぜ使うのか？
 Docker buildは、コードベースや設定を持つ環境を標準化したイメージを作成するために使います。Dockerfileに一連の手順を定義することで、イメージを再現性高く作成でき、開発環境と本番環境の違いを最小限に抑えることができます。
 
-3. Dockerfileの主要コマンド
+## 3. Dockerfileの主要コマンド
 
 Dockerfileを使ってイメージを作成する際に、いくつかの主要なコマンドがあります。それぞれの役割を理解することが重要です。
 
@@ -87,7 +87,7 @@ HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
 なぜ使うのか？
 Dockerfileは、イメージ作成の手順を明確にし、簡単に再現可能なビルドプロセスを提供します。これにより、複雑なセットアップ手順を簡単に自動化し、チーム全体で共有できます。
 
-4. Docker save: イメージの保存
+## 4. Docker save: イメージの保存
 
 docker save -o ファイル名.tar イメージ名
 
@@ -96,7 +96,7 @@ docker save -o ファイル名.tar イメージ名
 なぜ使うのか？
 Docker saveは、ローカルでビルドしたイメージをバックアップしたり、別のサーバーや環境に持ち込む場合に使用します。例えば、インターネットに接続されていない環境でイメージを配布する必要がある場合、.tarファイルとして保存しておくと便利です。
 
-5. まとめ
+## 5. まとめ
 
 このブログでは、Dockerにおけるコンテナのイメージ化やDockerfileを使ったイメージ作成、そして作成したイメージを保存する方法について解説しました。
 
