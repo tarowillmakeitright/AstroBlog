@@ -5,14 +5,13 @@ title: Gitのpull戦略: Merge, Rebase, Fast-Forwardの違いと使い分け
 postSlug: git-pull-strategy-merge-rebase-ff
 featured: true
 draft: false
-ogImage: (任意のURLを設定)
 tags: 
-  - Git 
-  - pull strategy 
-  - merge 
-  - rebase 
+  - Git
+  - pull strategy
+  - merge
+  - rebase
   - fast-forward
-description: Gitのpullコマンドで発生する分岐ブランチの対処方法について、Merge、Rebase、Fast-Forwardの使い分けを解説します。それぞれの戦略がどのような場面で有効かを理解し、分かりやすくまとめました。
+description: Gitのpullコマンドで発生する分岐ブランチの対処方法について、Merge、Rebase、"Fast-Forward"の使い分けを解説します。それぞれの戦略がどのような場面で有効かを理解し、分かりやすくまとめました。
 ---
 
 ## Table of Contents
