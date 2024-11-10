@@ -11,7 +11,7 @@ tags:
   - merge
   - rebase
   - fast-forward
-description: Gitのpullコマンドで発生する分岐ブランチの対処方法について、Merge、Rebase、"Fast-Forward"の使い分けを解説します。それぞれの戦略がどのような場面で有効かを理解し、分かりやすくまとめました。
+description: 'Gitのpullコマンドで発生する分岐ブランチの対処方法について、Merge、Rebase、"Fast-Forward"の使い分けを解説します。それぞれの戦略がどのような場面で有効かを理解し、分かりやすくまとめました。'
 ---
 
 ## Table of Contents
