@@ -14,7 +14,7 @@ tags:
 description: .envファイルからMongoDBの接続URIを読み込み、Spring Bootのapplication.propertiesで受け渡す方法を解説します。環境変数の設定で接続情報を管理し、より安全で柔軟なアプリケーション構成を実現します。
 ---
 
-Table of Contents
+## Table of Contents
 
 ## Introduction
 
