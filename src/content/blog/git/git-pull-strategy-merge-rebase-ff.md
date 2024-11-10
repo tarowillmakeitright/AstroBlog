@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2024-11-10T10:30:00.00Z
-title: Gitのpull戦略: Merge, Rebase, Fast-Forwardの違いと使い分け
+title: [Gitのpull戦略] Merge, Rebase, Fast-Forwardの違いと使い分け
 postSlug: git-pull-strategy-merge-rebase-ff
 featured: true
 draft: false
