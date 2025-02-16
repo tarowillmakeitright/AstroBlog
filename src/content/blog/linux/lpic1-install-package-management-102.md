@@ -112,101 +112,133 @@ tags:
 
 ✅ **RPM のアップグレード＆インストールには `rpm -U` または `rpm --upgrade` を使う！**
 
-## RPM コマンドで「postfix」パッケージの検査を行う方法
+## **RPM コマンドで「postfix-1.1.12-1.i386.rpm」の設定ファイルのみを表示する方法**
 
 ### **問題**
 
-`rpm` コマンドを使用して、「postfix」パッケージの検査を行いたい。ただし、MD5 によるファイルの改ざんの検査は行わないものとする。適切なコマンドを選択せよ（複数選択可）。
+`rpm` コマンドを使用して、**「postfix-1.1.12-1.i386.rpm」ファイルからインストールされる設定ファイルのみ** を表示したい。  
+適切なコマンドを選択せよ。
 
 ### **選択肢**
 
-- `rpm -V --nomd5 postfix`
-- `rpm -V postfix`
-- `rpm -qc postfix`
-- `rpm --verify --nomd5 postfix`
-- `rpm --verify postfix`
+- `rpm -qcp postfix-1.1.12-1.i386.rpm`
+- `rpm -qlp postfix-1.1.12-1.i386.rpm`
+- `rpm --query --list --package postfix-1.1.12-1.i386.rpm`
+- `rpm --query --list postfix`
+- `rpm --query -cp postfix-1.1.12-1.i386.rpm`
 
 ---
 
 ## **正解**
 
-✅ `rpm -V --nomd5 postfix`  
-✅ `rpm --verify --nomd5 postfix`
+✅ `rpm -qcp postfix-1.1.12-1.i386.rpm`  
+✅ `rpm --query -cp postfix-1.1.12-1.i386.rpm`
 
 ---
 
 ## **解説**
 
-`rpm` コマンドは **RPM パッケージの管理**（インストール、アンインストール、検査など）を行うためのコマンドです。
+`rpm` コマンドは、**RPM パッケージの情報を取得・管理** するために使用されます。
 
-### **RPM の検査関連オプション**
+- `-q` (`--query`) → **パッケージ情報を取得**
+- `-c` (`--configfiles`) → **設定ファイルのみを表示**
+- `-p` (`--package`) → **インストール済みではなく、指定した RPM ファイルを対象にする**
 
-| コマンド          | 説明                                               |
-| ----------------- | -------------------------------------------------- |
-| `-V` / `--verify` | インストール済みのパッケージを検査する             |
-| `--nomd5`         | MD5 チェックサムによる検査を省略する               |
-| `-q`              | インストール済みのパッケージ情報を取得             |
-| `-qc`             | インストール済みパッケージの設定ファイル一覧を表示 |
+### **設定ファイルのみを表示するには？**
+
+| コマンド                          | 説明                                                                       |
+| --------------------------------- | -------------------------------------------------------------------------- |
+| `rpm -qc <パッケージ名>`          | **インストール済みのパッケージの設定ファイルを表示**                       |
+| `rpm -qcp <RPMファイル名>`        | **指定した RPM ファイルの設定ファイルを表示**                              |
+| `rpm --query -cp <RPMファイル名>` | **指定した RPM ファイルの設定ファイルを表示**（`-qcp` のロングオプション） |
 
 ---
 
 ### **各選択肢の解説**
 
-#### ✅ `rpm -V --nomd5 postfix`
+#### ✅ `rpm -qcp postfix-1.1.12-1.i386.rpm`
 
-- `-V` (`--verify`) を使用して **postfix パッケージの整合性検査** を行う。
-- `--nomd5` を指定することで **MD5 チェックサムによる改ざんチェックを省略** する。
+- **指定した RPM ファイルに含まれる設定ファイルのみを表示** する。
+- `-q` → **問い合わせ（query）**
+- `-c` → **設定ファイルのみを表示**
+- `-p` → **指定した RPM ファイルを対象**
+- **正しいコマンド！**
 
-#### ✅ `rpm --verify --nomd5 postfix`
-
-- `-V` の代わりに `--verify` を使用して、**同じ動作** を行う。
-- `--nomd5` により **MD5 チェックを行わずに検査** する。
-
-#### ❌ `rpm -V postfix`
-
-- `-V` (`--verify`) による検査は行うが、**MD5 チェックも実施する** ため問題の条件に合わない。
-
-#### ❌ `rpm -qc postfix`
-
-- `-q` (`--query`) オプションの `-c` は **設定ファイルの一覧を表示する** ためのものであり、検査ではない。
-
-#### ❌ `rpm --verify postfix`
-
-- `--verify` による検査は行うが、**MD5 チェックも実施する** ため問題の条件に合わない。
-
----
-
-## **RPM の検査結果の見方**
-
-`rpm -V postfix` または `rpm --verify postfix` を実行すると、変更されたファイルがある場合、以下のように表示される。
+実行例:
 
 ```sh
-S.5....T.  c /etc/postfix/main.cf
+$ rpm -qcp postfix-1.1.12-1.i386.rpm
+/etc/postfix/main.cf
+/etc/postfix/master.cf
 ```
 
-文字 意味
-S ファイルサイズが変更されている
-5 MD5 チェックサムが異なっている
-T 修正時刻が異なっている
-c 設定ファイルであることを示す
+✅ rpm --query -cp postfix-1.1.12-1.i386.rpm
+• rpm -qcp のロングオプション版（動作は同じ）
+• 正しいコマンド！
+
+❌ rpm -qlp postfix-1.1.12-1.i386.rpm
+• 指定した RPM ファイルに含まれるすべてのファイルを一覧表示 する。
+• 設定ファイルだけではなく、バイナリやドキュメントも含まれるため不適切。
+• 不正解！
+
+実行例:
+
+$ rpm -qlp postfix-1.1.12-1.i386.rpm
+/usr/sbin/postfix
+/usr/libexec/postfix
+/etc/postfix/main.cf
+/etc/postfix/master.cf
+/var/spool/postfix
+...
+
+（設定ファイル以外も含まれているため NG）
+
+❌ rpm --query --list --package postfix-1.1.12-1.i386.rpm
+• 指定した RPM ファイルのすべてのファイルを一覧表示する
+• 設定ファイルのみを表示するわけではないため不適切
+• 不正解！
+
+実行例:
+
+$ rpm --query --list --package postfix-1.1.12-1.i386.rpm
+/usr/sbin/postfix
+/usr/libexec/postfix
+/etc/postfix/main.cf
+/etc/postfix/master.cf
+...
+
+（設定ファイルだけでなく、すべてのファイルが表示されるため NG）
+
+❌ rpm --query --list postfix
+• インストール済みの postfix パッケージに含まれるすべてのファイルを一覧表示する
+• 設定ファイルだけではなく、すべてのファイルが含まれるため不適切
+• 不正解！
+
+実行例:
+
+$ rpm --query --list postfix
+/usr/sbin/postfix
+/usr/libexec/postfix
+/etc/postfix/main.cf
+/etc/postfix/master.cf
+...
 
 まとめ
 
-コマンド 動作 正誤
-rpm -V --nomd5 postfix MD5 チェックなしでパッケージを検査 ✅
-rpm --verify --nomd5 postfix MD5 チェックなしでパッケージを検査 ✅
-rpm -V postfix MD5 チェックを含めてパッケージを検査 ❌
-rpm -qc postfix 設定ファイルの一覧を表示（検査ではない） ❌
-rpm --verify postfix MD5 チェックを含めてパッケージを検査 ❌
+コマンド 説明 正誤
+rpm -qcp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示 ✅
+rpm --query -cp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示（ロングオプション） ✅
+rpm -qlp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示（設定ファイルのみではない） ❌
+rpm --query --list --package postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示 ❌
+rpm --query --list postfix インストール済みの postfix に含まれるすべてのファイルを表示 ❌
 
 💡 ポイント
-• -V または --verify は インストール済みパッケージの検査 に使用する。
-• --nomd5 を指定すると MD5 チェックなしで検査 を実行できる。
-• 設定ファイルの一覧を表示する rpm -qc は 検査ではない ので注意。
+• 設定ファイルのみを表示するには -qcp または --query -cp を使う！ ✅
+• すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
 
-✅ RPM の検査には rpm -V --nomd5 または rpm --verify --nomd5 を使う！
+✅ RPM ファイル内の設定ファイルを確認するなら rpm -qcp <RPMファイル名>！
 
-RPM コマンドで「postfix」パッケージの変更履歴を調べる方法
+##RPM コマンドで「postfix」パッケージの変更履歴を調べる方法
 
 問題
 
@@ -975,9 +1007,7 @@ rpm -qa すべてのインストール済みパッケージを一覧表示（情
 $ rpm -qcp postfix-1.1.12-1.i386.rpm
 /etc/postfix/main.cf
 /etc/postfix/master.cf
-
-```
-
+...
 ✅ rpm --query -cp postfix-1.1.12-1.i386.rpm
 • rpm -qcp のロングオプション版（動作は同じ）
 • 正しいコマンド！
@@ -1043,4 +1073,585 @@ rpm --query --list postfix インストール済みの postfix に含まれる�
 • すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
 
 ✅ RPM ファイル内の設定ファイルを確認するなら rpm -qcp <RPMファイル名>！
+
+## **find コマンドの出力とエラーをファイルに保存する方法**
+
+### **問題**
+
+`find` コマンドの実行結果とエラー出力を、**どちらも `find.log` ファイルに保存** したい。  
+適切なコマンドを選択せよ。
+
+### **選択肢**
+
+1. `find / -name core > find.log`
+2. `find / -name core 2 >> find.log`
+3. `find / -name core 2 >& 1 | find.log`
+4. `find / -name core > find.log 2>&1`
+5. `find / -name core 2>&1 find.log`
+
+---
+
+## **正解**
+
+✅ **`find / -name core > find.log 2>&1`**（D）
+
+---
+
+## **解説**
+
+`find` コマンドは、指定したディレクトリ内でファイルを検索するためのコマンドです。  
+検索時に発生する **エラー出力（標準エラー `stderr`）** もあるため、標準出力 `stdout` だけでなく **`stderr` もファイルにリダイレクトする** 必要があります。
+
+### **リダイレクトの基本**
+
+| 記号   | 説明                                         |
+| ------ | -------------------------------------------- |
+| `>`    | 標準出力（stdout）をファイルにリダイレクト   |
+| `>>`   | 標準出力をファイルに追記                     |
+| `2>`   | 標準エラー（stderr）をファイルにリダイレクト |
+| `2>>`  | 標準エラーをファイルに追記                   |
+| `2>&1` | 標準エラー（2）を標準出力（1）にマージ       |
+
+---
+
+## **各選択肢の解説**
+
+### ❌ A. `find / -name core > find.log`
+
+- `>` は **標準出力（stdout）** のみを `find.log` にリダイレクトする。
+- **標準エラー（stderr）は出力されないため不適切**。
+
+---
+
+### ❌ B. `find / -name core 2 >> find.log`
+
+- `2 >> find.log` は **標準エラー（stderr）を `find.log` に追記する** という意味。
+- **標準出力（stdout）はリダイレクトされていないため、不適切**。
+
+---
+
+### ❌ C. `find / -name core 2 >& 1 | find.log`
+
+- `2 >& 1` は **標準エラー（stderr）を標準出力（stdout）にマージ** する。
+- しかし、`| find.log` の部分が無効な構文であり、正しく動作しない。
+
+---
+
+### ✅ D. `find / -name core > find.log 2>&1`
+
+- `> find.log` → **標準出力（stdout）を `find.log` に保存**
+- `2>&1` → **標準エラー（stderr）を標準出力（stdout）にマージ**
+- これにより、**stdout と stderr の両方が `find.log` に記録される**。
+- **✅ 正しいコマンド！**
+
+実行例:
+
+```sh
+find / -name core > find.log 2>&1
 ```
+
+結果:
+• find.log に find コマンドの 検索結果（stdout） と エラーメッセージ（stderr） の両方が記録される。
+
+❌ E. find / -name core 2>&1 find.log
+• 2>&1 find.log という記述は無効な構文。
+• 正しい順番は > find.log 2>&1。
+
+まとめ
+
+コマンド 説明 正誤
+find / -name core > find.log 標準出力のみを保存（stderr は無視） ❌
+find / -name core 2 >> find.log 標準エラーのみを追記（stdout は無視） ❌
+`find / -name core 2 >& 1	find.log` 無効な構文
+find / -name core > find.log 2>&1 stdout と stderr の両方を find.log に保存 ✅
+find / -name core 2>&1 find.log 無効な構文 ❌
+
+💡 ポイント
+
+✅ 標準出力と標準エラーを同じファイルに保存するには > find.log 2>&1
+✅ リダイレクトの順番が重要！ 2>&1 は > の後に書く！
+❌ 無効な構文 (2>&1 find.log や | find.log) はエラーになる！
+
+正解のコマンド
+
+find / -name core > find.log 2>&1
+
+## **PATH 変数にパスを追加する方法**
+
+### **1. PATH 変数とは？**
+
+`PATH` 変数は、**コマンドの検索パスを指定する環境変数** です。  
+シェル（bash や zsh など）は、コマンドを実行するときに `PATH` 変数に設定されているディレクトリを順番に検索し、該当する実行ファイルを探します。
+
+#### **現在の `PATH` 変数を確認**
+
+```sh
+echo $PATH
+```
+
+出力例:
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+このように :（コロン）で区切られたディレクトリが登録されています。
+
+2. PATH にディレクトリを追加する
+
+新しいパスを追加する方法は、次のように export コマンドを使います。
+
+一時的に PATH にディレクトリを追加
+
+export PATH=$PATH:/home/user/mybin
+
+    •	$PATH（現在の PATH）の 末尾に :/home/user/mybin を追加
+    •	export を使うことで、現在のシェル内で新しい PATH を適用
+
+追加後の確認
+
+echo $PATH
+
+出力例
+
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/mybin
+
+この方法は一時的 であり、シェルを閉じると元に戻ります。
+
+3. PATH に永続的にパスを追加
+
+シェルを閉じても PATH に新しいパスを追加した状態を維持するには、設定ファイルに記述 します。
+
+方法①: ~/.bashrc に追加（bash の場合）
+
+echo 'export PATH=$PATH:/home/user/mybin' >> ~/.bashrc
+
+その後、変更を反映:
+
+source ~/.bashrc
+
+方法②: ~/.bash_profile に追加
+
+~/.bash_profile は、ログインシェルでのみ適用されます。
+もし ~/.bashrc ではなく ~/.bash_profile を使いたい場合:
+
+echo 'export PATH=$PATH:/home/user/mybin' >> ~/.bash_profile
+source ~/.bash_profile
+
+方法③: ~/.zshrc に追加（zsh の場合）
+
+zsh を使っている場合:
+
+echo 'export PATH=$PATH:/home/user/mybin' >> ~/.zshrc
+source ~/.zshrc
+
+4. PATH に追加したディレクトリの優先度
+
+PATH に追加する位置によって、実行されるコマンドの優先順位が変わります。
+
+末尾に追加（低い優先度）
+
+export PATH=$PATH:/home/user/mybin
+
+    •	mybin にあるコマンドは、既存の /usr/bin などのコマンドより 後に検索 される。
+    •	既存のコマンドを上書きしない安全な方法。
+
+先頭に追加（高い優先度）
+
+export PATH=/home/user/mybin:$PATH
+
+    •	mybin にあるコマンドが 最優先で実行 される。
+    •	例えば、/usr/bin/python より /home/user/mybin/python を優先的に使いたい場合に有効。
+    •	誤って重要なシステムコマンドを上書きするリスクがある ので注意。
+
+5. PATH のリセット
+
+もし PATH の設定を間違えたり、デフォルトに戻したい場合は、以下の方法を使います。
+
+シェルを再起動
+
+exec bash # bash の場合
+exec zsh # zsh の場合
+
+デフォルトの PATH にリセット
+
+一時的にリセット:
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+または、~/.bashrc や ~/.zshrc を修正して source ~/.bashrc を実行。
+
+💡 まとめ
+
+方法 コマンド 効果
+現在の PATH を確認 echo $PATH	現在の PATH を表示
+一時的に追加	export PATH=$PATH:/home/user/mybin シェルを閉じるとリセット
+永続的に追加（bash） echo 'export PATH=$PATH:/home/user/mybin' >> ~/.bashrc && source ~/.bashrc	シェル起動時に適用
+永続的に追加（zsh）	echo 'export PATH=$PATH:/home/user/mybin' >> ~/.zshrc && source ~/.zshrc zsh 起動時に適用
+先頭に追加（優先度高） export PATH=/home/user/mybin:$PATH /home/user/mybin のコマンドを最優先
+デフォルトに戻す export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" PATH を初期状態にリセット
+
+📝 PATH を追加する際の注意点
+
+✅ 追加するディレクトリに 実行ファイルが含まれているか確認
+✅ 先頭に追加すると優先度が変わるため注意（重要なコマンドを上書きするリスクあり）
+✅ export PATH=$PATH:<追加するパス> の形式で設定する
+
+この方法を使えば、PATH 変数を適切に管理できます！ 🚀
+
+## **`lsmod` コマンドで表示されるモジュールの用途とは？**
+
+### **1. `lsmod` コマンドとは？**
+
+`lsmod` は、**カーネルモジュールの一覧を表示** するコマンドです。  
+Linux のカーネルは、必要に応じて「カーネルモジュール（Kernel Modules）」をロードし、機能を拡張します。
+
+#### **`lsmod` の基本的な使い方**
+
+```sh
+lsmod
+```
+
+出力例:
+
+Module Size Used by
+snd_hda_codec_realtek 90112 1
+snd_hda_codec_generic 77824 1 snd_hda_codec_realtek
+x86_pkg_temp_thermal 16384 0
+intel_powerclamp 16384 0
+snd_hda_intel 40960 2
+
+2. lsmod の出力の見方
+
+カラム 説明
+Module モジュール名
+Size モジュールのメモリサイズ（バイト単位）
+Used by そのモジュールを使用している他のモジュール（数値は参照数）
+
+例えば：
+
+x86_pkg_temp_thermal 16384 0
+
+    •	x86_pkg_temp_thermal → CPU の温度制御に関するモジュール
+    •	16384 バイト（約16KB）のメモリを使用
+    •	0 → 他のモジュールから参照されていない（単独で動作）
+
+3. モジュールの用途を調べる方法
+
+(1) modinfo で詳細情報を取得
+
+各モジュールの詳細情報を確認するには modinfo コマンドを使用します。
+
+modinfo x86_pkg_temp_thermal
+
+出力例:
+
+filename: /lib/modules/5.15.0-60-generic/kernel/drivers/thermal/x86_pkg_temp_thermal.ko
+license: GPL
+description: X86 Package Temperature Thermal Driver
+author: Jacob Pan
+
+ポイント
+• description: → モジュールの説明
+• filename: → モジュールの実際のパス
+
+(2) lsmod | grep <モジュール名> で特定のモジュールを検索
+
+lsmod | grep snd_hda
+
+出力例:
+
+snd_hda_codec_realtek 90112 1
+snd_hda_codec_generic 77824 1 snd_hda_codec_realtek
+snd_hda_intel 40960 2
+
+オーディオ関連のモジュールがロードされていることが分かる。
+
+4. よくあるカーネルモジュールと用途
+
+モジュール名 用途
+snd_hda_intel Intel HDA（High Definition Audio）ドライバ
+x86_pkg_temp_thermal CPU の温度管理
+nvidia NVIDIA の GPU ドライバ
+usbcore USB デバイスの管理
+ext4 ext4 ファイルシステムのサポート
+i915 Intel 内蔵 GPU のドライバ
+btusb Bluetooth USB デバイスのサポート
+
+5. lsmod で表示された不要なモジュールを削除
+
+カーネルモジュールは rmmod で削除可能（ただし、使用中のモジュールは削除不可）。
+
+モジュールのアンロード
+
+sudo rmmod <モジュール名>
+
+例：
+
+sudo rmmod x86_pkg_temp_thermal
+
+モジュールを完全にブラックリスト化
+
+不要なモジュールをロードされないようにするには、/etc/modprobe.d/blacklist.conf に追加：
+
+echo "blacklist x86_pkg_temp_thermal" | sudo tee -a /etc/modprobe.d/blacklist.conf
+
+その後、変更を適用：
+
+sudo update-initramfs -u
+sudo reboot
+
+6. まとめ
+
+✅ lsmod は、現在ロードされているカーネルモジュールを一覧表示するコマンド。
+✅ 各モジュールの詳細は modinfo <モジュール名> で確認できる。
+✅ lsmod | grep <キーワード> で特定のモジュールを検索可能。
+✅ 不要なモジュールは rmmod で削除可能（ただし、依存関係に注意）。
+✅ ブラックリスト設定 で永続的に無効化することもできる。
+
+この知識を活用して、カーネルモジュールの管理を適切に行いましょう！ 🚀
+
+## **RPM コマンドを使用してファイルのインストール元パッケージを表示する**
+
+### **問題**
+
+`rpm` コマンドを使用して、`/etc/yum.conf` ファイルのインストール元パッケージを表示したい。適切なコマンドを選択せよ。
+
+### **正解**
+
+✅ `rpm -qf /etc/yum.conf`  
+✅ `rpm --query --file /etc/yum.conf`
+
+---
+
+### **解説**
+
+RPM パッケージ管理システムでは、システム上のファイルがどのパッケージによって提供されているかを調べることができます。
+
+#### **`-qf` または `--query --file` オプションの説明**
+
+| コマンド                            | 説明                                                 |
+| ----------------------------------- | ---------------------------------------------------- |
+| `rpm -qf <ファイルパス>`            | 指定したファイルがどのパッケージに属しているかを表示 |
+| `rpm --query --file <ファイルパス>` | `-qf` と同じ機能を持つ長い形式                       |
+
+✅ 実行例:
+
+```sh
+rpm -qf /etc/yum.conf
+```
+
+出力例:
+
+yum-4.2.23-3.el8.noarch
+
+この出力から、/etc/yum.conf は yum パッケージによって提供されていることがわかります。
+
+✅ --query --file 形式でも同様の結果が得られます。
+
+rpm --query --file /etc/yum.conf
+
+誤った選択肢の解説
+
+コマンド 誤りの理由
+rpm -ql /etc/yum.conf -ql はパッケージがインストールしたファイル一覧を表示するため、個別のファイルを指定するとエラーになる。
+rpm -q /etc/yum.conf -q はパッケージ名を指定して情報を表示するため、ファイルを直接指定するとエラー。
+rpm -qi /etc/yum.conf -qi はパッケージの詳細情報を表示するが、パッケージ名を直接指定する必要があるため、ファイルを指定するとエラー。
+
+まとめ
+
+コマンド 説明 正誤
+rpm -qf /etc/yum.conf 指定ファイルのインストール元パッケージを表示 ✅
+rpm --query --file /etc/yum.conf -qf のロングオプション版 ✅
+rpm -ql /etc/yum.conf ファイルのリストを表示するが、パッケージ名が必要 ❌
+rpm -q /etc/yum.conf -q はパッケージ名を取るため、ファイル名指定は不可 ❌
+rpm -qi /etc/yum.conf -qi はパッケージの詳細を表示するが、パッケージ名が必要 ❌
+
+このように、-qf または --query --file を使うと、特定のファイルがどのパッケージに属しているのかを確認できます。
+
+## **GPT（GUID Partition Table）の説明で正しいものはどれか？（3つ選択）**
+
+### **問題**
+
+次の選択肢のうち、GPT（GUID Partition Table）の説明として正しいものを3つ選べ。
+
+### **正解**
+
+✅ **A．EFI規格の中の機能の 1つである**  
+✅ **D．ディスクには GUID が割り当てられる**  
+✅ **E．パーティションには GUID が割り当てられる**
+
+---
+
+### **解説**
+
+GPT（GUID Partition Table）は、従来のMBR（Master Boot Record）に代わる新しいパーティション方式で、**EFI（Extensible Firmware Interface）規格**の一部として定義されています。
+
+#### **A．EFI 規格の中の機能の 1つである** ✅
+
+- GPT は **UEFI（Unified Extensible Firmware Interface）** で使用されるパーティションテーブルの方式であり、EFI 規格の一部として定義されています。
+- これにより、従来の MBR よりも多くのパーティションを扱うことが可能になります。
+
+#### **D．ディスクには GUID が割り当てられる** ✅
+
+- GPT では **ディスク全体に GUID（Globally Unique Identifier）** が割り当てられます。
+- これにより、ディスクが一意に識別されるようになっています。
+
+#### **E．パーティションには GUID が割り当てられる** ✅
+
+- GPT では **各パーティションにも GUID が割り当てられます**。
+- これにより、パーティションの種類（例: EFI システムパーティション、Linux ファイルシステムパーティションなど）を識別できるようになっています。
+
+---
+
+### **誤った選択肢の解説**
+
+| 選択肢                                                                             | 誤りの理由                                                                                                                                                                         |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **B．パーティション情報はディスクの先頭セクタに格納される** ❌                     | GPT では MBR のようにパーティション情報をディスクの**先頭セクタ**に格納せず、代わりに**ディスクの先頭と末尾の両方**にパーティション情報を持つ（バックアップ GPT ヘッダーがある）。 |
+| **C．パーティションの開始と終了位置は CHS（Cylinder/Head/Sector）で指定される** ❌ | GPT では **CHS（Cylinder/Head/Sector）ではなく、LBA（Logical Block Addressing）** を使用してパーティションの開始・終了位置を指定する。                                             |
+
+---
+
+### **まとめ**
+
+| 選択肢                                                                          | 説明                                                         | 正誤 |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---- |
+| **A．EFI 規格の中の機能の 1つである**                                           | GPT は EFI（UEFI）の一部として定義されている                 | ✅   |
+| **B．パーティション情報はディスクの先頭セクタに格納される**                     | GPT ではディスクの先頭と末尾の両方にパーティション情報を持つ | ❌   |
+| **C．パーティションの開始と終了位置は CHS（Cylinder/Head/Sector）で指定される** | GPT では LBA（Logical Block Addressing）を使用する           | ❌   |
+| **D．ディスクには GUID が割り当てられる**                                       | GPT ではディスク全体に GUID を割り当てる                     | ✅   |
+| **E．パーティションには GUID が割り当てられる**                                 | GPT では各パーティションにも GUID を割り当てる               | ✅   |
+
+💡 **GPT は MBR に代わる最新のパーティションテーブルであり、EFI（UEFI）の標準仕様の一部として利用される。ディスク全体と各パーティションに GUID を割り当てることで、より多くのパーティションを管理し、CHS の制限を克服している。**
+
+## **仮想化環境でクローンした仮想マシンの重複を避けるべき項目**
+
+### **問題**
+
+一つの仮想化ソフトウェア上で、同じ仮想マシンのクローンをいくつか動作させたい場合、重複してはならないものを **4つ** 選べ。
+
+### **正解**
+
+✅ **UUID**  
+✅ **IPアドレス**  
+✅ **SSHホスト鍵**  
+✅ **マシンID**
+
+---
+
+### **解説**
+
+仮想マシンのクローンを作成すると、元の仮想マシンと同じ設定がコピーされますが、以下の **4つの情報が重複すると問題が発生する** ため、変更する必要があります。
+
+#### **1. UUID（Universally Unique Identifier）**
+
+- **UUID は仮想マシンごとに異なる識別子** であり、仮想化ソフトウェアが VM を識別するために使用します。
+- **UUID が重複すると、仮想化ソフトウェアが VM を適切に管理できなくなる可能性があります。**
+- 仮想マシンの UUID は通常、仮想化ソフトウェア（例: VirtualBox, VMware）によって管理されます。
+- **変更方法:**
+  - VirtualBox の場合:
+    ```sh
+    VBoxManage modifyvm "VM_Name" --uuid <new_uuid>
+    ```
+  - `new_uuid` は `uuidgen` で生成可能:
+    ```sh
+    uuidgen
+    ```
+
+#### **2. IPアドレス**
+
+- **同じネットワーク上で IP アドレスが重複すると、ネットワークの競合が発生し、通信できなくなる。**
+- DHCP を使用している場合は、DHCP サーバーが異なる IP を割り当てるため、手動変更は不要なことが多い。
+- **固定 IP の場合は、手動で IP アドレスを変更する必要がある。**
+- **変更方法:**
+  - `/etc/network/interfaces` または `/etc/netplan/` で IP 設定を変更（Linux）。
+  - Windows では `ipconfig /release` → `ipconfig /renew` を実行。
+
+#### **3. SSH ホスト鍵**
+
+- **SSH ホスト鍵は、サーバーの正当性をクライアントが確認するための鍵情報。**
+- 同じホスト鍵を持つサーバーが複数存在すると、**SSH 接続時に「MITM（中間者攻撃）の可能性がある」と警告が表示される**。
+- **変更方法:**
+
+```sh
+ sudo rm -f /etc/ssh/ssh_host_*
+ sudo dpkg-reconfigure openssh-server  # Debian系
+ sudo systemctl restart sshd  # SSH サービスを再起動
+```
+
+4. マシンID
+   • マシンID（/etc/machine-id）は、Linux システムが一意に識別されるための識別子。
+   • マシンIDが重複すると、クラウドサービスや一部のアプリケーションで識別の問題が発生する。
+   • 変更方法:
+
+sudo rm -f /etc/machine-id
+sudo systemd-machine-id-setup
+
+誤った選択肢の解説
+
+選択肢 誤りの理由
+root ユーザのパスワード 仮想マシンごとに異なる方が望ましいが、システムの動作に直接影響はしない。
+インストールされたパッケージ パッケージの構成が同じでも仮想マシンの識別には影響しないため、変更の必要はない。
+
+まとめ
+
+重複すると問題が発生する項目（変更が必要） 変更不要な項目
+✅ UUID（仮想マシンの識別子） ❌ root ユーザーのパスワード
+✅ IPアドレス（ネットワークの競合防止） ❌ インストールされたパッケージ
+✅ SSH ホスト鍵（セキュリティ問題防止）
+✅ マシンID（システム識別の問題防止）
+
+💡 仮想マシンのクローンを作成した後は、UUID、IPアドレス、SSHホスト鍵、マシンID を変更することで、正常に動作させることができます！
+
+## **コンテナ型の仮想化の説明として正しいものはどれか（2つ選択）**
+
+### **問題**
+
+次の選択肢のうち、コンテナ型の仮想化に関する説明として正しいものを 2 つ選べ。
+
+### **正解**
+
+✅ **オーバーヘッドが少なく、リソース・構築・管理の面がシンプルである**  
+✅ **Linuxカーネルの機能によってコンテナごとのユーザ管理やリソース制限ができる**
+
+---
+
+### **解説**
+
+コンテナ型仮想化は、ホスト OS のカーネルを共有しながら、独立した環境を提供する技術です。代表的なコンテナ技術には **Docker, LXC, Podman** などがあります。
+
+#### **1. オーバーヘッドが少なく、リソース・構築・管理の面がシンプルである** ✅
+
+- **コンテナ型仮想化は、従来のハイパーバイザー型仮想化（Xen, KVM など）よりも軽量** です。
+- ゲスト OS を必要とせず、ホスト OS のカーネルを直接利用するため、**メモリや CPU のオーバーヘッドが少ない**。
+- コンテナは **イメージの構築・デプロイが容易で、管理がシンプル** である。
+
+#### **2. Linuxカーネルの機能によってコンテナごとのユーザ管理やリソース制限ができる** ✅
+
+- コンテナは **Linux のカーネル機能（cgroups, namespaces）を活用** して、ユーザ管理やリソース制限を行います。
+- **cgroups（Control Groups）**:
+  - CPU、メモリ、ディスク I/O などのリソース割り当てを制御。
+- **namespaces**:
+  - コンテナごとに分離された環境を提供（プロセス空間、ネットワーク空間、ユーザー空間など）。
+- これにより、**コンテナ同士が干渉せず、安全な環境を構築できる**。
+
+---
+
+### **誤った選択肢の解説**
+
+| **選択肢**                                                                              | **誤りの理由**                                                                                           |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **コンテナ型ソフトウェアはXenやKVMである** ❌                                           | Xen や KVM は **ハイパーバイザー型仮想化** の技術であり、コンテナ型ではない。                            |
+| **物理マシン上でハイパーバイザーを起動し、その上で仮想マシンとゲストOSを動作させる** ❌ | これは **ハイパーバイザー型仮想化の説明** であり、コンテナ型仮想化の特徴ではない。                       |
+| **Linux上のコンテナでWindowsやmacOSを動作させることができる** ❌                        | コンテナは **ホスト OS のカーネルを共有する** ため、Linux のコンテナ上で Windows や macOS は動作しない。 |
+
+---
+
+### **まとめ**
+
+| **正解（コンテナ型仮想化の特徴）**                      | **誤り（ハイパーバイザー型仮想化の特徴や誤解）**            |
+| ------------------------------------------------------- | ----------------------------------------------------------- |
+| ✅ **オーバーヘッドが少なく、管理がシンプル**           | ❌ Xen や KVM はコンテナ型ではなくハイパーバイザー型        |
+| ✅ **Linuxカーネルの機能（cgroups, namespaces）を活用** | ❌ ハイパーバイザーを使用しないので、ゲストOSを動作させない |
+|                                                         | ❌ Linux のコンテナ上で Windows や macOS は動作しない       |
+
+💡 **コンテナ型仮想化は、ホスト OS のカーネルを共有しながら軽量な仮想環境を構築する技術であり、従来のハイパーバイザー型仮想化よりも高速かつ柔軟に運用できるのが特徴！**
