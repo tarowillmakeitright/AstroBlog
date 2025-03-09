@@ -185,12 +185,15 @@ $ rpm -qcp postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm -qlp postfix-1.1.12-1.i386.rpm
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
 /var/spool/postfix
+```
+
 ...
 
 （設定ファイル以外も含まれているため NG）
@@ -203,12 +206,13 @@ $ rpm -qlp postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
-...
+```
 
 （設定ファイルだけでなく、すべてのファイルが表示されるため NG）
 
@@ -220,21 +224,26 @@ $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm --query --list postfix
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
+```
+
 ...
 
 ### まとめ
 
+```
 コマンド 説明 正誤
 rpm -qcp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示 ✅
 rpm --query -cp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示（ロングオプション） ✅
 rpm -qlp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示（設定ファイルのみではない） ❌
 rpm --query --list --package postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示 ❌
 rpm --query --list postfix インストール済みの postfix に含まれるすべてのファイルを表示 ❌
+```
 
 💡 ポイント
 
@@ -317,12 +326,16 @@ rpm -q --changelog postfix
 
 ### まとめ
 
+```
 コマンド 動作 正誤
 rpm -q --changelog postfix postfix の変更履歴を表示 ✅
 rpm --query --changelog postfix postfix の変更履歴を表示 ✅
 rpm -qi postfix パッケージの詳細情報を表示（Changelog は含まれない） ❌
 rpm -q --log postfix --log は無効なオプション ❌
 rpm --query --log postfix --log は無効なオプション ❌
+```
+
+...
 
 💡 ポイント
 
@@ -398,12 +411,14 @@ yum-utils.noarch : Utilities based around the yum package manager
 
 ### まとめ
 
+```
 コマンド 動作 正誤
 yum search yum 「yum」を含むパッケージを検索 ✅
 yum show yum show は無効なオプション（エラー） ❌
 yum -s yum -s は無効なオプション（エラー） ❌
 yum list yum yum というパッケージのリストを表示（部分一致の検索は不可） ❌
 yum info yum yum というパッケージの詳細情報を表示 ❌
+```
 
 💡 ポイント
 
@@ -960,12 +975,14 @@ postfix-3.5.8-1.el8.x86_64
 
 まとめ
 
+```
 コマンド 説明 正誤
 rpm -q postfix postfix がインストールされているか確認（余計な情報なし） ✅
 rpm --query postfix postfix がインストールされているか確認（-q のロングオプション） ✅
 rpm -ql postfix postfix のインストール済みファイル一覧を表示（情報が多すぎる） ❌
 rpm --query -a すべてのインストール済みパッケージを一覧表示（情報が多すぎる） ❌
 rpm -qa すべてのインストール済みパッケージを一覧表示（情報が多すぎる） ❌
+```
 
 💡 ポイント
 
@@ -1089,12 +1106,14 @@ $ rpm --query --list postfix
 
 まとめ
 
+```
 コマンド 説明 正誤
 rpm -qcp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示 ✅
 rpm --query -cp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルの設定ファイルのみを表示（ロングオプション） ✅
 rpm -qlp postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示（設定ファイルのみではない） ❌
 rpm --query --list --package postfix-1.1.12-1.i386.rpm 指定した RPM ファイルのすべてのファイルを一覧表示 ❌
 rpm --query --list postfix インストール済みの postfix に含まれるすべてのファイルを表示 ❌
+```
 
 💡 ポイント
 
@@ -1190,12 +1209,14 @@ find / -name core > find.log 2>&1
 
 ### まとめ
 
+```
 コマンド 説明 正誤
 find / -name core > find.log 標準出力のみを保存（stderr は無視） ❌
 find / -name core 2 >> find.log 標準エラーのみを追記（stdout は無視） ❌
 `find / -name core 2 >& 1	find.log` 無効な構文
 find / -name core > find.log 2>&1 stdout と stderr の両方を find.log に保存 ✅
 find / -name core 2>&1 find.log 無効な構文 ❌
+```
 
 💡 ポイント
 
@@ -1312,6 +1333,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 💡 まとめ
 
+```
 方法 コマンド 効果
 現在の PATH を確認 echo $PATH	現在の PATH を表示
 一時的に追加	export PATH=$PATH:/home/user/mybin シェルを閉じるとリセット
@@ -1319,6 +1341,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 永続的に追加（zsh）	echo 'export PATH=$PATH:/home/user/mybin' >> ~/.zshrc && source ~/.zshrc zsh 起動時に適用
 先頭に追加（優先度高） export PATH=/home/user/mybin:$PATH /home/user/mybin のコマンドを最優先
 デフォルトに戻す export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin" PATH を初期状態にリセット
+```
 
 📝 PATH を追加する際の注意点
 
@@ -1433,11 +1456,13 @@ sudo reboot
 
 6. まとめ
 
+```
 ✅ lsmod は、現在ロードされているカーネルモジュールを一覧表示するコマンド。
 ✅ 各モジュールの詳細は modinfo <モジュール名> で確認できる。
 ✅ lsmod | grep <キーワード> で特定のモジュールを検索可能。
 ✅ 不要なモジュールは rmmod で削除可能（ただし、依存関係に注意）。
 ✅ ブラックリスト設定 で永続的に無効化することもできる。
+```
 
 この知識を活用して、カーネルモジュールの管理を適切に行いましょう！ 🚀
 
@@ -1488,14 +1513,16 @@ rpm -ql /etc/yum.conf -ql はパッケージがインストールしたファイ
 rpm -q /etc/yum.conf -q はパッケージ名を指定して情報を表示するため、ファイルを直接指定するとエラー。
 rpm -qi /etc/yum.conf -qi はパッケージの詳細情報を表示するが、パッケージ名を直接指定する必要があるため、ファイルを指定するとエラー。
 
-まとめ
+### まとめ
 
+```
 コマンド 説明 正誤
 rpm -qf /etc/yum.conf 指定ファイルのインストール元パッケージを表示 ✅
 rpm --query --file /etc/yum.conf -qf のロングオプション版 ✅
 rpm -ql /etc/yum.conf ファイルのリストを表示するが、パッケージ名が必要 ❌
 rpm -q /etc/yum.conf -q はパッケージ名を取るため、ファイル名指定は不可 ❌
 rpm -qi /etc/yum.conf -qi はパッケージの詳細を表示するが、パッケージ名が必要 ❌
+```
 
 このように、-qf または --query --file を使うと、特定のファイルがどのパッケージに属しているのかを確認できます。
 
@@ -1626,11 +1653,13 @@ root ユーザのパスワード 仮想マシンごとに異なる方が望ま�
 
 まとめ
 
+```
 重複すると問題が発生する項目（変更が必要） 変更不要な項目
 ✅ UUID（仮想マシンの識別子） ❌ root ユーザーのパスワード
 ✅ IPアドレス（ネットワークの競合防止） ❌ インストールされたパッケージ
 ✅ SSH ホスト鍵（セキュリティ問題防止）
 ✅ マシンID（システム識別の問題防止）
+```
 
 💡 仮想マシンのクローンを作成した後は、UUID、IPアドレス、SSHホスト鍵、マシンID を変更することで、正常に動作させることができます！
 
@@ -2153,8 +2182,10 @@ rpm -qlp emacs-23.1-28.el6.x86_64.rpm ❌ -qlp は パッケージに含まれ�
 
 ✅ RPM パッケージの依存関係を調べるには
 
+```
 rpm -qRp <RPMファイル>
 rpm --query --requires --package <RPMファイル>
+```
 
 ✅ -qRp または --query --requires --package を使用することで、インストール前 のパッケージの依存関係を確認できる。
 
