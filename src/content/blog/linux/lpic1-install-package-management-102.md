@@ -173,13 +173,15 @@ $ rpm -qcp postfix-1.1.12-1.i386.rpm
 ```
 
 ✅ rpm --query -cp postfix-1.1.12-1.i386.rpm
-• rpm -qcp のロングオプション版（動作は同じ）
-• 正しいコマンド！
+
+- rpm -qcp のロングオプション版（動作は同じ）
+- 正しいコマンド！
 
 ❌ rpm -qlp postfix-1.1.12-1.i386.rpm
-• 指定した RPM ファイルに含まれるすべてのファイルを一覧表示 する。
-• 設定ファイルだけではなく、バイナリやドキュメントも含まれるため不適切。
-• 不正解！
+
+- 指定した RPM ファイルに含まれるすべてのファイルを一覧表示 する。
+- 設定ファイルだけではなく、バイナリやドキュメントも含まれるため不適切。
+- 不正解！
 
 実行例:
 
@@ -194,9 +196,10 @@ $ rpm -qlp postfix-1.1.12-1.i386.rpm
 （設定ファイル以外も含まれているため NG）
 
 ❌ rpm --query --list --package postfix-1.1.12-1.i386.rpm
-• 指定した RPM ファイルのすべてのファイルを一覧表示する
-• 設定ファイルのみを表示するわけではないため不適切
-• 不正解！
+
+- 指定した RPM ファイルのすべてのファイルを一覧表示する
+- 設定ファイルのみを表示するわけではないため不適切
+- 不正解！
 
 実行例:
 
@@ -210,9 +213,10 @@ $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 （設定ファイルだけでなく、すべてのファイルが表示されるため NG）
 
 ❌ rpm --query --list postfix
-• インストール済みの postfix パッケージに含まれるすべてのファイルを一覧表示する
-• 設定ファイルだけではなく、すべてのファイルが含まれるため不適切
-• 不正解！
+
+- インストール済みの postfix パッケージに含まれるすべてのファイルを一覧表示する
+- 設定ファイルだけではなく、すべてのファイルが含まれるため不適切
+- 不正解！
 
 実行例:
 
@@ -233,8 +237,9 @@ rpm --query --list --package postfix-1.1.12-1.i386.rpm 指定した RPM ファ�
 rpm --query --list postfix インストール済みの postfix に含まれるすべてのファイルを表示 ❌
 
 💡 ポイント
-• 設定ファイルのみを表示するには -qcp または --query -cp を使う！ ✅
-• すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
+
+- 設定ファイルのみを表示するには -qcp または --query -cp を使う！ ✅
+- すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
 
 ✅ RPM ファイル内の設定ファイルを確認するなら rpm -qcp <RPMファイル名>！
 
@@ -245,11 +250,12 @@ rpm --query --list postfix インストール済みの postfix に含まれる�
 rpm コマンドを使用して、インストールされている「postfix」パッケージの変更履歴を調べたい。適切なコマンドを選択せよ（複数選択可）。
 
 選択肢
-• rpm --query --changelog postfix
-• rpm -qi postfix
-• rpm -q --log postfix
-• rpm --query --log postfix
-• rpm -q --changelog postfix
+
+- rpm --query --changelog postfix
+- rpm -qi postfix
+- rpm -q --log postfix
+- rpm --query --log postfix
+- rpm -q --changelog postfix
 
 ### 正解
 
@@ -271,21 +277,26 @@ RPM の情報取得関連オプション
 各選択肢の解説
 
 ✅ rpm -q --changelog postfix
-• -q (--query) で postfix の情報を取得。
-• --changelog で 変更履歴（Changelog）を表示 する。
+
+- -q (--query) で postfix の情報を取得。
+- --changelog で 変更履歴（Changelog）を表示 する。
 
 ✅ rpm --query --changelog postfix
-• -q の代わりに --query を使用して、同じ動作 を行う。
-• --changelog により 変更履歴を取得 できる。
+
+- -q の代わりに --query を使用して、同じ動作 を行う。
+- --changelog により 変更履歴を取得 できる。
 
 ❌ rpm -qi postfix
-• -qi は パッケージの詳細情報 を表示するコマンドであり、変更履歴の確認には適さない。
+
+- -qi は パッケージの詳細情報 を表示するコマンドであり、変更履歴の確認には適さない。
 
 ❌ rpm -q --log postfix
-• --log オプションは RPM には存在しない ためエラーになる。
+
+- --log オプションは RPM には存在しない ためエラーになる。
 
 ❌ rpm --query --log postfix
-• --log オプションは RPM には存在しない ためエラーになる。
+
+- --log オプションは RPM には存在しない ためエラーになる。
 
 RPM の Changelog の出力例
 
@@ -314,9 +325,10 @@ rpm -q --log postfix --log は無効なオプション ❌
 rpm --query --log postfix --log は無効なオプション ❌
 
 💡 ポイント
-• -q --changelog または --query --changelog で パッケージの変更履歴を表示 できる。
-• -qi は詳細情報を表示するが、変更履歴は含まれない ため不適切。
-• --log オプションは RPM には存在しない ため使用不可。
+
+- -q --changelog または --query --changelog で パッケージの変更履歴を表示 できる。
+- -qi は詳細情報を表示するが、変更履歴は含まれない ため不適切。
+- --log オプションは RPM には存在しない ため使用不可。
 
 ✅ RPM の変更履歴を確認するには rpm -q --changelog または rpm --query --changelog を使う！
 
@@ -327,11 +339,12 @@ YUM コマンドで「yum」を含むパッケージを検索する方法
 yum コマンドを使用して、キーワード「yum」を含むパッケージを表示させたい。適切なコマンドを選択せよ。
 
 選択肢
-• yum show yum
-• yum search yum
-• yum -s yum
-• yum list yum
-• yum info yum
+
+- yum show yum
+- yum search yum
+- yum -s yum
+- yum list yum
+- yum info yum
 
 ### 正解
 
@@ -351,8 +364,9 @@ yum info <パッケージ名> 指定したパッケージの詳細情報を表�
 各選択肢の解説
 
 ✅ yum search yum
-• yum search <キーワード> は 指定したキーワードを含むパッケージを検索 するためのコマンド。
-• yum search yum を実行すると、「yum」が名前や説明に含まれるすべてのパッケージを一覧表示する。
+
+- yum search <キーワード> は 指定したキーワードを含むパッケージを検索 するためのコマンド。
+- yum search yum を実行すると、「yum」が名前や説明に含まれるすべてのパッケージを一覧表示する。
 
 実行例
 
@@ -365,18 +379,22 @@ yum.noarch : RPM package manager
 yum-utils.noarch : Utilities based around the yum package manager
 
 ❌ yum show yum
-• show オプションは yum には存在しないため、エラー になる。
+
+- show オプションは yum には存在しないため、エラー になる。
 
 ❌ yum -s yum
-• -s というオプションは yum には存在しないため、エラー になる。
+
+- -s というオプションは yum には存在しないため、エラー になる。
 
 ❌ yum list yum
-• yum list <パッケージ名> は 指定したパッケージのリストを表示 するが、部分一致の検索には対応していない。
-• そのため、「yum」という文字列を含むすべてのパッケージは表示されない。
+
+- yum list <パッケージ名> は 指定したパッケージのリストを表示 するが、部分一致の検索には対応していない。
+- そのため、「yum」という文字列を含むすべてのパッケージは表示されない。
 
 ❌ yum info yum
-• yum info <パッケージ名> は 指定したパッケージの詳細情報を表示 するためのコマンド。
-• yum という特定のパッケージの情報は得られるが、「yum」を含むすべてのパッケージを検索するわけではない。
+
+- yum info <パッケージ名> は 指定したパッケージの詳細情報を表示 するためのコマンド。
+- yum という特定のパッケージの情報は得られるが、「yum」を含むすべてのパッケージを検索するわけではない。
 
 ### まとめ
 
@@ -388,9 +406,10 @@ yum list yum yum というパッケージのリストを表示（部分一致の
 yum info yum yum というパッケージの詳細情報を表示 ❌
 
 💡 ポイント
-• yum search <キーワード> → キーワードを含むすべてのパッケージを検索する（今回の正解）。
-• yum list <パッケージ名> → 指定したパッケージのインストール状況を確認する。
-• yum info <パッケージ名> → 指定したパッケージの詳細情報を確認する。
+
+- yum search <キーワード> → キーワードを含むすべてのパッケージを検索する（今回の正解）。
+- yum list <パッケージ名> → 指定したパッケージのインストール状況を確認する。
+- yum info <パッケージ名> → 指定したパッケージの詳細情報を確認する。
 
 ✅ 「yum」を含むパッケージを検索するには yum search yum を使う！
 
@@ -904,12 +923,14 @@ postfix-3.5.8-1.el8.x86_64
 （インストールされている場合はバージョン情報が表示される）
 
 ✅ rpm --query postfix
-• -q のロングオプション版。
-• 動作は rpm -q postfix とまったく同じ。
+
+- -q のロングオプション版。
+- 動作は rpm -q postfix とまったく同じ。
 
 ❌ rpm -ql postfix
-• -ql は --query --list の短縮形で、パッケージがインストールしているファイルの一覧を表示 する。
-• 単にインストールの有無を確認するには余計な情報が多い ため不適切。
+
+- -ql は --query --list の短縮形で、パッケージがインストールしているファイルの一覧を表示 する。
+- 単にインストールの有無を確認するには余計な情報が多い ため不適切。
 
 実行例:
 
@@ -920,8 +941,9 @@ $ rpm -ql postfix
 ...
 
 ❌ rpm --query -a
-• -a は --all の略で、すべてのインストール済みパッケージを一覧表示 する。
-• postfix だけを確認するには不適切（不要な情報が多すぎる）。
+
+- -a は --all の略で、すべてのインストール済みパッケージを一覧表示 する。
+- postfix だけを確認するには不適切（不要な情報が多すぎる）。
 
 実行例:
 
@@ -932,8 +954,9 @@ postfix-3.5.8-1.el8.x86_64
 ...
 
 ❌ rpm -qa
-• -qa は --query --all の略で、すべてのインストール済みパッケージを一覧表示 する。
-• 特定のパッケージ（postfix）だけを知りたい場合には不適切。
+
+- -qa は --query --all の略で、すべてのインストール済みパッケージを一覧表示 する。
+- 特定のパッケージ（postfix）だけを知りたい場合には不適切。
 
 まとめ
 
@@ -945,9 +968,10 @@ rpm --query -a すべてのインストール済みパッケージを一覧表�
 rpm -qa すべてのインストール済みパッケージを一覧表示（情報が多すぎる） ❌
 
 💡 ポイント
-• postfix がインストールされているか確認するには rpm -q postfix または rpm --query postfix ✅
-• すべてのパッケージを確認する場合は rpm -qa や rpm --query -a（今回は不適切） ❌
-• インストール済みのファイルを確認する場合は rpm -ql postfix（今回は不適切） ❌
+
+- postfix がインストールされているか確認するには rpm -q postfix または rpm --query postfix ✅
+- すべてのパッケージを確認する場合は rpm -qa や rpm --query -a（今回は不適切） ❌
+- インストール済みのファイルを確認する場合は rpm -ql postfix（今回は不適切） ❌
 
 ✅ RPM パッケージがインストールされているかを確認するなら rpm -q postfix！
 
@@ -1009,13 +1033,15 @@ $ rpm -qcp postfix-1.1.12-1.i386.rpm
 /etc/postfix/master.cf
 ...
 ✅ rpm --query -cp postfix-1.1.12-1.i386.rpm
-• rpm -qcp のロングオプション版（動作は同じ）
-• 正しいコマンド！
+
+- rpm -qcp のロングオプション版（動作は同じ）
+- 正しいコマンド！
 
 ❌ rpm -qlp postfix-1.1.12-1.i386.rpm
-• 指定した RPM ファイルに含まれるすべてのファイルを一覧表示 する。
-• 設定ファイルだけではなく、バイナリやドキュメントも含まれるため不適切。
-• 不正解！
+
+- 指定した RPM ファイルに含まれるすべてのファイルを一覧表示 する。
+- 設定ファイルだけではなく、バイナリやドキュメントも含まれるため不適切。
+- 不正解！
 
 実行例:
 
@@ -1030,9 +1056,10 @@ $ rpm -qlp postfix-1.1.12-1.i386.rpm
 （設定ファイル以外も含まれているため NG）
 
 ❌ rpm --query --list --package postfix-1.1.12-1.i386.rpm
-• 指定した RPM ファイルのすべてのファイルを一覧表示する
-• 設定ファイルのみを表示するわけではないため不適切
-• 不正解！
+
+- 指定した RPM ファイルのすべてのファイルを一覧表示する
+- 設定ファイルのみを表示するわけではないため不適切
+- 不正解！
 
 実行例:
 
@@ -1046,9 +1073,10 @@ $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 （設定ファイルだけでなく、すべてのファイルが表示されるため NG）
 
 ❌ rpm --query --list postfix
-• インストール済みの postfix パッケージに含まれるすべてのファイルを一覧表示する
-• 設定ファイルだけではなく、すべてのファイルが含まれるため不適切
-• 不正解！
+
+- インストール済みの postfix パッケージに含まれるすべてのファイルを一覧表示する
+- 設定ファイルだけではなく、すべてのファイルが含まれるため不適切
+- 不正解！
 
 実行例:
 
@@ -1069,8 +1097,9 @@ rpm --query --list --package postfix-1.1.12-1.i386.rpm 指定した RPM ファ�
 rpm --query --list postfix インストール済みの postfix に含まれるすべてのファイルを表示 ❌
 
 💡 ポイント
-• 設定ファイルのみを表示するには -qcp または --query -cp を使う！ ✅
-• すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
+
+- 設定ファイルのみを表示するには -qcp または --query -cp を使う！ ✅
+- すべてのファイルを表示する -qlp, --query --list は不適切！ ❌
 
 ✅ RPM ファイル内の設定ファイルを確認するなら rpm -qcp <RPMファイル名>！
 
@@ -1151,11 +1180,13 @@ find / -name core > find.log 2>&1
 ```
 
 結果:
-• find.log に find コマンドの 検索結果（stdout） と エラーメッセージ（stderr） の両方が記録される。
+
+- find.log に find コマンドの 検索結果（stdout） と エラーメッセージ（stderr） の両方が記録される。
 
 ❌ E. find / -name core 2>&1 find.log
-• 2>&1 find.log という記述は無効な構文。
-• 正しい順番は > find.log 2>&1。
+
+- 2>&1 find.log という記述は無効な構文。
+- 正しい順番は > find.log 2>&1。
 
 ### まとめ
 
@@ -1203,8 +1234,8 @@ echo $PATH
 
 export PATH=$PATH:/home/user/mybin
 
-    •	$PATH（現在の PATH）の 末尾に :/home/user/mybin を追加
-    •	export を使うことで、現在のシェル内で新しい PATH を適用
+    -	$PATH（現在の PATH）の 末尾に :/home/user/mybin を追加
+    -	export を使うことで、現在のシェル内で新しい PATH を適用
 
 追加後の確認
 
@@ -1251,16 +1282,16 @@ PATH に追加する位置によって、実行されるコマンドの優先順
 
 export PATH=$PATH:/home/user/mybin
 
-    •	mybin にあるコマンドは、既存の /usr/bin などのコマンドより 後に検索 される。
-    •	既存のコマンドを上書きしない安全な方法。
+    -	mybin にあるコマンドは、既存の /usr/bin などのコマンドより 後に検索 される。
+    -	既存のコマンドを上書きしない安全な方法。
 
 先頭に追加（高い優先度）
 
 export PATH=/home/user/mybin:$PATH
 
-    •	mybin にあるコマンドが 最優先で実行 される。
-    •	例えば、/usr/bin/python より /home/user/mybin/python を優先的に使いたい場合に有効。
-    •	誤って重要なシステムコマンドを上書きするリスクがある ので注意。
+    -	mybin にあるコマンドが 最優先で実行 される。
+    -	例えば、/usr/bin/python より /home/user/mybin/python を優先的に使いたい場合に有効。
+    -	誤って重要なシステムコマンドを上書きするリスクがある ので注意。
 
 5. PATH のリセット
 
@@ -1330,9 +1361,9 @@ Used by そのモジュールを使用している他のモジュール（数値
 
 x86_pkg_temp_thermal 16384 0
 
-    •	x86_pkg_temp_thermal → CPU の温度制御に関するモジュール
-    •	16384 バイト（約16KB）のメモリを使用
-    •	0 → 他のモジュールから参照されていない（単独で動作）
+    -	x86_pkg_temp_thermal → CPU の温度制御に関するモジュール
+    -	16384 バイト（約16KB）のメモリを使用
+    -	0 → 他のモジュールから参照されていない（単独で動作）
 
 3. モジュールの用途を調べる方法
 
@@ -1350,8 +1381,9 @@ description: X86 Package Temperature Thermal Driver
 author: Jacob Pan
 
 ポイント
-• description: → モジュールの説明
-• filename: → モジュールの実際のパス
+
+- description: → モジュールの説明
+- filename: → モジュールの実際のパス
 
 (2) lsmod | grep <モジュール名> で特定のモジュールを検索
 
@@ -1579,9 +1611,9 @@ GPT（GUID Partition Table）は、従来のMBR（Master Boot Record）に代わ
 ```
 
 4. マシンID
-   • マシンID（/etc/machine-id）は、Linux システムが一意に識別されるための識別子。
-   • マシンIDが重複すると、クラウドサービスや一部のアプリケーションで識別の問題が発生する。
-   • 変更方法:
+   - マシンID（/etc/machine-id）は、Linux システムが一意に識別されるための識別子。
+   - マシンIDが重複すると、クラウドサービスや一部のアプリケーションで識別の問題が発生する。
+   - 変更方法:
 
 sudo rm -f /etc/machine-id
 sudo systemd-machine-id-setup
@@ -2127,8 +2159,9 @@ rpm --query --requires --package <RPMファイル>
 ✅ -qRp または --query --requires --package を使用することで、インストール前 のパッケージの依存関係を確認できる。
 
 💡 ポイント
-• -qR → インストール済み のパッケージの依存関係
-• -qRp → インストール前（RPMファイル） の依存関係
-• -qlp はパッケージに含まれるファイルの一覧を表示する
+
+- -qR → インストール済み のパッケージの依存関係
+- -qRp → インストール前（RPMファイル） の依存関係
+- -qlp はパッケージに含まれるファイルの一覧を表示する
 
 ✅ よって、正解は rpm -qRp と rpm --query --requires --package！
