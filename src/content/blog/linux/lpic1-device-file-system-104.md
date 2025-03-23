@@ -5653,7 +5653,7 @@ chgroup	❌	❌	存在しない	❌
 以下は「work」ディレクトリのパーミッションである。
 
 ```bash
-# ls -ld work
+ls -ld work
 drwxrwxr-x. 2 staff staff 4096 Mar 18 14:13 work
 ```
 
@@ -5990,7 +5990,7 @@ lrwxrwxrwx  1 user user     9 Mar 22  testlink -> /etc/hosts
 
 ```bash
 ls -li file1 file2
-# → 同じ inode 番号が表示される
+→ 同じ inode 番号が表示される
 ```
 
 ⸻
@@ -6068,7 +6068,7 @@ $ rm -f File1
 $ echo "Hello" > File1
 $ ln File1 File2
 $ ls -li File1 File2
-# → 同じ inode 番号が表示される
+→ 同じ inode 番号が表示される
 
 $ rm -f File1
 $ cat File2
@@ -6575,7 +6575,7 @@ find /home -uid 1001
 
 ```bash
 which ls
-# /bin/ls
+/bin/ls
 ```
 
 ⸻
@@ -6666,8 +6666,8 @@ locatedb	❌	locate のデータベースファイル名	❌
 
 ```bash
 locate bashrc
-# /home/user/.bashrc
-# /etc/skel/.bashrc
+/home/user/.bashrc
+/etc/skel/.bashrc
 ```
 
     -	メリット：
@@ -6742,7 +6742,7 @@ locate -c	一致件数のみを表示
 
 ```bash
 which cp
-# /bin/cp
+/bin/cp
 ```
 
 ⸻
@@ -6756,7 +6756,7 @@ which cp
 
 ```
 whereis cp
-# cp: /bin/cp /usr/share/man/man1/cp.1.gz
+cp: /bin/cp /usr/share/man/man1/cp.1.gz
 ```
 
 ⸻
@@ -7061,7 +7061,7 @@ find . -name "*.txt" -print0 | xargs -0 rm
 
 ```bash
 whereis ls
-# ls: /bin/ls /usr/share/man/man1/ls.1.gz
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
 ```
 
 ⸻
@@ -7132,7 +7132,7 @@ whichis	存在しないコマンド（タイポと思われる）	❌
 
 ```bash
 locate bash
-# /bin/bash などが表示される可能性あり
+/bin/bash などが表示される可能性あり
 ```
 
 ⸻
@@ -7144,7 +7144,7 @@ locate bash
 
 whereis cp
 
-# cp: /bin/cp /usr/share/man/man1/cp.1.gz
+cp: /bin/cp /usr/share/man/man1/cp.1.gz
 
 ⸻
 
