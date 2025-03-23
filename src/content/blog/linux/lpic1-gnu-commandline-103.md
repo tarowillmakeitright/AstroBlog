@@ -2975,10 +2975,10 @@ E 異なるファイルシステムにシンボリックリンクを作成でき
 ### **`cp -r` / `cp -R` の使用例**
 
 ```sh
-# `dir1` を `dir2` にコピー
+`dir1` を `dir2` にコピー
 cp -r dir1 dir2
 
-# ディレクトリを `/backup/` にコピー
+ディレクトリを `/backup/` にコピー
 cp -R mydir /backup/
 ```
 
@@ -3070,7 +3070,7 @@ cp -R mydir /backup/
 ### **`gzip -c` の使用例**
 
 ```sh
-# `configure` を圧縮しつつ、元のファイルを保持
+`configure` を圧縮しつつ、元のファイルを保持
 gzip -c configure > configure.gz
 ```
 
@@ -3153,7 +3153,7 @@ gzip 圧縮されたファイルを解凍する → gzip -d ファイル名.gz �
 ### **`gzip` の基本動作**
 
 ```sh
-# `configure` を gzip 形式に圧縮（元のファイルは削除される）
+`configure` を gzip 形式に圧縮（元のファイルは削除される）
 gzip configure
 ```
 
@@ -3427,9 +3427,9 @@ cp: overwrite 'destination.txt'? (y/n)
 #### **bzip2 形式の解凍コマンドの使用例**
 
 ```sh
-# `configure.bz2` を解凍（元のファイルに戻す）
+`configure.bz2` を解凍（元のファイルに戻す）
 bzip2 -d configure.bz2
-# または
+または
 bunzip2 configure.bz2
 ```
 
