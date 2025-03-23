@@ -934,10 +934,13 @@ postfix-3.5.8-1.el8.x86_64
 
 実行例:
 
+```
 $ rpm -ql postfix
 /etc/postfix
 /etc/postfix/main.cf
 /usr/libexec/postfix
+```
+
 ...
 
 ❌ rpm --query -a
@@ -947,10 +950,13 @@ $ rpm -ql postfix
 
 実行例:
 
+```
 $ rpm --query -a
 bash-5.0.17-1.el8.x86_64
 coreutils-8.30-6.el8.x86_64
 postfix-3.5.8-1.el8.x86_64
+```
+
 ...
 
 ❌ rpm -qa
@@ -1030,9 +1036,13 @@ rpm -qa すべてのインストール済みパッケージを一覧表示（情
 - **正しいコマンド！**
 
 実行例:
+
+```
 $ rpm -qcp postfix-1.1.12-1.i386.rpm
 /etc/postfix/main.cf
 /etc/postfix/master.cf
+```
+
 ...
 ✅ rpm --query -cp postfix-1.1.12-1.i386.rpm
 
@@ -1047,12 +1057,15 @@ $ rpm -qcp postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm -qlp postfix-1.1.12-1.i386.rpm
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
 /var/spool/postfix
+```
+
 ...
 
 （設定ファイル以外も含まれているため NG）
@@ -1065,11 +1078,14 @@ $ rpm -qlp postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
+```
+
 ...
 
 （設定ファイルだけでなく、すべてのファイルが表示されるため NG）
@@ -1082,11 +1098,14 @@ $ rpm --query --list --package postfix-1.1.12-1.i386.rpm
 
 実行例:
 
+```
 $ rpm --query --list postfix
 /usr/sbin/postfix
 /usr/libexec/postfix
 /etc/postfix/main.cf
 /etc/postfix/master.cf
+```
+
 ...
 
 ### まとめ
@@ -1228,7 +1247,9 @@ echo $PATH
 
 出力例:
 
+```
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```
 
 このように :（コロン）で区切られたディレクトリが登録されています。
 
@@ -1249,7 +1270,9 @@ echo $PATH
 
 出力例
 
+```
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/mybin
+```
 
 この方法は一時的 であり、シェルを閉じると元に戻ります。
 
@@ -1257,28 +1280,43 @@ echo $PATH
 
 シェルを閉じても PATH に新しいパスを追加した状態を維持するには、設定ファイルに記述 します。
 
+---
+
 方法①: ~/.bashrc に追加（bash の場合）
 
+```
 echo 'export PATH=$PATH:/home/user/mybin' >> ~/.bashrc
+```
 
 その後、変更を反映:
 
+```
 source ~/.bashrc
+```
+
+---
 
 方法②: ~/.bash_profile に追加
-
 ~/.bash_profile は、ログインシェルでのみ適用されます。
 もし ~/.bashrc ではなく ~/.bash_profile を使いたい場合:
 
+```
 echo 'export PATH=$PATH:/home/user/mybin' >> ~/.bash_profile
 source ~/.bash_profile
+```
+
+---
 
 方法③: ~/.zshrc に追加（zsh の場合）
 
 zsh を使っている場合:
 
+```
 echo 'export PATH=$PATH:/home/user/mybin' >> ~/.zshrc
 source ~/.zshrc
+```
+
+---
 
 4. PATH に追加したディレクトリの優先度
 
@@ -1288,16 +1326,18 @@ PATH に追加する位置によって、実行されるコマンドの優先順
 
 export PATH=$PATH:/home/user/mybin
 
-    -	mybin にあるコマンドは、既存の /usr/bin などのコマンドより 後に検索 される。
-    -	既存のコマンドを上書きしない安全な方法。
+- mybin にあるコマンドは、既存の /usr/bin などのコマンドより 後に検索 される。
+- 既存のコマンドを上書きしない安全な方法。
 
 先頭に追加（高い優先度）
 
 export PATH=/home/user/mybin:$PATH
 
-    -	mybin にあるコマンドが 最優先で実行 される。
-    -	例えば、/usr/bin/python より /home/user/mybin/python を優先的に使いたい場合に有効。
-    -	誤って重要なシステムコマンドを上書きするリスクがある ので注意。
+- mybin にあるコマンドが 最優先で実行 される。
+- 例えば、/usr/bin/python より /home/user/mybin/python を優先的に使いたい場合に有効。
+- 誤って重要なシステムコマンドを上書きするリスクがある ので注意。
+
+---
 
 5. PATH のリセット
 
@@ -1305,16 +1345,20 @@ export PATH=/home/user/mybin:$PATH
 
 シェルを再起動
 
+```
 exec bash # bash の場合
 exec zsh # zsh の場合
+```
 
 デフォルトの PATH にリセット
 
 一時的にリセット:
 
+```
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+```
 
-または、~/.bashrc や ~/.zshrc を修正して source ~/.bashrc を実行。
+## または、~/.bashrc や ~/.zshrc を修正して source ~/.bashrc を実行。
 
 💡 まとめ
 
@@ -1330,9 +1374,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 📝 PATH を追加する際の注意点
 
-✅ 追加するディレクトリに 実行ファイルが含まれているか確認
-✅ 先頭に追加すると優先度が変わるため注意（重要なコマンドを上書きするリスクあり）
-✅ export PATH=$PATH:<追加するパス> の形式で設定する
+- ✅ 追加するディレクトリに 実行ファイルが含まれているか確認
+- ✅ 先頭に追加すると優先度が変わるため注意（重要なコマンドを上書きするリスクあり）
+- ✅ export PATH=$PATH:<追加するパス> の形式で設定する
 
 この方法を使えば、PATH 変数を適切に管理できます！ 🚀
 
@@ -1351,12 +1395,14 @@ lsmod
 
 出力例:
 
+```
 Module Size Used by
 snd_hda_codec_realtek 90112 1
 snd_hda_codec_generic 77824 1 snd_hda_codec_realtek
 x86_pkg_temp_thermal 16384 0
 intel_powerclamp 16384 0
 snd_hda_intel 40960 2
+```
 
 2. lsmod の出力の見方
 
@@ -1369,9 +1415,9 @@ Used by そのモジュールを使用している他のモジュール（数値
 
 x86_pkg_temp_thermal 16384 0
 
-    -	x86_pkg_temp_thermal → CPU の温度制御に関するモジュール
-    -	16384 バイト（約16KB）のメモリを使用
-    -	0 → 他のモジュールから参照されていない（単独で動作）
+- x86_pkg_temp_thermal → CPU の温度制御に関するモジュール
+- 16384 バイト（約16KB）のメモリを使用
+- 0 → 他のモジュールから参照されていない（単独で動作）
 
 3. モジュールの用途を調べる方法
 
@@ -1383,10 +1429,12 @@ modinfo x86_pkg_temp_thermal
 
 出力例:
 
+```
 filename: /lib/modules/5.15.0-60-generic/kernel/drivers/thermal/x86_pkg_temp_thermal.ko
 license: GPL
 description: X86 Package Temperature Thermal Driver
 author: Jacob Pan
+```
 
 ポイント
 
@@ -1399,9 +1447,11 @@ lsmod | grep snd_hda
 
 出力例:
 
+```
 snd_hda_codec_realtek 90112 1
 snd_hda_codec_generic 77824 1 snd_hda_codec_realtek
 snd_hda_intel 40960 2
+```
 
 オーディオ関連のモジュールがロードされていることが分かる。
 
@@ -1426,7 +1476,9 @@ sudo rmmod <モジュール名>
 
 例：
 
+```
 sudo rmmod x86_pkg_temp_thermal
+```
 
 モジュールを完全にブラックリスト化
 
@@ -1483,7 +1535,9 @@ rpm -qf /etc/yum.conf
 
 出力例:
 
+```
 yum-4.2.23-3.el8.noarch
+```
 
 この出力から、/etc/yum.conf は yum パッケージによって提供されていることがわかります。
 
