@@ -1,10 +1,12 @@
 ---
 author: Taro Gray
 pubDatetime: 2025-04-10T08:00:00.000Z
-title:  Lpic102_シェル、スクリプト（主題105） 
+title: Lpic102_シェル、スクリプト（主題105）
 postSlug: linuc1-102-Shell
 featured: true
-ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a tags: - Linux
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
+tags:
+  - Linux
 description: Lpic102_シェル、スクリプト（主題105）
 ---
 
