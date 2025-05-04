@@ -1,3 +1,15 @@
+---
+author: Taro Gray
+pubDatetime: 2025-05-04T08:00:00.000Z
+title: ネットワークの基礎(主題109)
+postSlug: lpic102_network
+featured: true
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
+tags:
+  - Linux
+description: ネットワークの基礎(主題109)
+---
+
 ## journalctlコマンドについて正しい説明はどれですか？（3つ選択）
 
 ### 問題
