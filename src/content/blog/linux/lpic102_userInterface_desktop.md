@@ -1,3 +1,17 @@
+---
+author: Taro Gray
+pubDatetime: 2025-05-04T08:00:00.000Z
+title: ユーザインターフェースとデスクトップ(主題106)
+postSlug: llpic102_userInterface_desktop
+featured: true
+ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
+tags:
+  - Linux
+description: ユーザインターフェースとデスクトップ(主題106)
+---
+
+## Table of Contents
+
 ## ホストremotepcのXクライアントが、ホストlocalpcのXサーバを利用できるように設定しようとしています。ホストlocalpc上で利用の許可を設定するには、どのコマンドを使えばよいかを選択してください。
 
 ### 問題
