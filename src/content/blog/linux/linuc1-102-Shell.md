@@ -110,7 +110,7 @@ ls /boot
 - ログインシェルで読み込まれるのは `/etc/profile`, `~/.bash_profile`
 
 ```bash
-# 対話型シェルの確認方法
+対話型シェルの確認方法
 bash --noprofile --rcfile ~/.bashrc
 ```
 
@@ -163,10 +163,10 @@ bash --noprofile --rcfile ~/.bashrc
 - EOF無視（`Ctrl + D`対策）→ `set -o ignoreeof`
 
 ```bash
-# 実行例
+ 実行例
 set -o noglob
 echo *
-# 出力: * （ファイル展開されない）
+出力: * （ファイル展開されない）
 ```
 
 ✅ ワイルドカードの展開を一時的に止めたいときは set -o noglob を使おう！
@@ -219,7 +219,7 @@ echo *
 - 履歴や終了時に関係 → `~/.bash_history`, `~/.bash_logout`
 
 ```bash
-# ~/.bash_profile の中で ~/.bashrc を読み込む例
+ ~/.bash_profile の中で ~/.bashrc を読み込む例
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
@@ -258,7 +258,7 @@ fi
 `env` コマンドは、環境変数を変更してコマンドを実行したり、環境変数の一覧を確認するために使用されます。
 
 ```bash
-# オプションなしで実行すると…
+オプションなしで実行すると…
 env
 ```
 
@@ -275,13 +275,15 @@ printenv	特定の環境変数を表示する（例：printenv PATH）
 
 env
 
-# 例:
+```
+ 例:
 
-# PATH=/usr/local/bin:/usr/bin:...
+ PATH=/usr/local/bin:/usr/bin:...
 
-# HOME=/home/user
+ HOME=/home/user
 
-# SHELL=/bin/bash
+ SHELL=/bin/bash
+```
 
 ✅ 環境変数の確認には env を使ってみよう！
 
@@ -456,8 +458,8 @@ bash における **環境設定ファイル** に関して、正しいものを
 - システム共通の設定 → `/etc/profile`（最初に読み込まれる）
 
 ```bash
-# ~/.bash_profile がない場合に ~/.bash_login が使われる
-# ただし、最初に見つかったファイルのみ有効！
+ ~/.bash_profile がない場合に ~/.bash_login が使われる
+ ただし、最初に見つかったファイルのみ有効！
 ```
 
 ✅ ファイルの読み込み順と、実行権の有無についてしっかり理解しよう！
@@ -505,7 +507,7 @@ Linuxの標準シェル `bash` の設定ファイル「~/.bashrc」について�
 - `.bashrc` の典型的な使い方：
 
 ```bash
-# ~/.bash_profile の中で ~/.bashrc を読み込む例
+ ~/.bash_profile の中で ~/.bashrc を読み込む例
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
