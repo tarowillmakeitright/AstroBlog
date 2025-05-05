@@ -6,10 +6,8 @@ postSlug: lpic102_security
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-
-- Linux
-  description: セキュリティ(主題110)
-
+  - Linux
+description: セキュリティ(主題110)
 ---
 
 ## Table of Contents
