@@ -1,4 +1,4 @@
-#---
+---
 author: Taro Gray
 pubDatetime: 2025-05-04T08:00:00.000Z
 title: セキュリティ(主題110)
