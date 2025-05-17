@@ -9,7 +9,7 @@ tags:
   - GCP
   - IAM
   - Cloud Storage
-description:
+description: 試験ガイド䛾セクション 1「クラウド ソリューション環境䛾設定」へようこそ。
 ---
 
 ## はじめに
