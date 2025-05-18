@@ -23,10 +23,10 @@ Cymbal Superstore の e コマース システムのバックエンドは、マ�
 
 **選択肢**:
 
-A. 新しいインスタンス テンプレートを作成する。\[VM を更新]をクリックする。更新タイプを \[追従型] に設定する。\[起動]をクリックする。
-B. マネージド インスタンス グループ内の各インスタンスを放棄する。インスタンス テンプレートを削除して新しいテンプレートと置き換え、マネージド グループでインスタンスを再作成する。
-C. 新しいインスタンス テンプレートを作成し、\[VM を更新]をクリックする。更新タイプを \[先行型] に設定する。\[起動]をクリックする。
-D. 新しいインスタンス テンプレートを作成する。\[VM を更新]をクリックする。最大サージを 5 に設定する。\[起動]をクリックする。
+1. 新しいインスタンス テンプレートを作成する。\[VM を更新]をクリックする。更新タイプを \[追従型] に設定する。\[起動]をクリックする。
+2. マネージド インスタンス グループ内の各インスタンスを放棄する。インスタンス テンプレートを削除して新しいテンプレートと置き換え、マネージド グループでインスタンスを再作成する。
+3. 新しいインスタンス テンプレートを作成し、\[VM を更新]をクリックする。更新タイプを \[先行型] に設定する。\[起動]をクリックする。
+4. 新しいインスタンス テンプレートを作成する。\[VM を更新]をクリックする。最大サージを 5 に設定する。\[起動]をクリックする。
 
 **正解**: ✅ C
 
@@ -42,10 +42,10 @@ Cymbal Superstore の営業部門には中規模の MySQL データベースが�
 
 **選択肢**:
 
-A. gcloud を使用して E2-standard-8 マシンタイプで Compute Engine インスタンスを実装し、MySQL をインストールして構成する。
-B. Cloud Marketplace で MySQL のマシンイメージを見つけ、ニーズを満たすように構成する。
-C. Cloud SQL を使用してデータベース インスタンスを実装し、ローカルデータをバックアップして新しいインスタンスに復元する。
-D. N2 マシンタイプで Compute Engine VM を構成し、MySQL をインストールして、新しいインスタンスにデータを復元する。
+1. gcloud を使用して E2-standard-8 マシンタイプで Compute Engine インスタンスを実装し、MySQL をインストールして構成する。
+2. Cloud Marketplace で MySQL のマシンイメージを見つけ、ニーズを満たすように構成する。
+3. Cloud SQL を使用してデータベース インスタンスを実装し、ローカルデータをバックアップして新しいインスタンスに復元する。
+4. N2 マシンタイプで Compute Engine VM を構成し、MySQL をインストールして、新しいインスタンスにデータを復元する。
 
 **正解**: ✅ A
 
@@ -61,10 +61,10 @@ Cloud SQL で自動フェイルオーバーを構成するには、gcloud sql in
 
 **選択肢**:
 
-A. --master-instance-name
-B. --availability-type
-C. --secondary-zone
-D. --replica-type
+1. --master-instance-name
+2. --availability-type
+3. --secondary-zone
+4. --replica-type
 
 **正解**: ✅ B
 
@@ -80,10 +80,10 @@ D. --replica-type
 
 **選択肢**:
 
-A. App Engine フレキシブル環境
-B. Cloud Run functions
-C. Cloud Run
-D. App Engine スタンダード環境
+1. App Engine フレキシブル環境
+2. Cloud Run functions
+3. Cloud Run
+4. App Engine スタンダード環境
 
 **正解**: ✅ C
 
@@ -99,10 +99,10 @@ terraform apply コマンドで実行されるアクションは何ですか？
 
 **選択肢**:
 
-A. Terraform の構成ファイルの構文が検証される
-B. 作成されるリソースのプレビューが表示される
-C. 最新バージョンの Terraform プロバイダがダウンロードされる
-D. Terraform の構成ファイルでリクエストされたリソースが設定される
+1. Terraform の構成ファイルの構文が検証される
+2. 作成されるリソースのプレビューが表示される
+3. 最新バージョンの Terraform プロバイダがダウンロードされる
+4. Terraform の構成ファイルでリクエストされたリソースが設定される
 
 **正解**: ✅ D
 
@@ -118,10 +118,10 @@ Cloud Storage に毎時間アップロードされるデータを、最小のコ
 
 **選択肢**:
 
-A. プログラムで BigQuery のストリーミング API を使用してバケットからデータを読み取る
-B. Cloud Run functions の関数を作成して、Dataflow パイプライン経由で BigQuery にデータを push する
-C. BigQuery Data Transfer Service を使用して、バケットと BigQuery の間の転送をスケジュール設定する
-D. コマンドライン スクリプトで bq load コマンドを実装し、cron を使用してスケジュール設定する
+1. プログラムで BigQuery のストリーミング API を使用してバケットからデータを読み取る
+2. Cloud Run functions の関数を作成して、Dataflow パイプライン経由で BigQuery にデータを push する
+3. BigQuery Data Transfer Service を使用して、バケットと BigQuery の間の転送をスケジュール設定する
+4. コマンドライン スクリプトで bq load コマンドを実装し、cron を使用してスケジュール設定する
 
 **正解**: ✅ C
 
@@ -137,10 +137,10 @@ Cloud Storage にオブジェクトが追加された際に Cloud Functions を�
 
 **選択肢**:
 
-A. google.storage.object.add
-B. google.storage.object.finalize
-C. google.storage.object.change
-D. google.storage.object.create
+1. google.storage.object.add
+2. google.storage.object.finalize
+3. google.storage.object.change
+4. google.storage.object.create
 
 **正解**: ✅ B
 
@@ -156,10 +156,10 @@ D. google.storage.object.create
 
 **選択肢**:
 
-A. デフォルトプールと Ubuntu イメージで Autopilot クラスタを us-central1-a に実装
-B. Ubuntu イメージタイプで Autopilot クラスタを us-central1 に実装
-C. デフォルトプールと Ubuntu イメージで限定公開の Standard ゾーンクラスタを us-central1-a に実装
-D. デフォルトプールとコンテナ最適化イメージで限定公開の Standard リージョンクラスタを us-central1 に実装
+1. デフォルトプールと Ubuntu イメージで Autopilot クラスタを us-central1-a に実装
+2. Ubuntu イメージタイプで Autopilot クラスタを us-central1 に実装
+3. デフォルトプールと Ubuntu イメージで限定公開の Standard ゾーンクラスタを us-central1-a に実装
+4. デフォルトプールとコンテナ最適化イメージで限定公開の Standard リージョンクラスタを us-central1 に実装
 
 **正解**: ✅ C
 
@@ -175,10 +175,10 @@ IP 範囲やリージョンごとのサブネットを完全に制御したい�
 
 **選択肢**:
 
-A. 自動モードネットワーク
-B. カスタムモードネットワーク
-C. カスタムネットワークに変換された自動モードネットワーク
-D. プロジェクトのデフォルトネットワーク
+1. 自動モードネットワーク
+2. カスタムモードネットワーク
+3. カスタムネットワークに変換された自動モードネットワーク
+4. プロジェクトのデフォルトネットワーク
 
 **正解**: ✅ B
 
@@ -194,10 +194,10 @@ NYC と SF のユーザーに対応し、ACL を使わない Cloud Storage バ�
 
 **選択肢**:
 
-A. --placement us-east1, europe-west2 を指定して、gcloud storage buckets create を実行
-B. --remove-acl-grant を指定して、gcloud storage objects を実行
-C. --location を指定せずに gcloud storage buckets create を実行
-D. マルチリージョンロケーションと ACL 評価オフオプションを指定して、gsutil mb を実行
+1. --placement us-east1, europe-west2 を指定して、gcloud storage buckets create を実行
+2. --remove-acl-grant を指定して、gcloud storage objects を実行
+3. --location を指定せずに gcloud storage buckets create を実行
+4. マルチリージョンロケーションと ACL 評価オフオプションを指定して、gsutil mb を実行
 
 **正解**: ✅ D
 
