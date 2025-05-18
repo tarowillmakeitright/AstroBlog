@@ -22,10 +22,10 @@ Cymbal Superstore はサプライ チェーン アプリケーションを Googl
 
 **選択肢**:
 
-A. Cloud Run でコンテナを使用してアプリケーションを実装する
-B. App Engine でコードを使用してアプリケーションを実装する
-C. Google Kubernetes Engine でコンテナを使用してアプリケーションを実装する
-D. Compute Engine で仮想マシンを使用してアプリケーションを実装する
+1. Cloud Run でコンテナを使用してアプリケーションを実装する
+2. App Engine でコードを使用してアプリケーションを実装する
+3. Google Kubernetes Engine でコンテナを使用してアプリケーションを実装する
+4. Compute Engine で仮想マシンを使用してアプリケーションを実装する
 
 **正解**: ✅ D
 
@@ -43,10 +43,10 @@ Cymbal Superstore は、旗艦店の POS システム用にクラウド アプ�
 
 **選択肢**:
 
-A. Compute Engine VM に SSH 接続し、コードを実行する
-B. コードをコンテナ イメージにパッケージ化し、Cloud Run に送信する
-C. Google Kubernetes Engine で Deployment マニフェストを実装し、それに対して kubectl apply を実行する
-D. Cloud Run functions でソリューションをコーディングする
+1. Compute Engine VM に SSH 接続し、コードを実行する
+2. コードをコンテナ イメージにパッケージ化し、Cloud Run に送信する
+3. Google Kubernetes Engine で Deployment マニフェストを実装し、それに対して kubectl apply を実行する
+4. Cloud Run functions でソリューションをコーディングする
 
 **正解**: ✅ B
 
@@ -64,10 +64,10 @@ Cloud Run はサーバーレスでコンテナを管理でき、コーディン�
 
 **選択肢**:
 
-A. Compute Engine 仮想マシンを作成し、そのインフラストラクチャにアプリを移行する
-B. 既存のアプリケーションを App Engine にデプロイする
-C. コンテナ イメージに含めたアプリケーションを Cloud Run にデプロイする
-D. Kubernetes クラスタを実装し、Pod を作成してアプリを有効にする
+1. Compute Engine 仮想マシンを作成し、そのインフラストラクチャにアプリを移行する
+2. 既存のアプリケーションを App Engine にデプロイする
+3. コンテナ イメージに含めたアプリケーションを Cloud Run にデプロイする
+4. Kubernetes クラスタを実装し、Pod を作成してアプリを有効にする
 
 **正解**: ✅ A
 
@@ -85,10 +85,10 @@ Cymbal Superstore では、四半期の販売計画を達成しているかど�
 
 **選択肢**:
 
-A. BigQuery
-B. Cloud SQL
-C. Spanner
-D. Firestore
+1. BigQuery
+2. Cloud SQL
+3. Spanner
+4. Firestore
 
 **正解**: ✅ A
 
@@ -106,10 +106,10 @@ Cymbal Superstore のサプライ チェーン アプリケーションでは、
 
 **選択肢**:
 
-A. Archive
-B. Coldline
-C. Nearline
-D. Standard
+1. Archive
+2. Coldline
+3. Nearline
+4. Standard
 
 **正解**: ✅ D
 
@@ -127,11 +127,11 @@ Cymbal Superstore では、時系列の履歴データを視覚的なダッシ�
 
 **選択肢**:
 
-A. BigQuery
-B. Cloud Storage
-C. Firestore
-D. Cloud SQL
-E. Bigtable
+1. BigQuery
+2. Cloud Storage
+3. Firestore
+4. Cloud SQL
+5. Bigtable
 
 **正解**: ✅ A, E
 
@@ -149,10 +149,10 @@ Cymbal Superstore は、ミネソタ州ミネアポリスの旗艦店の e コ�
 
 **選択肢**:
 
-A. プレミアム ティアのグローバル外部アプリケーション LB + リージョン内部アプリケーション LB
-B. グローバル外部プロキシ ネットワーク LB + プレミアム ティアのパススルー ネットワーク LB
-C. スタンダード ティアのリージョン外部アプリケーション LB + リージョン内部アプリケーション LB
-D. リージョン内部プロキシ ネットワーク LB + スタンダード ティアの内部プロキシ ネットワーク LB
+1. プレミアム ティアのグローバル外部アプリケーション LB + リージョン内部アプリケーション LB
+2. グローバル外部プロキシ ネットワーク LB + プレミアム ティアのパススルー ネットワーク LB
+3. スタンダード ティアのリージョン外部アプリケーション LB + リージョン内部アプリケーション LB
+4. リージョン内部プロキシ ネットワーク LB + スタンダード ティアの内部プロキシ ネットワーク LB
 
 **正解**: ✅ C
 
@@ -170,10 +170,10 @@ TCP スタックのレイヤ 7 で実行される Google Cloud のロード バ�
 
 **選択肢**:
 
-A. グローバル アプリケーション ロードバランサ
-B. グローバル プロキシ ネットワーク ロードバランサ
-C. リージョン パススルー ネットワーク ロードバランサ
-D. リージョン内部プロキシ ネットワーク ロードバランサ
+1. グローバル アプリケーション ロードバランサ
+2. グローバル プロキシ ネットワーク ロードバランサ
+3. リージョン パススルー ネットワーク ロードバランサ
+4. リージョン内部プロキシ ネットワーク ロードバランサ
 
 **正解**: ✅ A
 
