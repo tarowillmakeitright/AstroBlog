@@ -2,28 +2,11 @@
 author: Taro Gray
 pubDatetime: 2025-05-18T08:00:00.000Z
 title: Associate Cloud Engineerの取得に向けた実践問題解析 (GCP デプロイと実装)
-postSlug: 02\_AssociateCloudEngineer\_DeployPractice
+postSlug: 02_AssociateCloudEngineer_DeployPractice
 featured: true
-ogImage: [https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a](https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a)
 tags:
-- GCP
-- Cloud SQL
-- Cloud Run
-- Cloud Storage
-- Kubernetes
-- Terraform
-- VPC
-- Associate Cloud Engineer
-- Hands-on
-- Skills Boost
-- 試験対策
-- 実践
-- デプロイ
-- 実装
-- ラボ
-- 解説
-- 前編
-description: 診断用の質問: クラウド ソリューションのデプロイと実装
+  - GCP
+description: クラウド ソリューションのデプロイと実装
 ---
 
 ## はじめに
