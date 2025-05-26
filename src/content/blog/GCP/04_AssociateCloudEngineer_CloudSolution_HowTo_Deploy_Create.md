@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2025-05-27T08:00:00.000Z
 title: クラウド ソリューション䛾デプロイと実装
-postSlug:
+postSlug: 04_AssociateCloudEngineer_CloudSolution_HowTo_Deploy_Create
 featured: true
 tags:
   - GCP
