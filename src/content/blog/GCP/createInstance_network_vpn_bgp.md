@@ -86,9 +86,13 @@ gcloud compute firewall-rules create vpc-demo-allow-custom \
   --source-ranges 10.0.0.0/8
 ```
 
-🧾 意味と説明: - vpc-demo-allow-custom: ファイアウォールルールの名前 - --network vpc-demo: このルールを適用する VPC 名 - --allow tcp:0-65535,udp:0-65535,icmp:
+🧾 意味と説明:
 
-- 全ての TCP・UDP ポートと ICMP を許可 - --source-ranges 10.0.0.0/8:
+- vpc-demo-allow-custom: ファイアウォールルールの名前
+- - --network vpc-demo: このルールを適用する VPC 名
+- - --allow tcp:0-65535,udp:0-65535,icmp:
+- 全ての TCP・UDP ポートと ICMP を許可
+- - --source-ranges 10.0.0.0/8:
 - 10.0.0.0 〜 10.255.255.255 の範囲（プライベートIP）からの通信を許可
 
 🔐 主に 内部ネットワークの広範な通信を許可 する目的で使われます。
@@ -103,7 +107,10 @@ gcloud compute firewall-rules create vpc-demo-allow-ssh-icmp \
   --allow tcp:22,icmp
 ```
 
-🧾 意味と説明: - tcp:22: SSH 接続用のポート - icmp: ping に使われるプロトコル
+🧾 意味と説明:
+
+- tcp:22: SSH 接続用のポート
+- - icmp: ping に使われるプロトコル
 
 🔐 管理者が VM に SSH 接続したり、ping を使って疎通確認できるようにするルールです。
 
@@ -120,9 +127,12 @@ gcloud compute instances create vpc-demo-instance1 \
   --subnet vpc-demo-subnet1
 ```
 
-🧾 意味と説明: - vpc-demo-instance1: インスタンス名 - --machine-type=e2-medium:
+🧾 意味と説明:
 
-- vCPU 2個・メモリ 4GB のインスタンスタイプ - --zone us-west1-c:
+- vpc-demo-instance1: インスタンス名
+- - --machine-type=e2-medium:
+- vCPU 2個・メモリ 4GB のインスタンスタイプ
+- - --zone us-west1-c:
 - 西海岸リージョンの特定ゾーン - --subnet vpc-demo-subnet1:
 - 作成済みのサブネットに属するように指定
 
@@ -137,9 +147,12 @@ gcloud compute instances create vpc-demo-instance2 \
  --subnet vpc-demo-subnet2
 ```
 
-🧾 意味と説明: - vpc-demo-instance2: 別リージョンのインスタンス - --zone us-east1-d:
+🧾 意味と説明:
 
-- 米国東部リージョンの別ゾーン - --subnet vpc-demo-subnet2:
+- vpc-demo-instance2: 別リージョンのインスタンス
+- - --zone us-east1-d:
+- 米国東部リージョンの別ゾーン
+- - --subnet vpc-demo-subnet2:
 - us-east1 にあるサブネットに属する
 
 ---
