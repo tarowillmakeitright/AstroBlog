@@ -165,9 +165,13 @@ Firewall	TCP/UDP/ICMP を広範囲に許可（内部通信用）＋ 管理アク
 gcloud compute networks create on-prem --subnet-mode custom
 ```
 
-🧾 解説：- on-prem: ネットワーク名。オンプレミス環境を模した名前。- --subnet-mode custom:
+🧾 解説：
 
+```
+- on-prem: ネットワーク名。オンプレミス環境を模した名前。
+- --subnet-mode custom:
 - サブネットを自動で作成せず、明示的に定義するカスタムモード。
+```
 
 💡 auto モードだと各リージョンに自動でサブネットが作られますが、custom モードは自分で必要な範囲を定義できます。
 
@@ -182,10 +186,15 @@ gcloud compute networks subnets create on-prem-subnet1 \
   --region us-west1
 ```
 
-🧾 解説：- on-prem-subnet1: サブネット名 - --network on-prem: 所属させるVPCネットワーク名 - --range 192.168.1.0/24:
+🧾 解説：
 
+```
+- on-prem-subnet1: サブネット名
+- - --network on-prem: 所属させるVPCネットワーク名
+- - --range 192.168.1.0/24:
 - サブネットのIP範囲（254ホスト分）- --region us-west1:
 - このサブネットが存在するリージョン
+```
 
 📌 192.168.0.0/16 はオンプレミスでよく使われるプライベートIP帯。これを模して使用しています。
 
@@ -200,10 +209,14 @@ gcloud compute firewall-rules create on-prem-allow-custom \
   --source-ranges 192.168.0.0/16
 ```
 
-🧾 解説：- --allow tcp:0-65535,udp:0-65535,icmp:
+🧾 解説：
 
-- 全ポートのTCP/UDP、ICMP通信を許可 - --source-ranges 192.168.0.0/16:
+```
+- --allow tcp:0-65535,udp:0-65535,icmp
+- 全ポートのTCP/UDP、ICMP通信を許可
+- --source-ranges 192.168.0.0/16
 - 192.168.. のすべてのサブネットからの通信を許可
+```
 
 🔐 内部の広い通信を許可するため、オンプレミス環境でよくある設定です。
 
@@ -217,7 +230,12 @@ gcloud compute firewall-rules create on-prem-allow-ssh-icmp \
   --allow tcp:22,icmp
 ```
 
-🧾 解説：- tcp:22: SSH 接続を許可 - icmp: ping（疎通確認）を許可
+🧾 解説：
+
+```
+- tcp:22: SSH 接続を許可
+- - icmp: ping（疎通確認）を許可
+```
 
 💻 管理やモニタリング用途で SSH/ICMP は非常に重要です。
 
@@ -232,11 +250,15 @@ gcloud compute instances create on-prem-instance1 \
   --subnet on-prem-subnet1
 ```
 
-🧾 解説：- on-prem-instance1: 作成される仮想マシンの名前 - --machine-type=e2-medium:
+🧾 解説：
 
+```
+- on-prem-instance1: 作成される仮想マシンの名前
+- --machine-type=e2-medium:
 - vCPU 2、メモリ 4GB の低コスト・汎用 VM - --zone us-west1-b:
 - us-west1 リージョンの特定ゾーン - --subnet on-prem-subnet1:
 - 先ほど作成したサブネットに所属させる
+```
 
 ---
 
@@ -277,10 +299,12 @@ gcloud compute vpn-gateways create on-prem-vpn-gw1 \
 
 🔍 オプション解説：
 
+```
 オプション 説明
-vpn-gateways create HA VPN ゲートウェイを作成するコマンド
+- vpn-gateways create HA VPN ゲートウェイを作成するコマンド
 --network ゲートウェイを紐づける VPC ネットワーク名
 --region ゲートウェイが存在するリージョン。HA VPN はリージョン単位で構成される
+```
 
 💡 HA VPN ゲートウェイは 2 つの外部 IP アドレス（インターフェース）を持ちます。
 
@@ -304,9 +328,11 @@ gcloud compute vpn-gateways describe on-prem-vpn-gw1 \
 
 🔍 オプション解説：
 
+```
 オプション 説明
 vpn-gateways describe 指定した VPN ゲートウェイの詳細情報を表示する
 --region 対象となるゲートウェイのリージョン
+```
 
 🔎 ここで表示される IP アドレスやインターフェース情報は、トンネル設定時に必須になります。
 
@@ -334,11 +360,13 @@ gcloud compute routers create on-prem-router1 \
 
 🔍 オプション解説：
 
+```
 オプション 説明
 routers create 動的ルーティング用の Cloud Router を作成
 --region Cloud Router の設置リージョン
 --network ルーターを紐づける VPC
 --asn BGP の AS 番号。両端は異なる番号にする必要あり
+```
 
 🚧 BGP（Border Gateway Protocol）でルーティングを自動化するため、Cloud Router は必須です。
 
@@ -346,6 +374,7 @@ routers create 動的ルーティング用の Cloud Router を作成
 
 ✅ 全体構成イメージ
 
+```
 ┌───────────────────────┐ ┌────────────────────────┐
 │ VPC: vpc-demo │ │ On-Prem: on-prem │
 │ │ │ │
@@ -354,6 +383,7 @@ routers create 動的ルーティング用の Cloud Router を作成
 │ ASN: 65001 │ ASN: 65002 │
 │ Region: us-west1 │ Region: us-west1 │
 └───────────────────────┘ └────────────────────────┘
+```
 
 ---
 
