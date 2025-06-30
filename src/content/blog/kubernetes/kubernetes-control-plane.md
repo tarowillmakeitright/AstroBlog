@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2025-06-30T08:00:00.00Z
 title: KubernetesのControl Planeとは？構成要素と役割をわかりやすく解説
-postSlug:
+postSlug: kubernetes-control-plane
 featured: true
 tags:
   - kubernetes
