@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2025-07-06T08:00:00.000Z
-title: 【GCP】VPNとBGPの作成
+title: クラウドストレージの種類とその違いを解説
 postSlug: storage_type
 featured: true
 tags:
