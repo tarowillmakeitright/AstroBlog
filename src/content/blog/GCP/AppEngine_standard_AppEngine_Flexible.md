@@ -1,7 +1,7 @@
 ---
 author: Taro Gray
 pubDatetime: 2025-07-06T08:00:00.000Z
-title: App Engine Standard と App Enginge Flexible のちがい
+title: App Engine Standard と App Engine Flexible のちがい
 postSlug: AppEngine_standard_AppEngine_Flexible
 featured: true
 tags:
