@@ -1,15 +1,15 @@
 ---
 author: Taro Gray
-pubDatetime: 2025-11-30T21:00:00.000Z
+pubDatetime: 2025-11-30T22:15:00.000Z
 title: Setting bluetooth on sway
 postSlug: sway-setting-bluetooth
 featured: true
 tags:
   - Sway
-description: 
+description: how to set up bluetooth in sway
 ---
 
-###Table of contents
+## Table of contents
 
 Here is the **exact, clean, reliable sequence** to connect Bluetooth using `bluetoothctl` on Sway / Wayland / Linux.
 This works on Fedora / Asahi Linux perfectly.
