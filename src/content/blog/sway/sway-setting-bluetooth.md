@@ -1,6 +1,6 @@
 ---
 author: Taro Gray
-pubDatetime: 2025-11-30T20:47:00.000Z
+pubDatetime: 2025-11-30T21:00:00.000Z
 title: Setting bluetooth on sway
 postSlug: sway-setting-bluetooth
 featured: true
