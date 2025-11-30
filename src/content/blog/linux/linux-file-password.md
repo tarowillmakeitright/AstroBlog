@@ -2,11 +2,11 @@
 author: Taro Gray
 pubDatetime: 2025-11-28T08:00:00.000Z
 title: How to enrypt a file other then zip command 
-postSlug: linux, encryption
+postSlug: linux-file-encryption
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
-  - Linux
+  - Linux, encryption
 description: This article describes how to decrypt a file oter than zip command.
 ---
 
@@ -18,12 +18,12 @@ Here are the secure alternatives depending on what tool you prefer:
 
 ---
 
-##✅ **Best Alternative (Recommended): Use 7z with AES-256**
+## ✅ **Best Alternative (Recommended): Use 7z with AES-256**
 
 `zip -er` uses old, weak ZIPCrypto.
 **7z uses AES-256**, which is secure.
 
-### **Encrypt a file**
+## # **Encrypt a file**
 
 ```bash
 7z a -tzip -p -mem=AES256 file.zip file
@@ -37,11 +37,11 @@ Explanation:
 
 ---
 
-##✅ **Alternative for systems without 7z: Use gpg**
+## ✅ **Alternative for systems without 7z: Use gpg**
 
 GPG gives you **strong encryption** and does not rely on ZIP format at all.
 
-### **Encrypt a file into .gpg**
+## # **Encrypt a file into .gpg**
 
 ```bash
 gpg -c file
@@ -58,7 +58,7 @@ gpg -c file.tar
 
 ---
 
-##✅ **Alternative using `zip` but forcing AES (if supported)**
+## ✅ **Alternative using `zip` but forcing AES (if supported)**
 
 Some `zip` implementations support AES:
 
@@ -89,7 +89,7 @@ If not present → it will still use **weak ZIPCrypto**.
 
 ---
 
-##Summary
+## Summary
 
 | Method                    | Encryption | Secure?  | Command                                   |
 | ------------------------- | ---------- | -------- | ----------------------------------------- |
