@@ -1,6 +1,10 @@
 ---
 author: Taro Gray
+<<<<<<< HEAD
 pubDatetime: 2025-12-12T15:00:00.00Z
+=======
+pubDatetime: 2025-12-12T00:00:00.00Z
+>>>>>>> origin
 title: Docker Commands I've learned so far
 postSlug: docker-commands
 featured: true

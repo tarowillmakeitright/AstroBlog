@@ -2,7 +2,7 @@
 author: Taro Gray
 pubDatetime: 2025-11-16T08:00:00.000Z
 title: How to encrypt the text using OpenSSL Encryption
-postSlug: linux, encryption
+postSlug: linux-openssl-encryption
 featured: true
 ogImage: https://github.com/satnaing/astro-paper/assets/53733092/1ef0cf03-8137-4d67-ac81-84a032119e3a
 tags:
