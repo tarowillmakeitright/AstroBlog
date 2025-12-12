@@ -95,3 +95,45 @@ performance stats for all containers
 ```
 docker container stats
 ```
+
+## Network
+
+In order to see the network IPAddress
+
+```
+docker container inspect --format '{ .NetworkSettings.IPAddress }' webhost
+```
+
+quick port check
+
+```
+docker container port <container name>
+```
+
+show networks
+
+```
+docker network ls
+```
+
+```
+docker network inspect
+```
+
+create a network
+
+```
+docker network create --driver
+```
+
+attach a network to container
+
+```
+docker network connect
+```
+
+detach a network from container
+
+```
+docker network disconect
+```
