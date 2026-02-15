@@ -1,4 +1,18 @@
-# LPIC-102 Answers (Linux Project)
+---
+author: Taro Gray
+pubDatetime: 2026-02-15T12:45:00.000Z
+title: LPIC-102 Answers (Linux Project)
+postSlug: lpic102-answers
+featured: false
+draft: false
+tags:
+  - Linux
+description: A practical LPIC-1 Exam 102 reference covering shells, admin tasks, services, networking, and security.
+---
+
+## Table of contents
+
+## LPIC-102 Answers (Linux Project)
 
 A practical, deployment-ready markdown reference for LPIC-1 Exam 102 topics.
 
@@ -379,18 +393,3 @@ chmod chown chgrp umask sudo visudo ssh-keygen gpg
 3. Memorize paths and config files (`/etc/passwd`, `/etc/shadow`, `/etc/ssh/sshd_config`, etc.).
 4. Get comfortable with shell pipelines and text filtering.
 5. In scenario questions: troubleshoot bottom-up (local → network → service).
-
----
-
-## Optional: Add This to Your Site Navigation
-
-If your site generator supports front matter, prepend this block:
-
-```yaml
----
-title: LPIC-102 Answers
-description: Practical LPIC-1 102 reference for Linux admin tasks.
----
-```
-
-Done: this file is ready to publish as `LPIC102_answers.md`.
